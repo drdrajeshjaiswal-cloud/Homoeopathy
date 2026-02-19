@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psoriasis Treatment Without Steroids | Dr. Jaiswal's Homoeopathy - Tarnaka, Hyderabad</title>
-    <meta name="description" content="Treat psoriasis naturally without steroids at Dr. Jaiswal's Homoeopathy Clinic in Tarnaka, Hyderabad. Constitutional homeopathy heals psoriasis from within, reduces scaling, and prevents recurrence permanently.">
+    <title>Kidney Stones Treatment Without Surgery | Dr. Jaiswal's Homoeopathy - Tarnaka, Hyderabad</title>
+    <meta name="description" content="Treat kidney stones naturally without surgery at Dr. Jaiswal's Homoeopathy Clinic in Tarnaka, Hyderabad. Constitutional homeopathy dissolves stones safely, relieves pain, and prevents recurrence.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -164,29 +164,29 @@
         }
         .section-card p { color: var(--text-mid); margin-bottom: 1rem; }
 
-        /* ── TYPE CARDS GRID ── */
-        .type-grid {
+        /* ── STONE TYPES GRID ── */
+        .stone-types {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1.2rem;
             margin-top: 1rem;
         }
-        .type-card {
+        .stone-card {
             background: linear-gradient(135deg, var(--warm-white), #f0ede4);
             border-radius: 12px;
             padding: 1.3rem 1.5rem;
             border-left: 4px solid var(--primary);
         }
-        .type-card h4 { color: var(--primary); font-size: 1.05rem; margin-bottom: 0.4rem; }
-        .type-card p { font-size: 0.9rem; color: var(--text-mid); margin: 0; }
-        .type-badge {
+        .stone-card h4 { color: var(--primary); font-size: 1.05rem; margin-bottom: 0.4rem; }
+        .stone-card p { font-size: 0.9rem; color: var(--text-mid); margin: 0; }
+        .stone-badge {
             display: inline-block;
             background: var(--primary); color: white;
             font-size: 0.7rem; padding: 0.15rem 0.6rem; border-radius: 20px;
             margin-bottom: 0.5rem; font-weight: 600; letter-spacing: 0.5px;
         }
 
-        /* ── SYMPTOMS GRID ── */
+        /* ── SYMPTOMS LIST ── */
         .symptoms-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -200,23 +200,6 @@
         }
         .symptom-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 0.1rem; }
         .symptom-text { font-size: 0.92rem; color: var(--text-mid); }
-
-        /* ── TRIGGERS GRID ── */
-        .triggers-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        .trigger-item {
-            background: var(--warm-white);
-            border-radius: 10px;
-            padding: 1rem 1.1rem;
-            text-align: center;
-        }
-        .trigger-item .trigger-icon { font-size: 1.6rem; margin-bottom: 0.4rem; }
-        .trigger-item strong { display: block; color: var(--primary); font-size: 0.88rem; margin-bottom: 0.2rem; }
-        .trigger-item span { font-size: 0.82rem; color: var(--text-mid); }
 
         /* ── BENEFITS LIST ── */
         .benefits-list { list-style: none; margin-top: 1rem; }
@@ -255,7 +238,7 @@
         .step-content h4 { color: var(--primary); font-size: 1.1rem; margin-bottom: 0.3rem; }
         .step-content p { color: var(--text-mid); font-size: 0.93rem; margin: 0; }
 
-        /* ── DIET / LIFESTYLE COLUMNS ── */
+        /* ── DIET SECTION ── */
         .diet-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem; }
         .diet-col { background: var(--warm-white); border-radius: 12px; padding: 1.3rem 1.5rem; }
         .diet-col h4 { margin-bottom: 0.8rem; font-size: 1.1rem; }
@@ -356,17 +339,15 @@
             padding: 0.6rem 0;
             font-size: 0.9rem; color: var(--text-mid);
             border-bottom: 1px solid var(--warm-white);
-            align-items: flex-start;
+            align-items: center;
         }
         .why-list li:last-child { border-bottom: none; }
         .why-list li .dot {
             width: 8px; height: 8px; flex-shrink: 0;
-            background: var(--sage); border-radius: 50%; margin-top: 0.5rem;
+            background: var(--sage); border-radius: 50%; margin-top: 0.35rem;
         }
-        .why-list li a { color: var(--primary); text-decoration: none; font-weight: 600; }
-        .why-list li a:hover { text-decoration: underline; }
 
-        /* ── MID-PAGE CTA BANNER ── */
+        /* ── BANNER CTA ── */
         .mid-cta {
             background: linear-gradient(135deg, var(--primary), var(--primary-light));
             color: white; text-align: center;
@@ -408,8 +389,7 @@
         }
         @media (max-width: 768px) {
             nav { display: none; }
-            .type-grid, .symptoms-grid, .diet-cols { grid-template-columns: 1fr; }
-            .triggers-grid { grid-template-columns: repeat(2, 1fr); }
+            .stone-types, .symptoms-grid, .diet-cols { grid-template-columns: 1fr; }
             .page-hero { padding: 3rem 1.5rem; }
             .section-card { padding: 1.5rem; }
             .footer-container { grid-template-columns: 1fr; gap: 2rem; }
@@ -446,7 +426,7 @@
         <span>›</span>
         <a href="index.html#services">Services</a>
         <span>›</span>
-        Psoriasis Treatment
+        Kidney Stones Treatment
     </div>
 </div>
 
@@ -454,8 +434,8 @@
 <section class="page-hero">
     <div class="page-hero-content">
         <div class="badge">🌿 Constitutional Homoeopathy</div>
-        <h1>Psoriasis Treatment Without Steroids</h1>
-        <p>Heal psoriasis from within with constitutional homoeopathy — clear skin, lasting relief, no steroids, no side effects.</p>
+        <h1>Kidney Stones Treatment Without Surgery</h1>
+        <p>Dissolve kidney stones naturally with time-tested homoeopathic remedies — safe, effective, no surgery, no side effects.</p>
         <div class="hero-cta-group">
             <a href="index.html#contact" class="btn-primary">Book Free Consultation</a>
             <a href="tel:+919985188831" class="btn-secondary">📞 Call Now: +91 99851 88831</a>
@@ -466,308 +446,211 @@
 <!-- ── MAIN CONTENT + SIDEBAR ── -->
 <div class="page-layout">
 
+    <!-- ── LEFT: MAIN CONTENT ── -->
     <div class="main-content">
 
         <!-- INTRO -->
         <div class="section-card">
-            <h2>What Is Psoriasis?</h2>
-            <p>Psoriasis is a <strong>chronic autoimmune skin condition</strong> that causes skin cells to multiply up to ten times faster than normal. As cells pile up on the surface, they form the characteristic red, scaly plaques — patches of raised, inflamed skin covered with silvery-white scales that can crack, bleed, and itch intensely.</p>
-            <p>Psoriasis affects over 125 million people worldwide and is particularly challenging because it is <strong>not merely a skin problem</strong> — it is a systemic immune disorder with its roots deep in the body's internal imbalance. Steroid creams and immunosuppressant drugs may suppress symptoms temporarily, but they do not address the underlying cause, and symptoms almost always return when medication is stopped — often worse than before.</p>
-            <p>At Dr. Jaiswal's Homoeopathy Clinic, Tarnaka, we treat psoriasis constitutionally — addressing the immune dysregulation, genetic predisposition, and emotional triggers that drive the condition — producing lasting improvement that topical treatments cannot achieve.</p>
+            <h2>What Are Kidney Stones?</h2>
+            <p>Kidney stones are <strong>hard mineral and salt deposits</strong> that form inside the kidneys when urine becomes highly concentrated. As urine becomes saturated with minerals like calcium, oxalate, and uric acid, these substances can crystallise and bind together — forming stones that range from a tiny grain of sand to the size of a golf ball.</p>
+            <p>When a stone begins to move through the narrow urinary tract, it can trigger <strong>excruciating pain</strong>, blockages, and complications. Most conventional treatments involve waiting for the stone to pass, medications, or invasive surgical procedures. Homoeopathy offers a gentler, more holistic alternative — working with the body to dissolve stones naturally while addressing the underlying metabolic imbalance.</p>
+            <p>At Dr. Jaiswal's Homoeopathy Clinic, Tarnaka, we have helped hundreds of patients dissolve kidney stones and prevent recurrence through precise constitutional treatment — without any surgery.</p>
 
-            <h3>Types of Psoriasis We Treat</h3>
-            <div class="type-grid">
-                <div class="type-card">
-                    <div class="type-badge">Most Common — 80%</div>
-                    <h4>Plaque Psoriasis</h4>
-                    <p>Raised, inflamed patches covered with silvery-white scales. Most often appears on elbows, knees, scalp, and lower back. Can be mild or cover large areas of the body.</p>
+            <h3>Types of Kidney Stones We Treat</h3>
+            <div class="stone-types">
+                <div class="stone-card">
+                    <div class="stone-badge">Most Common — 80%</div>
+                    <h4>Calcium Oxalate Stones</h4>
+                    <p>Form when calcium combines with oxalate in the urine. Often linked to dehydration, high-oxalate diet, or metabolic conditions.</p>
                 </div>
-                <div class="type-card">
-                    <div class="type-badge">Scalp Type</div>
-                    <h4>Scalp Psoriasis</h4>
-                    <p>Thick, adherent scales on the scalp that may extend to the forehead, back of the neck, or ears. Often confused with severe dandruff and causes significant hair fall.</p>
+                <div class="stone-card">
+                    <div class="stone-badge">Uric Acid Stones</div>
+                    <h4>Uric Acid Stones</h4>
+                    <p>Develop when urine is too acidic. Common in patients with gout, high-protein diets, or chronic dehydration.</p>
                 </div>
-                <div class="type-card">
-                    <div class="type-badge">Droplet Shape</div>
-                    <h4>Guttate Psoriasis</h4>
-                    <p>Small, drop-shaped lesions scattered over the trunk, arms, and legs. Often triggered by a streptococcal infection and more common in children and young adults.</p>
+                <div class="stone-card">
+                    <div class="stone-badge">Infection-Related</div>
+                    <h4>Struvite Stones</h4>
+                    <p>Form after urinary tract infections. Can grow rapidly and become quite large if left untreated.</p>
                 </div>
-                <div class="type-card">
-                    <div class="type-badge">Nail Involvement</div>
-                    <h4>Nail Psoriasis</h4>
-                    <p>Causes pitting, discolouration, thickening, and separation of nails. Affects up to 50% of psoriasis patients and is often a precursor to psoriatic arthritis.</p>
-                </div>
-                <div class="type-card">
-                    <div class="type-badge">Joint Involvement</div>
-                    <h4>Psoriatic Arthritis</h4>
-                    <p>An inflammatory arthritis associated with psoriasis, causing joint pain, stiffness, and swelling. Homoeopathy effectively addresses both the skin and joint components together.</p>
-                </div>
-                <div class="type-card">
-                    <div class="type-badge">Skin Folds</div>
-                    <h4>Inverse / Pustular</h4>
-                    <p>Inverse psoriasis appears in skin folds (armpits, groin, under breasts). Pustular psoriasis presents as pus-filled blisters — both require careful constitutional treatment.</p>
+                <div class="stone-card">
+                    <div class="stone-badge">Rare — Genetic</div>
+                    <h4>Cystine Stones</h4>
+                    <p>Caused by a hereditary condition where the kidneys excrete too much of an amino acid called cystine into the urine.</p>
                 </div>
             </div>
         </div>
 
         <!-- SYMPTOMS -->
         <div class="section-card">
-            <h2>Common Psoriasis Symptoms</h2>
-            <p>Psoriasis symptoms vary by type and severity, but the following are most frequently seen in patients visiting our clinic. Recognising the pattern helps Dr. Jaiswal select the most accurate constitutional remedy.</p>
+            <h2>Common Kidney Stone Symptoms</h2>
+            <p>Recognising symptoms early allows for prompt homoeopathic intervention, often avoiding the need for hospitalisation or surgery.</p>
             <div class="symptoms-grid">
                 <div class="symptom-item">
                     <div class="symptom-icon">🔴</div>
-                    <div class="symptom-text"><strong>Red, raised patches</strong> of skin covered with thick, silvery-white scales (plaques)</div>
+                    <div class="symptom-text"><strong>Severe sudden pain</strong> in lower back, side, or abdomen (renal colic)</div>
                 </div>
                 <div class="symptom-item">
-                    <div class="symptom-icon">🌡️</div>
-                    <div class="symptom-text"><strong>Dry, cracked skin</strong> that may bleed spontaneously or when scratched</div>
+                    <div class="symptom-icon">⚡</div>
+                    <div class="symptom-text"><strong>Sharp pain</strong> radiating to the groin or lower abdomen</div>
                 </div>
                 <div class="symptom-item">
                     <div class="symptom-icon">🔥</div>
-                    <div class="symptom-text"><strong>Burning, itching, or soreness</strong> around lesions — often worse at night</div>
+                    <div class="symptom-text"><strong>Burning sensation</strong> during urination</div>
                 </div>
                 <div class="symptom-item">
-                    <div class="symptom-icon">💅</div>
-                    <div class="symptom-text"><strong>Pitted, ridged, or thickened nails</strong> separating from the nail bed</div>
+                    <div class="symptom-icon">🚽</div>
+                    <div class="symptom-text"><strong>Frequent urge to urinate</strong> with very little output</div>
                 </div>
                 <div class="symptom-item">
-                    <div class="symptom-icon">🦴</div>
-                    <div class="symptom-text"><strong>Swollen, stiff joints</strong> (psoriatic arthritis) — especially in fingers and toes</div>
+                    <div class="symptom-icon">🩸</div>
+                    <div class="symptom-text"><strong>Blood in urine</strong> — pink, red, or brownish discolouration</div>
                 </div>
                 <div class="symptom-item">
-                    <div class="symptom-icon">🧴</div>
-                    <div class="symptom-text"><strong>Scalp scaling</strong> with excessive dandruff-like flaking and hair thinning</div>
+                    <div class="symptom-icon">💧</div>
+                    <div class="symptom-text"><strong>Cloudy or foul-smelling urine</strong></div>
                 </div>
                 <div class="symptom-item">
-                    <div class="symptom-icon">📉</div>
-                    <div class="symptom-text"><strong>Koebner phenomenon</strong> — new lesions appearing at sites of skin injury or friction</div>
+                    <div class="symptom-icon">🤢</div>
+                    <div class="symptom-text"><strong>Nausea and vomiting</strong> accompanying the pain</div>
                 </div>
                 <div class="symptom-item">
-                    <div class="symptom-icon">😔</div>
-                    <div class="symptom-text"><strong>Psychological distress</strong> — anxiety, depression, and social withdrawal due to visible symptoms</div>
+                    <div class="symptom-icon">🌡️</div>
+                    <div class="symptom-text"><strong>Fever and chills</strong> — may indicate kidney infection, seek care immediately</div>
                 </div>
             </div>
             <p style="margin-top:1.2rem; padding: 1rem 1.3rem; background: #fff8e6; border-left: 3px solid var(--secondary); border-radius: 6px; font-size:0.92rem;">
-                ⚠️ Psoriasis is not contagious and cannot be spread by touch. However, it is a systemic condition with links to cardiovascular disease, metabolic syndrome, and depression. Early constitutional treatment reduces the overall disease burden significantly.
+                ⚠️ If you experience fever with stone pain, inability to urinate, or severe vomiting — seek immediate medical attention. Early homoeopathic treatment can prevent complications and help you avoid surgery.
             </p>
-        </div>
-
-        <!-- TRIGGERS -->
-        <div class="section-card">
-            <h2>Common Psoriasis Triggers</h2>
-            <p>Understanding and avoiding your personal triggers is an essential part of psoriasis management alongside homoeopathic treatment. During the consultation, Dr. Jaiswal will identify which triggers are most relevant for your case.</p>
-            <div class="triggers-grid">
-                <div class="trigger-item">
-                    <div class="trigger-icon">😰</div>
-                    <strong>Stress</strong>
-                    <span>The single most common trigger — emotional stress directly activates the immune cascade that drives flares</span>
-                </div>
-                <div class="trigger-item">
-                    <div class="trigger-icon">🤒</div>
-                    <strong>Infections</strong>
-                    <span>Streptococcal throat infections, skin infections, and other illnesses trigger or worsen psoriasis</span>
-                </div>
-                <div class="trigger-item">
-                    <div class="trigger-icon">💊</div>
-                    <strong>Medications</strong>
-                    <span>Beta-blockers, lithium, antimalarials, and some NSAIDs are known to trigger or aggravate psoriasis</span>
-                </div>
-                <div class="trigger-item">
-                    <div class="trigger-icon">🌞</div>
-                    <strong>Weather</strong>
-                    <span>Cold, dry weather typically worsens psoriasis. Some patients also flare under excessive sun exposure</span>
-                </div>
-                <div class="trigger-item">
-                    <div class="trigger-icon">🍺</div>
-                    <strong>Alcohol &amp; Smoking</strong>
-                    <span>Both directly worsen psoriasis severity and reduce the effectiveness of all treatments</span>
-                </div>
-                <div class="trigger-item">
-                    <div class="trigger-icon">🍽️</div>
-                    <strong>Diet</strong>
-                    <span>Gluten, processed foods, red meat, and high-sugar diets promote systemic inflammation that triggers flares</span>
-                </div>
-            </div>
         </div>
 
         <!-- WHY HOMOEOPATHY -->
         <div class="section-card">
-            <h2>Why Choose Homoeopathy for Psoriasis?</h2>
-            <p>Conventional treatments — steroids, methotrexate, biologics — suppress the immune system and manage symptoms. They do not cure psoriasis, and long-term use carries serious risks. Homoeopathy addresses the <strong>root immunological and constitutional cause</strong>, producing deep, lasting improvement.</p>
+            <h2>Why Choose Homoeopathy for Kidney Stones?</h2>
+            <p>Homoeopathy offers a <strong>natural, non-invasive alternative</strong> to surgery and lithotripsy, working with your body's own healing mechanisms to dissolve stones safely and address the root metabolic cause.</p>
             <ul class="benefits-list">
                 <li>
                     <div class="check-icon">✓</div>
-                    <div><strong>Treats the Root Immune Cause</strong><br><span>Constitutional homoeopathy regulates the immune system from within — reducing the hyperactive T-cell response that drives rapid skin cell turnover and plaque formation.</span></div>
+                    <div><strong>Dissolves Stones Naturally</strong> <br><span>Homoeopathic remedies help break down kidney stones gradually, enabling them to pass through urine without any surgical procedure.</span></div>
                 </li>
                 <li>
                     <div class="check-icon">✓</div>
-                    <div><strong>No Steroids, No Side Effects</strong><br><span>Avoid the skin thinning, systemic absorption, rebound flares, and long-term complications of steroid creams and immunosuppressant drugs.</span></div>
+                    <div><strong>Effective Pain Relief</strong> <br><span>Natural medicines reduce severe renal colic, burning urination, and urinary discomfort — with no harmful side effects.</span></div>
                 </li>
                 <li>
                     <div class="check-icon">✓</div>
-                    <div><strong>Reduces Scaling &amp; Inflammation</strong><br><span>Remedies significantly reduce the thickness, redness, and scaling of plaques — improving the PASI score and quality of life measurably within 3–6 months.</span></div>
+                    <div><strong>Prevents Stone Recurrence</strong> <br><span>Constitutional treatment addresses root metabolic imbalances, significantly reducing chances of new stone formation — something surgery alone cannot achieve.</span></div>
                 </li>
                 <li>
                     <div class="check-icon">✓</div>
-                    <div><strong>Prevents Recurrence</strong><br><span>By correcting the constitutional predisposition, homoeopathy extends remission periods significantly — unlike steroids, which cause rebound flares when stopped.</span></div>
+                    <div><strong>Strengthens Kidney Health</strong> <br><span>Treatment improves kidney filtration, reduces inflammation, and supports long-term urinary health.</span></div>
                 </li>
                 <li>
                     <div class="check-icon">✓</div>
-                    <div><strong>Addresses Psoriatic Arthritis</strong><br><span>Constitutional remedies work on both the skin and the joints simultaneously, relieving stiffness, pain, and swelling without NSAIDs or DMARDs.</span></div>
+                    <div><strong>Safe for All Ages</strong> <br><span>Gentle remedies are suitable for children, adults, elderly patients, and those with other health conditions or on existing medications.</span></div>
                 </li>
                 <li>
                     <div class="check-icon">✓</div>
-                    <div><strong>Heals Emotional Wellbeing</strong><br><span>Homoeopathy uniquely considers the psychological dimension — anxiety, grief, suppressed emotions — which are known drivers of autoimmune flares.</span></div>
+                    <div><strong>No Surgery or Hospitalisation</strong> <br><span>Avoid anaesthesia risks, post-operative infections, and weeks of recovery. Continue your daily routine while undergoing treatment.</span></div>
                 </li>
                 <li>
                     <div class="check-icon">✓</div>
-                    <div><strong>Safe for Long-term Use</strong><br><span>Homoeopathic remedies can be taken for years without toxicity — critical for a lifelong condition like psoriasis that requires sustained management.</span></div>
+                    <div><strong>Highly Affordable</strong> <br><span>Cost-effective treatment (₹3,000–₹15,000) compared to surgery or lithotripsy (₹50,000–₹2,00,000).</span></div>
                 </li>
                 <li>
                     <div class="check-icon">✓</div>
-                    <div><strong>Affordable Treatment</strong><br><span>Homoeopathic treatment costs a fraction of biologic therapies (₹4,000–₹20,000/year vs ₹3–8 lakhs/year for biologics) with no infusions or hospital visits.</span></div>
+                    <div><strong>Personalised Treatment</strong> <br><span>Remedies are customised based on your stone type, size, location, individual symptoms, and overall constitution — not a one-size-fits-all approach.</span></div>
                 </li>
             </ul>
         </div>
 
         <!-- HOW IT WORKS -->
         <div class="section-card">
-            <h2>How Constitutional Homoeopathy Heals Psoriasis</h2>
-            <p>Dr. Jaiswal's approach at our Tarnaka clinic goes beyond symptomatic relief. Treatment is structured as a deep constitutional process addressing the person as a whole — not just the lesions on the skin.</p>
+            <h2>How Homoeopathy Dissolves Kidney Stones</h2>
+            <p>Our approach at Dr. Jaiswal's Clinic combines <strong>constitutional homoeopathy</strong> with targeted kidney stone remedies. The natural treatment works through five interconnected mechanisms:</p>
             <ul class="steps-list">
                 <li class="step-item">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h4>Detailed Constitutional Case-Taking</h4>
-                        <p>A 60–90 minute first consultation explores your full medical history, family history, skin symptoms, triggers, emotional state, sleep, appetite, and personality traits. This depth is what makes constitutional prescribing precise and effective.</p>
+                        <h4>Natural Stone Dissolution</h4>
+                        <p>Specific homoeopathic medicines help alter the chemical environment of the kidneys, gradually breaking down the stone's composition until it reduces in size enough to pass naturally through urine.</p>
                     </div>
                 </li>
                 <li class="step-item">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h4>Immune Modulation</h4>
-                        <p>Selected remedies at the correct potency act on the immune system's T-helper cell balance — gradually reducing the autoimmune over-response that causes excessive keratinocyte proliferation and plaque formation.</p>
+                        <h4>Pain &amp; Inflammation Control</h4>
+                        <p>Remedies rapidly reduce inflammation and spasm in the urinary tract, relieving renal colic, burning sensation, and tissue irritation during stone passage.</p>
                     </div>
                 </li>
                 <li class="step-item">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h4>Skin Cell Normalisation</h4>
-                        <p>As immune regulation improves, the rate of skin cell turnover slows from the accelerated 3–5 day cycle back toward the normal 28-day cycle. Plaques thin, scale reduces, and redness fades progressively.</p>
+                        <h4>Metabolic Correction</h4>
+                        <p>Constitutional treatment balances mineral levels — calcium, oxalate, and uric acid — in your body, addressing the underlying metabolic cause rather than just the stone itself.</p>
                     </div>
                 </li>
                 <li class="step-item">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h4>Detoxification &amp; Liver Support</h4>
-                        <p>Psoriasis has strong links to impaired liver detoxification and gut health. Constitutional treatment supports hepatic function, improves gut microbiome balance, and reduces systemic inflammatory load — all of which reflect positively on the skin.</p>
+                        <h4>Kidney Function Enhancement</h4>
+                        <p>Homoeopathy strengthens the kidneys' filtration capacity, reduces chronic inflammation, and supports the body's natural detoxification and fluid regulation.</p>
                     </div>
                 </li>
                 <li class="step-item">
                     <div class="step-number">5</div>
                     <div class="step-content">
-                        <h4>Stress &amp; Emotional Healing</h4>
-                        <p>Homoeopathy uniquely addresses the psychological layer — grief, suppression, anxiety, perfectionism — that is often the deep-acting trigger sustaining autoimmune conditions. Emotional resolution is part of the cure.</p>
-                    </div>
-                </li>
-                <li class="step-item">
-                    <div class="step-number">6</div>
-                    <div class="step-content">
-                        <h4>Long-term Constitutional Maintenance</h4>
-                        <p>After the initial treatment phase, periodic constitutional follow-ups (every 3–6 months) maintain the improvement, prevent relapses, and continue deepening the cure — keeping the skin clear for years.</p>
+                        <h4>Long-term Recurrence Prevention</h4>
+                        <p>By correcting the root-level constitutional imbalances that predispose a person to stone formation, treatment significantly reduces the likelihood of developing new stones in the future.</p>
                     </div>
                 </li>
             </ul>
         </div>
 
-        <!-- REMEDIES -->
-        <div class="section-card">
-            <h2>Key Homoeopathic Remedies for Psoriasis</h2>
-            <p>Dr. Jaiswal selects remedies based on a thorough constitutional assessment — your specific plaque pattern, triggers, mental-emotional state, and overall constitution. The following are among the most effective remedies for psoriasis.</p>
-            <div class="type-grid" style="margin-top:1rem;">
-                <div class="type-card">
-                    <div class="type-badge">Deep-Acting</div>
-                    <h4>Arsenicum Album</h4>
-                    <p>For psoriasis with intense burning, restlessness, and anxiety. Dry, scaly patches that burn on scratching. Worse at night and in cold weather.</p>
-                </div>
-                <div class="type-card">
-                    <div class="type-badge">Scalp &amp; Skin</div>
-                    <h4>Graphites</h4>
-                    <p>For thick, rough, cracked skin with sticky, honey-like discharge from lesions. Very effective for psoriasis in skin folds and behind the ears.</p>
-                </div>
-                <div class="type-card">
-                    <div class="type-badge">Silvery Scales</div>
-                    <h4>Arsenicum Iodatum</h4>
-                    <p>Particularly indicated for psoriasis with profuse, fine, bran-like scaling. Often used in patients with a thin, irritable constitution and skin that peels in large flakes.</p>
-                </div>
-                <div class="type-card">
-                    <div class="type-badge">Chronic Cases</div>
-                    <h4>Kali Arsenicosum</h4>
-                    <p>One of the deepest-acting remedies for intractable, long-standing psoriasis. Extreme itching, worse at warmth. Indicated when other remedies have failed.</p>
-                </div>
-                <div class="type-card">
-                    <div class="type-badge">Moist Type</div>
-                    <h4>Mezereum</h4>
-                    <p>For psoriasis with thick, leather-like crusts beneath which pus accumulates. Violent itching that changes to burning on scratching. Often effective for scalp psoriasis.</p>
-                </div>
-                <div class="type-card">
-                    <div class="type-badge">Psoriatic Arthritis</div>
-                    <h4>Sulphur</h4>
-                    <p>A deeply constitutional remedy. Skin that is dirty-looking, rough, and unhealthy. Very effective when psoriasis is worsened by bathing, washing, or heat. Often used to clear suppression from prior steroid use.</p>
-                </div>
-            </div>
-            <p style="margin-top:1.2rem; font-size:0.9rem; color:var(--text-mid); padding:1rem 1.3rem; background:var(--warm-white); border-radius:8px;">
-                🌿 <strong>Note:</strong> Psoriasis requires precise constitutional prescribing based on your complete individual profile. Self-medication is ineffective for a condition of this complexity. Please schedule a consultation for a personalised remedy selection.
-            </p>
-        </div>
-
         <!-- DIET & LIFESTYLE -->
         <div class="section-card">
-            <h2>Diet &amp; Lifestyle for Psoriasis Management</h2>
-            <p>Dietary and lifestyle changes work synergistically with homoeopathic treatment to reduce systemic inflammation, support the gut-skin axis, and minimise flare frequency.</p>
+            <h2>Diet &amp; Lifestyle Tips for Kidney Stone Prevention</h2>
+            <p>Alongside homoeopathic treatment, these evidence-based dietary and lifestyle adjustments accelerate recovery and help prevent future stone formation.</p>
 
-            <h3>🌊 Skin Hydration — Critical for Psoriasis</h3>
-            <p>Psoriatic skin loses moisture rapidly. Drink <strong>2.5–3 litres of water daily</strong> and apply a fragrance-free, natural moisturiser immediately after bathing to lock in moisture. Coconut oil and aloe vera gel are excellent, gentle options that do not interfere with homoeopathic treatment.</p>
+            <h3>💧 Hydration — Most Important</h3>
+            <p>Drink at least <strong>3–4 litres of water daily</strong>. Diluted urine prevents mineral crystallisation. In Hyderabad's hot summers, increase intake further. Your urine should be pale yellow — dark yellow means you need more water.</p>
 
             <div class="diet-cols">
                 <div class="diet-col good">
                     <h4>✅ Foods to Include</h4>
                     <ul>
-                        <li>Omega-3 rich foods — flaxseed, walnuts, fish</li>
-                        <li>Turmeric &amp; ginger — potent anti-inflammatories</li>
-                        <li>Colourful vegetables — carrots, spinach, broccoli</li>
-                        <li>Fruits rich in vitamin C — amla, guava, citrus</li>
-                        <li>Probiotics — curd, buttermilk, fermented foods</li>
-                        <li>Whole grains — brown rice, ragi, jowar</li>
-                        <li>Legumes &amp; lentils — dal, rajma, chana</li>
+                        <li>Lemon &amp; citrus fruits (boost citrate)</li>
+                        <li>Adequate dairy (calcium in food prevents stones)</li>
+                        <li>Whole grains &amp; fibre-rich foods</li>
+                        <li>Magnesium-rich foods — bananas, avocados</li>
+                        <li>Cucumber, watermelon, coconut water</li>
+                        <li>Leafy greens like spinach (in moderation)</li>
                     </ul>
                 </div>
                 <div class="diet-col bad">
                     <h4>❌ Foods to Reduce</h4>
                     <ul>
-                        <li>Gluten (wheat, maida) — triggers inflammation in many</li>
-                        <li>Nightshades — tomatoes, brinjal, potatoes</li>
-                        <li>Red meat &amp; processed meats</li>
-                        <li>Refined sugar &amp; sweets</li>
-                        <li>Alcohol — proven to worsen psoriasis significantly</li>
-                        <li>Packaged &amp; fried foods</li>
-                        <li>Dairy — aggravates some patients; trial elimination advised</li>
+                        <li>Excessive salt (limit to 5g/day)</li>
+                        <li>High-oxalate foods — beetroot, nuts, chocolate</li>
+                        <li>Red meat &amp; high-protein animal foods</li>
+                        <li>Sodas &amp; sweetened beverages</li>
+                        <li>Processed &amp; packaged foods</li>
+                        <li>Excess Vitamin C supplements</li>
                     </ul>
                 </div>
             </div>
 
-            <h3 style="margin-top:1.5rem;">🧘 Lifestyle Habits</h3>
-            <p>Stress management is non-negotiable for psoriasis patients. Daily practices of yoga, pranayama, or meditation meaningfully reduce flare frequency. Avoid hot showers (use lukewarm water), pat — don't rub — skin dry after bathing, and wear loose, soft, breathable cotton clothing over affected areas. Quit smoking immediately — it is independently associated with more severe and treatment-resistant psoriasis.</p>
+            <h3 style="margin-top:1.5rem;">🏃 Lifestyle Habits</h3>
+            <p>Maintain a healthy weight, exercise for at least 30 minutes daily, avoid holding urine for long periods, and manage chronic stress — all of which directly influence kidney health and stone risk.</p>
         </div>
 
         <!-- MID CTA -->
         <div class="mid-cta">
-            <h2>Ready to Heal Your Psoriasis Naturally?</h2>
-            <p>Book a consultation with Dr. Jaiswal today. 26+ years of experience, 10,000+ patients treated, constitutional homoeopathy that heals from within.</p>
+            <h2>Ready to Dissolve Your Kidney Stones Naturally?</h2>
+            <p>Book a consultation with Dr. Jaiswal today. 26+ years of experience, 10,000+ patients treated, constitutional homoeopathy that works.</p>
             <div class="hero-cta-group">
                 <a href="index.html#contact" class="btn-primary">Book Consultation Now</a>
-                <a href="https://wa.me/919985188831?text=Hello%2C%20I%20would%20like%20to%20consult%20about%20psoriasis%20treatment." target="_blank" class="btn-secondary">💬 WhatsApp Us</a>
+                <a href="https://wa.me/919985188831?text=Hello%2C%20I%20would%20like%20to%20consult%20about%20kidney%20stones%20treatment." target="_blank" class="btn-secondary">💬 WhatsApp Us</a>
             </div>
         </div>
 
@@ -777,61 +660,51 @@
 
             <div class="faq-item open">
                 <button class="faq-question" onclick="toggleFaq(this)">
-                    Can homoeopathy permanently cure psoriasis?
+                    Can homoeopathy completely cure kidney stones?
                     <span class="arrow">▼</span>
                 </button>
                 <div class="faq-answer">
-                    Psoriasis is a chronic constitutional condition with a genetic component, so the word "cure" must be used carefully. However, constitutional homoeopathy can produce very long-lasting remissions — often years — by addressing the immune root cause. Many patients achieve 80–100% clearance and remain symptom-free for extended periods. Results depend on disease duration, previous treatments (especially steroids), and how closely the patient follows the constitutional program.
+                    Yes, homoeopathic treatment can dissolve kidney stones naturally, relieve pain, and — most importantly — prevent recurrence by addressing the root metabolic cause. Success depends on stone size, type, and the patient's overall constitution, which is why a detailed consultation is essential.
                 </div>
             </div>
 
             <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">
-                    How long before I see improvement?
+                    How long does homoeopathic treatment take?
                     <span class="arrow">▼</span>
                 </button>
                 <div class="faq-answer">
-                    Most patients notice reduced itching and some improvement in scaling within 4–8 weeks. Significant plaque reduction typically occurs by 3–4 months. The full constitutional treatment course for psoriasis is usually 12–18 months, with gradual and steady improvement throughout. Longstanding or extensive psoriasis may take longer. Unlike steroids, improvement is slow but deep — and does not rebound when treatment ends.
+                    Treatment duration depends on the size and type of the stone. Small stones (under 5mm) may dissolve within a few weeks. Medium-sized stones (5–15mm) typically take 2–4 months. Larger stones may require longer treatment. Regular monitoring via ultrasound tracks progress.
                 </div>
             </div>
 
             <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">
-                    Can I continue my current steroid cream while starting homoeopathy?
+                    Is homoeopathic medicine safe alongside other medications?
                     <span class="arrow">▼</span>
                 </button>
                 <div class="faq-answer">
-                    Yes — do not abruptly stop steroid creams before starting homoeopathy, as sudden withdrawal can cause severe rebound flares. Dr. Jaiswal will guide a safe, gradual reduction of steroids as the homoeopathic treatment takes effect. This transition is managed carefully to avoid any deterioration.
+                    Homoeopathic medicines are highly diluted, natural remedies with no known drug interactions. They can generally be taken safely alongside conventional medicines. Always inform Dr. Jaiswal about all medications you are currently taking.
                 </div>
             </div>
 
             <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">
-                    Is homoeopathy effective for scalp psoriasis?
+                    What stone sizes can homoeopathy treat effectively?
                     <span class="arrow">▼</span>
                 </button>
                 <div class="faq-answer">
-                    Yes. Scalp psoriasis responds well to constitutional homoeopathy. Remedies such as Mezereum, Graphites, Kali Sulphuricum, and Sepia are particularly effective for scalp involvement. Treatment also addresses associated hair thinning and loss, which is a common concern. Results are usually noticeable within 2–3 months.
+                    Homoeopathy is most effective for stones between 4mm and 20mm. Very large stones (above 20mm) or stones causing complete urinary blockage may still require conventional intervention as a first step. Dr. Jaiswal will advise honestly based on your scan reports.
                 </div>
             </div>
 
             <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">
-                    I have psoriatic arthritis along with skin lesions. Can homoeopathy treat both?
+                    I had surgery but stones came back. Can homoeopathy help?
                     <span class="arrow">▼</span>
                 </button>
                 <div class="faq-answer">
-                    Yes — this is actually where constitutional homoeopathy shows one of its greatest advantages. Since it treats the whole person rather than separate organs, a well-chosen constitutional remedy addresses both the skin and joint manifestations simultaneously. Many patients find their joint stiffness, pain, and swelling improve alongside their skin, often reducing the need for NSAIDs.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question" onclick="toggleFaq(this)">
-                    Are homoeopathic medicines safe for children with psoriasis?
-                    <span class="arrow">▼</span>
-                </button>
-                <div class="faq-answer">
-                    Absolutely. Homoeopathic remedies are highly diluted, non-toxic, and entirely safe for children of all ages. For paediatric psoriasis, homoeopathy is particularly valuable because it avoids the significant side effects of steroid creams on developing skin, and addresses the emotional and psychological aspects that often accompany visible skin conditions in children.
+                    Absolutely. Surgery removes existing stones but does not address the underlying metabolic imbalance that causes new ones to form. Constitutional homoeopathy targets this root cause, making it particularly valuable for patients with recurrent kidney stones.
                 </div>
             </div>
 
@@ -841,7 +714,7 @@
                     <span class="arrow">▼</span>
                 </button>
                 <div class="faq-answer">
-                    You can book through this website using the consultation form, call us directly at +91 99851 88831, or send a WhatsApp message. The clinic is at Street No 14, Tarnaka, Secunderabad — open Monday to Saturday, 6:30 PM – 9:00 PM, and Sunday by appointment.
+                    You can book through this website using the consultation form, call us directly at +91 99851 88831, or send us a WhatsApp message. The clinic is located at Street No 14, Tarnaka, Secunderabad — open Monday to Saturday, 6:30 PM – 9:00 PM, and Sunday by appointment.
                 </div>
             </div>
         </div>
@@ -863,30 +736,19 @@
                     <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" required>
                 </div>
                 <div class="form-group">
-                    <label for="psoriasis-type">Type of Psoriasis</label>
-                    <select id="psoriasis-type">
-                        <option value="">Select type</option>
-                        <option>Plaque Psoriasis</option>
-                        <option>Scalp Psoriasis</option>
-                        <option>Guttate Psoriasis</option>
-                        <option>Nail Psoriasis</option>
-                        <option>Psoriatic Arthritis</option>
+                    <label for="stone-size">Stone Size (if known)</label>
+                    <select id="stone-size">
+                        <option value="">Select size</option>
+                        <option>Less than 5mm</option>
+                        <option>5mm – 10mm</option>
+                        <option>10mm – 20mm</option>
+                        <option>More than 20mm</option>
                         <option>Not sure</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="duration">Duration of Condition</label>
-                    <select id="duration">
-                        <option value="">Select duration</option>
-                        <option>Less than 1 year</option>
-                        <option>1–5 years</option>
-                        <option>5–10 years</option>
-                        <option>More than 10 years</option>
-                    </select>
-                </div>
-                <div class="form-group">
                     <label for="message">Describe your symptoms</label>
-                    <textarea id="message" placeholder="E.g. scaly patches on elbows, scalp itching, joint pain..."></textarea>
+                    <textarea id="message" placeholder="E.g. lower back pain, burning urination, blood in urine..."></textarea>
                 </div>
                 <button type="submit" class="submit-btn">Send via WhatsApp 💬</button>
                 <p class="form-note">🔒 Your information is kept completely private.</p>
@@ -900,7 +762,7 @@
                     <span class="icon">📞</span>
                     <div><strong>Call Now</strong><br><small>+91 99851 88831</small></div>
                 </a>
-                <a href="https://wa.me/919985188831?text=Hello%2C%20I%20have%20psoriasis%20and%20would%20like%20a%20consultation." target="_blank">
+                <a href="https://wa.me/919985188831?text=Hello%2C%20I%20have%20a%20kidney%20stone%20and%20would%20like%20a%20consultation." target="_blank">
                     <span class="icon">💬</span>
                     <div><strong>WhatsApp</strong><br><small>Chat with Dr. Jaiswal</small></div>
                 </a>
@@ -922,7 +784,7 @@
                 <li><div class="dot"></div>Personalised remedies for each patient</li>
                 <li><div class="dot"></div>Regular follow-up &amp; monitoring</li>
                 <li><div class="dot"></div>Transparent, affordable pricing</li>
-                <li><div class="dot"></div>No steroids, no side effects</li>
+                <li><div class="dot"></div>No surgery, no hospitalisation</li>
             </ul>
         </div>
 
@@ -941,17 +803,6 @@
                style="display:block; text-align:center; background:white; color:var(--primary); padding:0.75rem 1rem; border-radius:25px; text-decoration:none; font-weight:700; font-size:0.9rem;">
                 📍 Get Directions
             </a>
-        </div>
-
-        <div class="sidebar-card">
-            <h3>🔗 Related Treatments</h3>
-            <ul class="why-list">
-                <li><div class="dot"></div><a href="index.html#services">Eczema &amp; Skin Disorders</a></li>
-                <li><div class="dot"></div><a href="index.html#services">Vitiligo Treatment</a></li>
-                <li><div class="dot"></div><a href="kidney-stones.html">Kidney Stones</a></li>
-                <li><div class="dot"></div><a href="gallstones.html">Gallstones</a></li>
-                <li><div class="dot"></div><a href="index.html#services">Psoriatic Arthritis</a></li>
-            </ul>
         </div>
 
     </aside>
@@ -978,11 +829,10 @@
             <h4>Services</h4>
             <ul>
                 <li><a href="index.html#services">Chronic Diseases</a></li>
-                <li><a href="psoriasis.html">Psoriasis</a></li>
+                <li><a href="index.html#services">Skin Disorders</a></li>
                 <li><a href="index.html#services">Women's Health</a></li>
                 <li><a href="index.html#services">Pediatric Care</a></li>
                 <li><a href="kidney-stones.html">Kidney Stones</a></li>
-                <li><a href="gallstones.html">Gallstones</a></li>
             </ul>
         </div>
         <div class="footer-links">
@@ -1011,10 +861,9 @@
         e.preventDefault();
         const name = document.getElementById('name').value.trim();
         const phone = document.getElementById('phone').value.trim();
-        const type = document.getElementById('psoriasis-type').value;
-        const duration = document.getElementById('duration').value;
+        const size = document.getElementById('stone-size').value;
         const msg = document.getElementById('message').value.trim();
-        const text = `Hello Dr. Jaiswal,\n\nI would like a consultation for psoriasis.\n\nName: ${name}\nPhone: ${phone}\nType: ${type || 'Not specified'}\nDuration: ${duration || 'Not specified'}\nSymptoms: ${msg || 'Not specified'}\n\nPlease let me know your availability. Thank you!`;
+        const text = `Hello Dr. Jaiswal,\n\nI would like a consultation for kidney stones.\n\nName: ${name}\nPhone: ${phone}\nStone Size: ${size || 'Not specified'}\nSymptoms: ${msg || 'Not specified'}\n\nPlease let me know your availability. Thank you!`;
         window.open('https://wa.me/919985188831?text=' + encodeURIComponent(text), '_blank');
     }
 </script>
