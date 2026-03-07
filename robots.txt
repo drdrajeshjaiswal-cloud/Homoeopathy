@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drdrajeshjaiswal-cloud.github.io/Homoeopathy/sitemap.xml
