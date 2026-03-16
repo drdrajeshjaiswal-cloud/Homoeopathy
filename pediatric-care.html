@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pediatric Care Treatment | Dr. Jaiswal's Homoeopathy - Tarnaka, Hyderabad</title>
+  <meta name="description" content="Safe, gentle, and effective homoeopathic care for children — supporting healthy development without antibiotics, steroids, or harsh medications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary:      #2d5016;
+      --primary-light:#4a7c59;
+      --sage:         #6b9e7a;
+      --sage-pale:    #e8f0eb;
+      --cream:        #faf7f2;
+      --dark:         #1e2d24;
+      --text:         #3a3a3a;
+      --muted:        #7a8a7d;
+      --border:       #d4e0d7;
+      --white:        #ffffff;
+      --shadow:       0 4px 24px rgba(45,80,22,0.10);
+      --shadow-lg:    0 8px 40px rgba(45,80,22,0.15);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(250,247,242,0.95); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 68px;
+    }
+    .nav-logo { font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--primary); text-decoration:none; font-weight:700; }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a { text-decoration:none; color:var(--muted); font-size:0.9rem; font-weight:500; transition:color 0.2s; }
+    .nav-links a:hover { color:var(--primary); }
+    .nav-cta { background:var(--primary); color:#fff !important; padding:0.45rem 1.1rem; border-radius:50px; }
+    .nav-cta:hover { background:var(--primary-light) !important; }
+    @media(max-width:768px){.nav-links{display:none;}}
+
+    /* BREADCRUMB */
+    .breadcrumb { background:var(--white); border-bottom:1px solid var(--border); padding:0.7rem 2rem; font-size:0.82rem; color:var(--muted); }
+    .breadcrumb a { color:var(--primary-light); text-decoration:none; }
+    .breadcrumb a:hover { text-decoration:underline; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--dark) 0%, #2a4a34 60%, #1e3828 100%);
+      padding: 4rem 2rem 3.5rem; text-align:center; position:relative; overflow:hidden;
+    }
+    .hero::before {
+      content:''; position:absolute; inset:0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%236b9e7a' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-badge {
+      display:inline-flex; align-items:center; gap:0.4rem;
+      background:rgba(107,158,122,0.2); border:1px solid rgba(107,158,122,0.4);
+      color:#a8d5b5; font-size:0.78rem; font-weight:600; letter-spacing:0.1em;
+      text-transform:uppercase; padding:0.35rem 0.9rem; border-radius:50px; margin-bottom:1rem;
+    }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,4.5vw,3.2rem); color:#fff; line-height:1.2; max-width:700px; margin:0 auto 0.8rem; }
+    .hero h1 em { font-style:italic; color:#a8d5b5; }
+    .hero .tagline { color:rgba(255,255,255,0.7); font-size:1.05rem; max-width:580px; margin:0 auto 1.8rem; }
+    .hero-ctas { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+    .btn-primary { background:var(--sage); color:#fff; text-decoration:none; padding:0.8rem 1.8rem; border-radius:50px; font-weight:600; transition:background 0.2s; }
+    .btn-primary:hover { background:var(--primary-light); }
+    .btn-secondary { background:transparent; color:#a8d5b5; text-decoration:none; padding:0.8rem 1.8rem; border-radius:50px; font-weight:600; border:1.5px solid rgba(168,213,181,0.5); transition:all 0.2s; }
+    .btn-secondary:hover { background:rgba(168,213,181,0.1); }
+
+    /* LAYOUT */
+    .content-wrap { max-width:1100px; margin:0 auto; padding:3rem 2rem 5rem; display:grid; grid-template-columns:1fr 300px; gap:3rem; align-items:start; }
+    @media(max-width:880px){.content-wrap{grid-template-columns:1fr;}}
+
+    /* SECTIONS */
+    section.content-section { margin-bottom:3rem; }
+    section.content-section h2 { font-family:'Playfair Display',serif; font-size:1.7rem; color:var(--dark); margin-bottom:1rem; }
+    section.content-section h3 { font-family:'Playfair Display',serif; font-size:1.15rem; color:var(--primary); margin:1.2rem 0 0.4rem; }
+    section.content-section p { color:var(--text); line-height:1.8; margin-bottom:0.8rem; }
+    section.content-section strong { color:var(--dark); }
+
+    /* CONDITIONS GRID */
+    .conditions-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; margin-top:1rem; }
+    .condition-card { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:1.2rem; box-shadow:var(--shadow); }
+    .condition-card h4 { font-size:0.95rem; font-weight:600; color:var(--dark); margin-bottom:0.3rem; }
+    .condition-card p { font-size:0.85rem; color:var(--muted); margin:0; }
+
+    /* SYMPTOMS */
+    .symptoms-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0.8rem; margin-top:1rem; }
+    .symptom-item { display:flex; align-items:center; gap:0.6rem; background:var(--white); border:1px solid var(--border); border-radius:10px; padding:0.8rem 1rem; font-size:0.88rem; }
+    .symptom-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; }
+    .dot-red { background:#e05252; }
+    .dot-orange { background:#e09052; }
+    .dot-gray { background:#9aa89d; }
+
+    /* BENEFITS */
+    .benefits-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; margin-top:1rem; }
+    .benefit-item { background:var(--white); border:1px solid var(--border); border-left:4px solid var(--primary-light); border-radius:12px; padding:1.2rem; box-shadow:var(--shadow); }
+    .benefit-item h4 { font-size:0.95rem; font-weight:600; color:var(--dark); margin-bottom:0.3rem; }
+    .benefit-item p { font-size:0.85rem; color:var(--muted); margin:0; }
+    .benefit-item::before { content:'✓'; color:var(--sage); font-weight:700; font-size:1.1rem; display:block; margin-bottom:0.4rem; }
+
+    /* MECHANISMS */
+    .mechanism-list { display:flex; flex-direction:column; gap:1rem; margin-top:1rem; }
+    .mechanism-item { display:flex; gap:1rem; background:var(--white); border:1px solid var(--border); border-radius:12px; padding:1.2rem; box-shadow:var(--shadow); }
+    .mechanism-num { width:36px; height:36px; background:var(--primary); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.9rem; flex-shrink:0; }
+    .mechanism-body h4 { font-size:0.95rem; font-weight:600; color:var(--dark); margin-bottom:0.25rem; }
+    .mechanism-body p { font-size:0.85rem; color:var(--muted); margin:0; }
+
+    /* DIET */
+    .diet-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:1rem; }
+    @media(max-width:600px){.diet-grid{grid-template-columns:1fr;}}
+    .diet-card { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:1.2rem; }
+    .diet-card h4 { font-size:0.9rem; font-weight:700; margin-bottom:0.8rem; }
+    .diet-card.include h4 { color:#3a7a3a; }
+    .diet-card.avoid h4 { color:#b03a3a; }
+    .diet-card ul { list-style:none; padding:0; }
+    .diet-card ul li { font-size:0.85rem; color:var(--muted); padding:0.3rem 0; border-bottom:1px solid var(--sage-pale); display:flex; gap:0.5rem; }
+    .diet-card ul li:last-child { border-bottom:none; }
+    .diet-card.include li::before { content:'✓'; color:#3a7a3a; font-weight:700; }
+    .diet-card.avoid li::before { content:'✗'; color:#b03a3a; font-weight:700; }
+
+    /* FAQ */
+    .faq-list { display:flex; flex-direction:column; gap:0.8rem; margin-top:1rem; }
+    details { background:var(--white); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+    summary { padding:1rem 1.2rem; font-weight:600; font-size:0.92rem; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; color:var(--dark); }
+    summary::after { content:'▼'; font-size:0.7rem; color:var(--muted); transition:transform 0.2s; }
+    details[open] summary::after { transform:rotate(180deg); }
+    details p { padding:0 1.2rem 1rem; font-size:0.88rem; color:var(--muted); line-height:1.7; }
+
+    /* CTA SECTION */
+    .cta-section { background:linear-gradient(135deg,var(--dark),#2a4a34); border-radius:20px; padding:2.5rem 2rem; text-align:center; margin-bottom:3rem; }
+    .cta-section h2 { font-family:'Playfair Display',serif; font-size:1.8rem; color:#fff; margin-bottom:0.6rem; }
+    .cta-section p { color:rgba(255,255,255,0.7); max-width:500px; margin:0 auto 1.5rem; }
+    .cta-btns { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+
+    /* SIDEBAR */
+    .sidebar { display:flex; flex-direction:column; gap:1.5rem; }
+    .sidebar-card { background:var(--white); border:1px solid var(--border); border-radius:16px; padding:1.4rem; box-shadow:var(--shadow); }
+    .sidebar-card h3 { font-family:'Playfair Display',serif; font-size:0.95rem; color:var(--dark); margin-bottom:1rem; padding-bottom:0.6rem; border-bottom:2px solid var(--sage-pale); }
+    .doctor-wrap { width:80px; height:80px; border-radius:50%; margin:0 auto 0.8rem; padding:3px; background:linear-gradient(135deg,var(--primary),var(--sage)); display:flex; align-items:center; justify-content:center; }
+    .doctor-avatar { width:100%; height:100%; border-radius:50%; overflow:hidden; border:2px solid #fff; background:var(--sage-pale); display:flex; align-items:center; justify-content:center; }
+    .doctor-avatar img { width:100%; height:100%; object-fit:cover; object-position:top center; border-radius:50%; }
+    .sidebar-card.doctor-card { text-align:center; }
+    .sidebar-card.doctor-card h4 { font-family:'Playfair Display',serif; font-size:0.95rem; color:var(--dark); }
+    .sidebar-card.doctor-card p { font-size:0.78rem; color:var(--muted); margin:0.2rem 0 1rem; }
+    .btn-appt { display:block; background:var(--primary); color:#fff; text-decoration:none; text-align:center; padding:0.65rem 1rem; border-radius:50px; font-size:0.85rem; font-weight:600; transition:background 0.2s; }
+    .btn-appt:hover { background:var(--primary-light); }
+    .contact-item { display:flex; align-items:center; gap:0.6rem; font-size:0.85rem; color:var(--text); padding:0.5rem 0; border-bottom:1px solid var(--sage-pale); text-decoration:none; }
+    .contact-item:last-child { border-bottom:none; }
+    .contact-item:hover { color:var(--primary); }
+    .reasons-list { list-style:none; }
+    .reasons-list li { font-size:0.83rem; color:var(--muted); padding:0.3rem 0; display:flex; gap:0.5rem; border-bottom:1px solid var(--sage-pale); }
+    .reasons-list li:last-child { border-bottom:none; }
+    .reasons-list li::before { content:'✓'; color:var(--sage); font-weight:700; flex-shrink:0; }
+
+    /* FORM */
+    .form-group { margin-bottom:1rem; }
+    .form-group label { display:block; font-size:0.82rem; font-weight:600; color:var(--dark); margin-bottom:0.3rem; }
+    .form-group input, .form-group textarea, .form-group select {
+      width:100%; padding:0.7rem 0.9rem; border:1px solid var(--border);
+      border-radius:8px; font-family:'DM Sans',sans-serif; font-size:0.88rem;
+      background:var(--cream); color:var(--text); outline:none; transition:border 0.2s;
+    }
+    .form-group input:focus, .form-group textarea:focus { border-color:var(--sage); }
+    .form-group textarea { resize:vertical; min-height:80px; }
+    .btn-wa { width:100%; background:#25d366; color:#fff; border:none; border-radius:50px; padding:0.75rem; font-size:0.9rem; font-weight:600; cursor:pointer; font-family:'DM Sans',sans-serif; transition:background 0.2s; }
+    .btn-wa:hover { background:#1da855; }
+    .privacy-note { text-align:center; font-size:0.75rem; color:var(--muted); margin-top:0.5rem; }
+
+    /* FOOTER */
+    footer { background:var(--dark); color:rgba(255,255,255,0.5); text-align:center; padding:1.8rem 2rem; font-size:0.82rem; }
+    footer a { color:#a8d5b5; text-decoration:none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">🌿 Dr. Jaiswal's Homoeopathy</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="tips.html">Health Tips</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Book Consultation</a></li>
+  </ul>
+</nav>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a> › <a href="index.html#services">Services</a> › Pediatric Care Treatment
+</div>
+
+<header class="hero">
+  <div class="hero-badge">🌿 Constitutional Homoeopathy</div>
+  <h1>Pediatric Care Treatment<br><em>Children's Health</em></h1>
+  <p class="tagline">Safe, gentle, and effective homoeopathic care for children — supporting healthy development without antibiotics, steroids, or harsh medications.</p>
+  <div class="hero-ctas">
+    <a class="btn-primary" href="index.html#contact">Book Free Consultation</a>
+    <a class="btn-secondary" href="tel:+919985188831">📞 Call Now: +91 99851 88831</a>
+  </div>
+</header>
+
+<div class="content-wrap">
+<main>
+
+  <!-- INTRO -->
+  <section class="content-section">
+    <h2>What Is Pediatric Care?</h2>
+    <p>Children are not simply small adults — their immune systems, nervous systems, and emotional worlds are developing rapidly, making them uniquely responsive to homoeopathic treatment. When a child's health is supported gently and naturally, the benefits extend across their entire developmental journey.</p>
+    <p>Parents today are increasingly concerned about the overuse of antibiotics in childhood, steroid-based inhalers for mild asthma, and medications for behavioural conditions. Many are discovering that homoeopathy offers a safer, more holistic approach to their child's health — one that strengthens rather than suppresses the immune system.</p>
+    <p>At Dr. Jaiswal's Homoeopathy Clinic, Tarnaka, we have helped thousands of children overcome recurrent illnesses, developmental challenges, and chronic health conditions — giving them the foundation for a healthier life.</p>
+  </section>
+
+  <!-- CONDITIONS -->
+  <section class="content-section">
+    <h2>Children's Conditions We Treat</h2>
+    <div class="conditions-grid">
+      <div class="condition-card"><h4>ADHD & Autism Spectrum Disorder</h4><p>Improving concentration, reducing hyperactivity, and supporting social development naturally.</p></div>
+      <div class="condition-card"><h4>Recurrent Cold, Cough & Infections</h4><p>Breaking the cycle of repeated viral and bacterial infections through immune strengthening.</p></div>
+      <div class="condition-card"><h4>Enlarged Tonsils & Adenoids</h4><p>Reducing size naturally and avoiding unnecessary tonsillectomy surgery.</p></div>
+      <div class="condition-card"><h4>Bedwetting (Enuresis)</h4><p>Safe, effective treatment for nocturnal and daytime bedwetting in children.</p></div>
+      <div class="condition-card"><h4>Childhood Asthma & Allergies</h4><p>Managing respiratory allergies and asthma with targeted homoeopathic treatment.</p></div>
+      <div class="condition-card"><h4>Growth & Developmental Issues</h4><p>Supporting healthy physical and cognitive development in growing children.</p></div>
+    </div>
+  </section>
+
+  <!-- SYMPTOMS -->
+  <section class="content-section">
+    <h2>Common Symptoms</h2>
+    <p>Recognising symptoms early allows for timely homoeopathic intervention, often preventing complications and reducing treatment duration.</p>
+    <div class="symptoms-grid">
+      <div class="symptom-item"><span class="symptom-dot dot-orange"></span>Recurrent fever, cold, or throat infections</div>
+      <div class="symptom-item"><span class="symptom-dot dot-red"></span>Persistent cough or wheezing</div>
+      <div class="symptom-item"><span class="symptom-dot dot-orange"></span>Difficulty concentrating or hyperactivity</div>
+      <div class="symptom-item"><span class="symptom-dot dot-gray"></span>Night terrors or sleep disturbances</div>
+      <div class="symptom-item"><span class="symptom-dot dot-orange"></span>Delayed speech or developmental milestones</div>
+      <div class="symptom-item"><span class="symptom-dot dot-gray"></span>Bedwetting beyond age 5–6 years</div>
+      <div class="symptom-item"><span class="symptom-dot dot-orange"></span>Skin rashes, eczema, or allergies</div>
+      <div class="symptom-item"><span class="symptom-dot dot-red"></span>Digestive issues — colic, constipation, diarrhoea</div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="content-section">
+    <h2>Why Choose Homoeopathy for Pediatric Care?</h2>
+    <div class="benefits-grid">
+      <div class="benefit-item"><h4>Completely Safe for Infants & Children</h4><p>Homoeopathic medicines are extremely gentle — suitable for newborns, infants, and children of all ages with no risk of side effects.</p></div>
+      <div class="benefit-item"><h4>Strengthens Immunity</h4><p>Constitutional treatment builds a stronger, more resilient immune system — reducing the frequency and severity of childhood illnesses over time.</p></div>
+      <div class="benefit-item"><h4>Avoids Unnecessary Antibiotics</h4><p>Reduces the need for repeated antibiotic courses, preventing gut microbiome disruption and antibiotic resistance.</p></div>
+      <div class="benefit-item"><h4>Supports Development</h4><p>Remedies support healthy neurological, emotional, and physical development in children with ADHD, autism, and developmental delays.</p></div>
+      <div class="benefit-item"><h4>Sweet, Easy-to-Take Medicines</h4><p>Children love homoeopathic medicines — they are tiny, sweet pills that even the most medicine-resistant children happily accept.</p></div>
+      <div class="benefit-item"><h4>Treats Without Suppression</h4><p>Homoeopathy supports the body's natural healing rather than suppressing it — building genuine long-term health.</p></div>
+    </div>
+  </section>
+
+  <!-- MECHANISM -->
+  <section class="content-section">
+    <h2>Our Approach to Children's Health</h2>
+    <div class="mechanism-list">
+      <div class="mechanism-item"><div class="mechanism-num">1</div><div class="mechanism-body"><h4>Child-Centred Case Taking</h4><p>Parents and children are interviewed together, exploring physical symptoms, temperament, fears, sleep, appetite, and emotional world to find the ideal remedy.</p></div></div>
+      <div class="mechanism-item"><div class="mechanism-num">2</div><div class="mechanism-body"><h4>Immune System Strengthening</h4><p>Constitutional remedies like Calcarea Carb, Tuberculinum, and Baryta Carb are used to build immune resilience in infection-prone children.</p></div></div>
+      <div class="mechanism-item"><div class="mechanism-num">3</div><div class="mechanism-body"><h4>Adenoid & Tonsil Treatment</h4><p>Remedies like Agraphis Nutans and Baryta Carb reduce lymphoid hypertrophy naturally — often avoiding the need for surgical removal.</p></div></div>
+      <div class="mechanism-item"><div class="mechanism-num">4</div><div class="mechanism-body"><h4>Neurological Support</h4><p>For ADHD and developmental issues, remedies improve neural connectivity, concentration, and emotional regulation.</p></div></div>
+      <div class="mechanism-item"><div class="mechanism-num">5</div><div class="mechanism-body"><h4>Allergy Desensitisation</h4><p>Treatment gradually reduces allergic hypersensitivity to food, environment, and respiratory triggers.</p></div></div>
+    </div>
+  </section>
+
+  <!-- DIET -->
+  <section class="content-section">
+    <h2>Nutrition & Lifestyle for Children</h2>
+    <div class="diet-grid">
+      <div class="diet-card include">
+        <h4>✅ Recommended</h4>
+        <ul><li>Breastfeeding for at least 6 months for optimal immunity</li><li>Fresh home-cooked meals rich in vegetables and whole grains</li><li>Adequate vitamin D through daily outdoor play</li><li>Regular sleep schedule — 9–11 hours for school-age children</li><li>Screen-time limits — max 1–2 hours for children under 12</li><li>Play, creativity, and social interaction</li></ul>
+      </div>
+      <div class="diet-card avoid">
+        <h4>❌ Avoid or Reduce</h4>
+        <ul><li>Ultra-processed junk food and packaged snacks</li><li>Cold drinks and artificial fruit juices</li><li>Excess sugar and candy</li><li>Ice cream during illness (worsens mucus)</li><li>Over-scheduling and excessive academic pressure</li><li>Self-medication with antibiotics for viral infections</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <h2>Ready to Start Natural Treatment?</h2>
+    <p>Book a consultation with Dr. D Rajesh Jaiswal — 26+ years of experience, 10,000+ patients treated.</p>
+    <div class="cta-btns">
+      <a class="btn-primary" href="index.html#contact">Book Consultation Now</a>
+      <a class="btn-secondary" href="https://wa.me/919985188831?text=Hello%2C%20I%20would%20like%20to%20consult%20about%20pediatric%20homoeopathic%20care.">💬 WhatsApp Us</a>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="content-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details><summary>At what age can children start homoeopathic treatment?</summary><p>Homoeopathy is safe from birth. Newborns with colic or jaundice, infants with eczema, and toddlers with recurrent infections all respond beautifully to homoeopathic treatment.</p></details>
+      <details><summary>Can homoeopathy help avoid tonsil surgery?</summary><p>Yes. Many children avoid tonsillectomy through constitutional homoeopathic treatment. Success depends on the degree of enlargement and frequency of infections. Dr. Jaiswal will give an honest assessment.</p></details>
+      <details><summary>How do you give medicines to small children?</summary><p>Homoeopathic globules are tiny, sweet, and easy to give. They dissolve instantly in the mouth. For infants, they are dissolved in a small amount of water.</p></details>
+      <details><summary>Can homoeopathy help my child with ADHD?</summary><p>Yes. Constitutional homoeopathy has helped many children with ADHD improve focus, reduce impulsivity, and manage emotions better — without the appetite suppression and growth concerns of stimulant medications.</p></details>
+    </div>
+  </section>
+
+</main>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+  <!-- Doctor card -->
+  <div class="sidebar-card doctor-card">
+    <div class="doctor-wrap">
+      <div class="doctor-avatar">
+        <img src="doctor.jpg" alt="Dr. D Rajesh Jaiswal" onerror="this.style.display='none';this.parentElement.innerHTML='👨‍⚕️';" />
+      </div>
+    </div>
+    <h4>Dr. D Rajesh Jaiswal</h4>
+    <p>Classical Homoeopath · 26+ Years · Tarnaka, Hyderabad</p>
+    <a class="btn-appt" href="index.html#contact">📅 Book a Consultation</a>
+  </div>
+
+  <!-- Consultation form -->
+  <div class="sidebar-card">
+    <h3>📋 Quick Consultation</h3>
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" id="name" placeholder="Your name" />
+    </div>
+    <div class="form-group">
+      <label>Mobile Number</label>
+      <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" />
+    </div>
+    <div class="form-group">
+      <label>Child's Age & Condition</label>
+      <input type="text" id="condition" placeholder="Describe your child's health concern and how long it has been present" />
+    </div>
+    <div class="form-group">
+      <label>Brief Description</label>
+      <textarea id="message" placeholder="Describe your child's health concern and how long it has been present"></textarea>
+    </div>
+    <button class="btn-wa" onclick="sendWA()">Send via WhatsApp 💬</button>
+    <p class="privacy-note">🔒 Your information is kept completely private.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="sidebar-card">
+    <h3>📞 Quick Contact</h3>
+    <a class="contact-item" href="tel:+919985188831">📞 <span><strong>Call Now</strong><br>+91 99851 88831</span></a>
+    <a class="contact-item" href="https://wa.me/919985188831">💬 <span><strong>WhatsApp</strong><br>Chat with Dr. Jaiswal</span></a>
+    <div class="contact-item">🕐 <span><strong>Clinic Hours</strong><br>Mon–Sat: 6:30 PM – 9:00 PM<br>Sunday: By Appointment</span></div>
+  </div>
+
+  <!-- Why choose -->
+  <div class="sidebar-card">
+    <h3>🏆 Why Dr. Jaiswal?</h3>
+    <ul class="reasons-list">
+      <li>26+ years of clinical experience</li>
+      <li>10,000+ patients successfully treated</li>
+      <li>Constitutional homoeopathy specialist</li>
+      <li>Treats root cause, not just symptoms</li>
+      <li>Personalised remedies for each patient</li>
+      <li>No surgery, no side effects</li>
+      <li>Transparent, affordable pricing</li>
+      <li>Regular follow-up &amp; monitoring</li>
+    </ul>
+  </div>
+
+  <!-- Location -->
+  <div class="sidebar-card">
+    <h3>📍 Clinic Location</h3>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:0.8rem;">Street No 14, Tarnaka<br>Secunderabad, Telangana 500017</p>
+    <a class="btn-appt" href="https://www.google.com/maps/place/Dr+Jaiswal's+Homeopathy+Clinic/@17.4254569,78.5413221,20z" target="_blank" style="background:var(--primary-light);">📍 Get Directions</a>
+  </div>
+
+</aside>
+</div>
+
+<footer>
+  <p>© 2026 Dr. Jaiswal's Homoeopathy · Tarnaka, Secunderabad, Hyderabad &nbsp;|&nbsp;
+     <a href="index.html">← Back to Home</a> &nbsp;|&nbsp;
+     <a href="index.html#services">All Services</a>
+  </p>
+
+<!-- Legal Links Bar -->
+<div style="border-top:1px solid rgba(255,255,255,0.08);margin-top:2rem;padding-top:1.5rem;text-align:center;">
+    <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);margin-bottom:0.8rem;">
+        &copy; 2026 Dr. Jaiswal&#39;s Homoeopathy &middot; Street No 14, Tarnaka, Secunderabad, Hyderabad &ndash; 500017
+    </p>
+    <div style="display:flex;justify-content:center;gap:0.5rem;flex-wrap:wrap;align-items:center;">
+        <a href="terms-of-service.html" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Terms of Service</a>
+        <span style="color:rgba(255,255,255,0.2);font-size:0.8rem;">&middot;</span>
+        <a href="medical-disclaimer.html" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Medical Disclaimer</a>
+        <span style="color:rgba(255,255,255,0.2);font-size:0.8rem;">&middot;</span>
+        <a href="privacy-policy.html" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Privacy Policy</a>
+        <span style="color:rgba(255,255,255,0.2);font-size:0.8rem;">&middot;</span>
+        <a href="teleconsultation-disclaimer.html" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Teleconsultation Disclaimer</a>
+    </div>
+</div>
+
+</footer>
+
+<script>
+function sendWA() {
+  var name = document.getElementById('name').value.trim();
+  var phone = document.getElementById('phone').value.trim();
+  var cond = document.getElementById('condition').value.trim();
+  var msg  = document.getElementById('message').value.trim();
+  if (!name || !phone) { alert('Please enter your name and mobile number.'); return; }
+  var text = 'Hello, I would like a consultation.%0A%0AName: ' + encodeURIComponent(name)
+           + '%0AMobile: ' + encodeURIComponent(phone)
+           + '%0ACondition: ' + encodeURIComponent(cond)
+           + '%0ADetails: ' + encodeURIComponent(msg);
+  window.open('https://wa.me/919985188831?text=' + text, '_blank');
+}
+</script>
+</body>
+</html>
