@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skin Disorders Treatment | Dr. Jaiswal's Homoeopathy - Tarnaka, Hyderabad</title>
+  <link rel="canonical" href="https://drjaiswalhomoeopathy.com/skin-disorders.html">
+  <meta name="description" content="Homoeopathy treats skin conditions from the inside out — addressing the root constitutional cause for lasting, natural skin health." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary:      #2d5016;
+      --primary-light:#4a7c59;
+      --sage:         #6b9e7a;
+      --sage-pale:    #e8f0eb;
+      --cream:        #faf7f2;
+      --dark:         #1e2d24;
+      --text:         #3a3a3a;
+      --muted:        #7a8a7d;
+      --border:       #d4e0d7;
+      --white:        #ffffff;
+      --shadow:       0 4px 24px rgba(45,80,22,0.10);
+      --shadow-lg:    0 8px 40px rgba(45,80,22,0.15);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(250,247,242,0.95); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 68px;
+    }
+    .nav-logo { font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--primary); text-decoration:none; font-weight:700; }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a { text-decoration:none; color:var(--muted); font-size:0.9rem; font-weight:500; transition:color 0.2s; }
+    .nav-links a:hover { color:var(--primary); }
+    .nav-cta { background:var(--primary); color:#fff !important; padding:0.45rem 1.1rem; border-radius:50px; }
+    .nav-cta:hover { background:var(--primary-light) !important; }
+    @media(max-width:768px){.nav-links{display:none;}}
+
+    /* BREADCRUMB */
+    .breadcrumb { background:var(--white); border-bottom:1px solid var(--border); padding:0.7rem 2rem; font-size:0.82rem; color:var(--muted); }
+    .breadcrumb a { color:var(--primary-light); text-decoration:none; }
+    .breadcrumb a:hover { text-decoration:underline; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--dark) 0%, #2a4a34 60%, #1e3828 100%);
+      padding: 4rem 2rem 3.5rem; text-align:center; position:relative; overflow:hidden;
+    }
+    .hero::before {
+      content:''; position:absolute; inset:0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%236b9e7a' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-badge {
+      display:inline-flex; align-items:center; gap:0.4rem;
+      background:rgba(107,158,122,0.2); border:1px solid rgba(107,158,122,0.4);
+      color:#a8d5b5; font-size:0.78rem; font-weight:600; letter-spacing:0.1em;
+      text-transform:uppercase; padding:0.35rem 0.9rem; border-radius:50px; margin-bottom:1rem;
+    }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,4.5vw,3.2rem); color:#fff; line-height:1.2; max-width:700px; margin:0 auto 0.8rem; }
+    .hero h1 em { font-style:italic; color:#a8d5b5; }
+    .hero .tagline { color:rgba(255,255,255,0.7); font-size:1.05rem; max-width:580px; margin:0 auto 1.8rem; }
+    .hero-ctas { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+    .btn-primary { background:var(--sage); color:#fff; text-decoration:none; padding:0.8rem 1.8rem; border-radius:50px; font-weight:600; transition:background 0.2s; }
+    .btn-primary:hover { background:var(--primary-light); }
+    .btn-secondary { background:transparent; color:#a8d5b5; text-decoration:none; padding:0.8rem 1.8rem; border-radius:50px; font-weight:600; border:1.5px solid rgba(168,213,181,0.5); transition:all 0.2s; }
+    .btn-secondary:hover { background:rgba(168,213,181,0.1); }
+
+    /* LAYOUT */
+    .content-wrap { max-width:1100px; margin:0 auto; padding:3rem 2rem 5rem; display:grid; grid-template-columns:1fr 300px; gap:3rem; align-items:start; }
+    @media(max-width:880px){.content-wrap{grid-template-columns:1fr;}}
+
+    /* SECTIONS */
+    section.content-section { margin-bottom:3rem; }
+    section.content-section h2 { font-family:'Playfair Display',serif; font-size:1.7rem; color:var(--dark); margin-bottom:1rem; }
+    section.content-section h3 { font-family:'Playfair Display',serif; font-size:1.15rem; color:var(--primary); margin:1.2rem 0 0.4rem; }
+    section.content-section p { color:var(--text); line-height:1.8; margin-bottom:0.8rem; }
+    section.content-section strong { color:var(--dark); }
+
+    /* CONDITIONS GRID */
+    .conditions-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; margin-top:1rem; }
+    .condition-card { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:1.2rem; box-shadow:var(--shadow); }
+    .condition-card h4 { font-size:0.95rem; font-weight:600; color:var(--dark); margin-bottom:0.3rem; }
+    .condition-card p { font-size:0.85rem; color:var(--muted); margin:0; }
+
+    /* SYMPTOMS */
+    .symptoms-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0.8rem; margin-top:1rem; }
+    .symptom-item { display:flex; align-items:center; gap:0.6rem; background:var(--white); border:1px solid var(--border); border-radius:10px; padding:0.8rem 1rem; font-size:0.88rem; }
+    .symptom-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; }
+    .dot-red { background:#e05252; }
+    .dot-orange { background:#e09052; }
+    .dot-gray { background:#9aa89d; }
+
+    /* BENEFITS */
+    .benefits-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; margin-top:1rem; }
+    .benefit-item { background:var(--white); border:1px solid var(--border); border-left:4px solid var(--primary-light); border-radius:12px; padding:1.2rem; box-shadow:var(--shadow); }
+    .benefit-item h4 { font-size:0.95rem; font-weight:600; color:var(--dark); margin-bottom:0.3rem; }
+    .benefit-item p { font-size:0.85rem; color:var(--muted); margin:0; }
+    .benefit-item::before { content:'✓'; color:var(--sage); font-weight:700; font-size:1.1rem; display:block; margin-bottom:0.4rem; }
+
+    /* MECHANISMS */
+    .mechanism-list { display:flex; flex-direction:column; gap:1rem; margin-top:1rem; }
+    .mechanism-item { display:flex; gap:1rem; background:var(--white); border:1px solid var(--border); border-radius:12px; padding:1.2rem; box-shadow:var(--shadow); }
+    .mechanism-num { width:36px; height:36px; background:var(--primary); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.9rem; flex-shrink:0; }
+    .mechanism-body h4 { font-size:0.95rem; font-weight:600; color:var(--dark); margin-bottom:0.25rem; }
+    .mechanism-body p { font-size:0.85rem; color:var(--muted); margin:0; }
+
+    /* DIET */
+    .diet-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:1rem; }
+    @media(max-width:600px){.diet-grid{grid-template-columns:1fr;}}
+    .diet-card { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:1.2rem; }
+    .diet-card h4 { font-size:0.9rem; font-weight:700; margin-bottom:0.8rem; }
+    .diet-card.include h4 { color:#3a7a3a; }
+    .diet-card.avoid h4 { color:#b03a3a; }
+    .diet-card ul { list-style:none; padding:0; }
+    .diet-card ul li { font-size:0.85rem; color:var(--muted); padding:0.3rem 0; border-bottom:1px solid var(--sage-pale); display:flex; gap:0.5rem; }
+    .diet-card ul li:last-child { border-bottom:none; }
+    .diet-card.include li::before { content:'✓'; color:#3a7a3a; font-weight:700; }
+    .diet-card.avoid li::before { content:'✗'; color:#b03a3a; font-weight:700; }
+
+    /* FAQ */
+    .faq-list { display:flex; flex-direction:column; gap:0.8rem; margin-top:1rem; }
+    details { background:var(--white); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+    summary { padding:1rem 1.2rem; font-weight:600; font-size:0.92rem; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; color:var(--dark); }
+    summary::after { content:'▼'; font-size:0.7rem; color:var(--muted); transition:transform 0.2s; }
+    details[open] summary::after { transform:rotate(180deg); }
+    details p { padding:0 1.2rem 1rem; font-size:0.88rem; color:var(--muted); line-height:1.7; }
+
+    /* CTA SECTION */
+    .cta-section { background:linear-gradient(135deg,var(--dark),#2a4a34); border-radius:20px; padding:2.5rem 2rem; text-align:center; margin-bottom:3rem; }
+    .cta-section h2 { font-family:'Playfair Display',serif; font-size:1.8rem; color:#fff; margin-bottom:0.6rem; }
+    .cta-section p { color:rgba(255,255,255,0.7); max-width:500px; margin:0 auto 1.5rem; }
+    .cta-btns { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+
+    /* SIDEBAR */
+    .sidebar { display:flex; flex-direction:column; gap:1.5rem; }
+    .sidebar-card { background:var(--white); border:1px solid var(--border); border-radius:16px; padding:1.4rem; box-shadow:var(--shadow); }
+    .sidebar-card h3 { font-family:'Playfair Display',serif; font-size:0.95rem; color:var(--dark); margin-bottom:1rem; padding-bottom:0.6rem; border-bottom:2px solid var(--sage-pale); }
+    .doctor-wrap { width:80px; height:80px; border-radius:50%; margin:0 auto 0.8rem; padding:3px; background:linear-gradient(135deg,var(--primary),var(--sage)); display:flex; align-items:center; justify-content:center; }
+    .doctor-avatar { width:100%; height:100%; border-radius:50%; overflow:hidden; border:2px solid #fff; background:var(--sage-pale); display:flex; align-items:center; justify-content:center; }
+    .doctor-avatar img { width:100%; height:100%; object-fit:cover; object-position:top center; border-radius:50%; }
+    .sidebar-card.doctor-card { text-align:center; }
+    .sidebar-card.doctor-card h4 { font-family:'Playfair Display',serif; font-size:0.95rem; color:var(--dark); }
+    .sidebar-card.doctor-card p { font-size:0.78rem; color:var(--muted); margin:0.2rem 0 1rem; }
+    .btn-appt { display:block; background:var(--primary); color:#fff; text-decoration:none; text-align:center; padding:0.65rem 1rem; border-radius:50px; font-size:0.85rem; font-weight:600; transition:background 0.2s; }
+    .btn-appt:hover { background:var(--primary-light); }
+    .contact-item { display:flex; align-items:center; gap:0.6rem; font-size:0.85rem; color:var(--text); padding:0.5rem 0; border-bottom:1px solid var(--sage-pale); text-decoration:none; }
+    .contact-item:last-child { border-bottom:none; }
+    .contact-item:hover { color:var(--primary); }
+    .reasons-list { list-style:none; }
+    .reasons-list li { font-size:0.83rem; color:var(--muted); padding:0.3rem 0; display:flex; gap:0.5rem; border-bottom:1px solid var(--sage-pale); }
+    .reasons-list li:last-child { border-bottom:none; }
+    .reasons-list li::before { content:'✓'; color:var(--sage); font-weight:700; flex-shrink:0; }
+
+    /* FORM */
+    .form-group { margin-bottom:1rem; }
+    .form-group label { display:block; font-size:0.82rem; font-weight:600; color:var(--dark); margin-bottom:0.3rem; }
+    .form-group input, .form-group textarea, .form-group select {
+      width:100%; padding:0.7rem 0.9rem; border:1px solid var(--border);
+      border-radius:8px; font-family:'DM Sans',sans-serif; font-size:0.88rem;
+      background:var(--cream); color:var(--text); outline:none; transition:border 0.2s;
+    }
+    .form-group input:focus, .form-group textarea:focus { border-color:var(--sage); }
+    .form-group textarea { resize:vertical; min-height:80px; }
+    .btn-wa { width:100%; background:#25d366; color:#fff; border:none; border-radius:50px; padding:0.75rem; font-size:0.9rem; font-weight:600; cursor:pointer; font-family:'DM Sans',sans-serif; transition:background 0.2s; }
+    .btn-wa:hover { background:#1da855; }
+    .privacy-note { text-align:center; font-size:0.75rem; color:var(--muted); margin-top:0.5rem; }
+
+    /* FOOTER */
+    footer { background:var(--dark); color:rgba(255,255,255,0.5); text-align:center; padding:1.8rem 2rem; font-size:0.82rem; }
+    footer a { color:#a8d5b5; text-decoration:none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">🌿 Dr. Jaiswal's Homoeopathy</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="tips.html">Health Tips</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Book Consultation</a></li>
+  </ul>
+</nav>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a> › <a href="index.html#services">Services</a> › Skin Disorders Treatment
+</div>
+
+<header class="hero">
+  <div class="hero-badge">🌿 Constitutional Homoeopathy</div>
+  <h1>Skin Disorders Treatment<br><em>Eczema, Psoriasis, Acne, Vitiligo & More</em></h1>
+  <p class="tagline">Homoeopathy treats skin conditions from the inside out — addressing the root constitutional cause for lasting, natural skin health.</p>
+  <div class="hero-ctas">
+    <a class="btn-primary" href="index.html#contact">Book Free Consultation</a>
+    <a class="btn-secondary" href="tel:+919985188831">📞 Call Now: +91 99851 88831</a>
+  </div>
+</header>
+
+<div class="content-wrap">
+<main>
+
+  <!-- INTRO -->
+  <section class="content-section">
+    <h2>What Is Skin Disorders?</h2>
+    <p>Skin disorders are rarely just a surface problem. In homoeopathic philosophy, the skin is a mirror of the body's internal health — and chronic skin conditions like psoriasis, eczema, and vitiligo almost always reflect a deeper constitutional imbalance that topical creams and steroids cannot resolve.</p>
+    <p>Conventional dermatology offers symptomatic relief through steroids, immunosuppressants, and biologics — but these rarely cure skin conditions and often cause significant side effects with prolonged use. When medication is stopped, the skin condition frequently rebounds worse than before.</p>
+    <p>Constitutional homoeopathy takes a fundamentally different approach — treating the whole person so that the skin heals as an expression of restored internal balance. At Dr. Jaiswal's Homoeopathy Clinic, Tarnaka, we have helped thousands of patients achieve clear, healthy skin naturally.</p>
+  </section>
+
+  <!-- CONDITIONS -->
+  <section class="content-section">
+    <h2>Skin Conditions We Treat</h2>
+    <div class="conditions-grid">
+      <div class="condition-card"><h4>Psoriasis</h4><p>Chronic autoimmune skin condition causing red, scaly plaques — treated constitutionally to reduce flare frequency and severity.</p></div>
+      <div class="condition-card"><h4>Eczema & Atopic Dermatitis</h4><p>Chronic inflammatory skin condition with intense itching — managed naturally without steroid dependence.</p></div>
+      <div class="condition-card"><h4>Acne & Pimples</h4><p>From teenage acne to adult hormonal acne — addressed at the hormonal and constitutional level.</p></div>
+      <div class="condition-card"><h4>Vitiligo</h4><p>Loss of skin pigmentation — constitutional homoeopathy stimulates melanocyte activity and immune regulation.</p></div>
+      <div class="condition-card"><h4>Urticaria (Hives)</h4><p>Allergic skin reactions causing wheals and intense itching — effectively managed without antihistamine dependence.</p></div>
+      <div class="condition-card"><h4>Warts & Molluscum</h4><p>Safe, painless removal of warts and molluscum contagiosum through targeted homoeopathic medicines.</p></div>
+    </div>
+  </section>
+
+  <!-- SYMPTOMS -->
+  <section class="content-section">
+    <h2>Common Symptoms</h2>
+    <p>Recognising symptoms early allows for timely homoeopathic intervention, often preventing complications and reducing treatment duration.</p>
+    <div class="symptoms-grid">
+      <div class="symptom-item"><span class="symptom-dot dot-red"></span>Persistent itching, burning or stinging</div>
+      <div class="symptom-item"><span class="symptom-dot dot-red"></span>Red, inflamed, or scaly patches</div>
+      <div class="symptom-item"><span class="symptom-dot dot-orange"></span>Dry, cracked skin prone to bleeding</div>
+      <div class="symptom-item"><span class="symptom-dot dot-orange"></span>Oozing or crusting skin lesions</div>
+      <div class="symptom-item"><span class="symptom-dot dot-gray"></span>White or depigmented patches on skin</div>
+      <div class="symptom-item"><span class="symptom-dot dot-orange"></span>Recurrent breakouts or pustules</div>
+      <div class="symptom-item"><span class="symptom-dot dot-gray"></span>Thickened or leathery skin texture</div>
+      <div class="symptom-item"><span class="symptom-dot dot-orange"></span>Rashes triggered by food, stress, or weather</div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="content-section">
+    <h2>Why Choose Homoeopathy for Skin Disorders?</h2>
+    <div class="benefits-grid">
+      <div class="benefit-item"><h4>Steroid-Free Healing</h4><p>Achieve clear skin without the thinning, dependency, and rebound effects of topical or oral steroids.</p></div>
+      <div class="benefit-item"><h4>Addresses Root Cause</h4><p>Treats the genetic predisposition, immune dysregulation, and emotional triggers underlying chronic skin disease.</p></div>
+      <div class="benefit-item"><h4>Reduces Recurrence</h4><p>Constitutional treatment significantly reduces the frequency and severity of flare-ups over time.</p></div>
+      <div class="benefit-item"><h4>Safe for Children</h4><p>Gentle remedies suitable for infants and children with eczema, urticaria, and other skin conditions.</p></div>
+      <div class="benefit-item"><h4>No Suppression</h4><p>Unlike steroids that suppress the immune response, homoeopathy stimulates genuine healing — preventing internal suppression of disease.</p></div>
+      <div class="benefit-item"><h4>Improves Overall Health</h4><p>As skin heals, patients report improvement in digestion, sleep, energy, and emotional well-being.</p></div>
+    </div>
+  </section>
+
+  <!-- MECHANISM -->
+  <section class="content-section">
+    <h2>How Homoeopathy Heals Skin Disorders</h2>
+    <div class="mechanism-list">
+      <div class="mechanism-item"><div class="mechanism-num">1</div><div class="mechanism-body"><h4>Constitutional Evaluation</h4><p>Skin type, lesion characteristics, triggers, emotional state, and family history are assessed to find the precise constitutional remedy.</p></div></div>
+      <div class="mechanism-item"><div class="mechanism-num">2</div><div class="mechanism-body"><h4>Immune Modulation</h4><p>For autoimmune conditions like psoriasis, remedies recalibrate immune responses to prevent self-attack on skin cells.</p></div></div>
+      <div class="mechanism-item"><div class="mechanism-num">3</div><div class="mechanism-body"><h4>Hormonal Regulation</h4><p>For acne and cyclical skin flares, constitutional remedies address hormonal imbalances at their source.</p></div></div>
+      <div class="mechanism-item"><div class="mechanism-num">4</div><div class="mechanism-body"><h4>Detoxification Support</h4><p>Remedies support liver and digestive function — organs closely linked to chronic skin health in homoeopathic understanding.</p></div></div>
+      <div class="mechanism-item"><div class="mechanism-num">5</div><div class="mechanism-body"><h4>Allergy Desensitisation</h4><p>For urticaria and allergic eczema, treatment gradually reduces hypersensitivity to environmental and food triggers.</p></div></div>
+    </div>
+  </section>
+
+  <!-- DIET -->
+  <section class="content-section">
+    <h2>Diet & Lifestyle for Skin Health</h2>
+    <div class="diet-grid">
+      <div class="diet-card include">
+        <h4>✅ Recommended</h4>
+        <ul><li>Hydration — minimum 8–10 glasses of water daily</li><li>Antioxidant-rich fruits: pomegranate, amla, blueberries</li><li>Omega-3 rich foods: flaxseed, walnuts, fish</li><li>Fresh vegetables especially bitter gourd and drumstick</li><li>Coconut oil for dry skin (external use)</li><li>Stress management through yoga and meditation</li></ul>
+      </div>
+      <div class="diet-card avoid">
+        <h4>❌ Avoid or Reduce</h4>
+        <ul><li>Dairy and gluten (common triggers in eczema and psoriasis)</li><li>Sugar and refined carbohydrates</li><li>Spicy and oily street foods</li><li>Nightshades (tomato, brinjal) in psoriasis</li><li>Seafood and eggs (if allergic)</li><li>Harsh chemical soaps and synthetic fabrics</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <h2>Ready to Start Natural Treatment?</h2>
+    <p>Book a consultation with Dr. D Rajesh Jaiswal — 26+ years of experience, 10,000+ patients treated.</p>
+    <div class="cta-btns">
+      <a class="btn-primary" href="index.html#contact">Book Consultation Now</a>
+      <a class="btn-secondary" href="https://wa.me/919985188831?text=Hello%2C%20I%20would%20like%20to%20consult%20about%20skin%20disorder%20treatment.">💬 WhatsApp Us</a>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="content-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details><summary>Can homoeopathy cure psoriasis permanently?</summary><p>Homoeopathy can achieve long-term remission in psoriasis, significantly reducing or eliminating flare-ups. Complete cure depends on disease duration, severity, and individual constitution. Many patients remain symptom-free for years after completing treatment.</p></details>
+      <details><summary>How long does homoeopathic skin treatment take?</summary><p>Acute conditions like urticaria may respond in days to weeks. Chronic conditions like eczema and psoriasis typically require 6–18 months. Vitiligo may take 1–3 years for significant repigmentation.</p></details>
+      <details><summary>Should I stop steroids before starting treatment?</summary><p>Do not stop steroids abruptly — this can cause dangerous rebound reactions. Dr. Jaiswal will guide you on safely tapering steroids as homoeopathic treatment takes effect.</p></details>
+      <details><summary>Is homoeopathy safe for children with eczema?</summary><p>Yes — homoeopathy is one of the safest and most effective treatments for childhood eczema, avoiding the risks of long-term steroid use in growing children.</p></details>
+    </div>
+  </section>
+
+</main>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+  <!-- Doctor card -->
+  <div class="sidebar-card doctor-card">
+    <div class="doctor-wrap">
+      <div class="doctor-avatar">
+        <img src="doctor.jpg" alt="Dr. D Rajesh Jaiswal" onerror="this.style.display='none';this.parentElement.innerHTML='👨‍⚕️';" />
+      </div>
+    </div>
+    <h4>Dr. D Rajesh Jaiswal</h4>
+    <p>Classical Homoeopath · 26+ Years · Tarnaka, Hyderabad</p>
+    <a class="btn-appt" href="index.html#contact">📅 Book a Consultation</a>
+  </div>
+
+  <!-- Consultation form -->
+  <div class="sidebar-card">
+    <h3>📋 Quick Consultation</h3>
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" id="name" placeholder="Your name" />
+    </div>
+    <div class="form-group">
+      <label>Mobile Number</label>
+      <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" />
+    </div>
+    <div class="form-group">
+      <label>Condition (e.g., Eczema, Psoriasis, Acne)</label>
+      <input type="text" id="condition" placeholder="Describe your skin condition, duration, and triggers" />
+    </div>
+    <div class="form-group">
+      <label>Brief Description</label>
+      <textarea id="message" placeholder="Describe your skin condition, duration, and triggers"></textarea>
+    </div>
+    <button class="btn-wa" onclick="sendWA()">Send via WhatsApp 💬</button>
+    <p class="privacy-note">🔒 Your information is kept completely private.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="sidebar-card">
+    <h3>📞 Quick Contact</h3>
+    <a class="contact-item" href="tel:+919985188831">📞 <span><strong>Call Now</strong><br>+91 99851 88831</span></a>
+    <a class="contact-item" href="https://wa.me/919985188831">💬 <span><strong>WhatsApp</strong><br>Chat with Dr. Jaiswal</span></a>
+    <div class="contact-item">🕐 <span><strong>Clinic Hours</strong><br>Mon–Sat: 6:30 PM – 9:00 PM<br>Sunday: By Appointment</span></div>
+  </div>
+
+  <!-- Why choose -->
+  <div class="sidebar-card">
+    <h3>🏆 Why Dr. Jaiswal?</h3>
+    <ul class="reasons-list">
+      <li>26+ years of clinical experience</li>
+      <li>10,000+ patients successfully treated</li>
+      <li>Constitutional homoeopathy specialist</li>
+      <li>Treats root cause, not just symptoms</li>
+      <li>Personalised remedies for each patient</li>
+      <li>No surgery, no side effects</li>
+      <li>Transparent, affordable pricing</li>
+      <li>Regular follow-up &amp; monitoring</li>
+    </ul>
+  </div>
+
+  <!-- Location -->
+  <div class="sidebar-card">
+    <h3>📍 Clinic Location</h3>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:0.8rem;">Street No 14, Tarnaka<br>Secunderabad, Telangana 500017</p>
+    <a class="btn-appt" href="https://www.google.com/maps/place/Dr+Jaiswal's+Homeopathy+Clinic/@17.4254569,78.5413221,20z" target="_blank" style="background:var(--primary-light);">📍 Get Directions</a>
+  </div>
+
+</aside>
+</div>
+
+<footer>
+<!-- Legal Links Bar -->
+<div style="border-top:1px solid rgba(255,255,255,0.08);margin-top:0.5rem;padding-top:0.8rem;text-align:center;">
+    <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);margin-bottom:0.8rem;">
+        &copy; 2026 Dr. Jaiswal&#39;s Homoeopathy &middot; Street No 14, Tarnaka, Secunderabad, Hyderabad &ndash; 500017
+    </p>
+    <div style="display:flex;justify-content:center;gap:0.5rem;flex-wrap:wrap;align-items:center;">
+        <a href="terms-of-service.html" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Terms of Service</a>
+        <span style="color:rgba(255,255,255,0.2);font-size:0.8rem;">&middot;</span>
+        <a href="medical-disclaimer.html" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Medical Disclaimer</a>
+        <span style="color:rgba(255,255,255,0.2);font-size:0.8rem;">&middot;</span>
+        <a href="privacy-policy.html" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Privacy Policy</a>
+        <span style="color:rgba(255,255,255,0.2);font-size:0.8rem;">&middot;</span>
+        <a href="teleconsultation-disclaimer.html" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Teleconsultation Disclaimer</a>
+    </div>
+</div>
+
+</footer>
+
+<script>
+function sendWA() {
+  var name = document.getElementById('name').value.trim();
+  var phone = document.getElementById('phone').value.trim();
+  var cond = document.getElementById('condition').value.trim();
+  var msg  = document.getElementById('message').value.trim();
+  if (!name || !phone) { alert('Please enter your name and mobile number.'); return; }
+  var text = 'Hello, I would like a consultation.%0A%0AName: ' + encodeURIComponent(name)
+           + '%0AMobile: ' + encodeURIComponent(phone)
+           + '%0ACondition: ' + encodeURIComponent(cond)
+           + '%0ADetails: ' + encodeURIComponent(msg);
+  window.open('https://wa.me/919985188831?text=' + text, '_blank');
+}
+</script>
+</body>
+</html>
