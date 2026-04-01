@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Start Your Treatment via WhatsApp | Dr. Jaiswal's Homoeopathy</title>
+<meta name="description" content="Start your homoeopathic treatment with Dr. Jaiswal in 5 simple steps via WhatsApp — from anywhere in India or abroad. No travel needed.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://drjaiswalhomoeopathy.com/how-to-start.html">
+<meta property="og:title" content="How to Start Treatment via WhatsApp | Dr. Jaiswal's Homoeopathy">
+<meta property="og:description" content="Start your homoeopathic treatment in 5 simple steps via WhatsApp — from anywhere in India or abroad.">
+<meta property="og:url" content="https://drjaiswalhomoeopathy.com/how-to-start.html">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ── Reset & Tokens ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --primary:       #2d5016;
+  --primary-light: #4a7c2a;
+  --secondary:     #d4a574;
+  --cream:         #faf8f3;
+  --warm-white:    #f5f1e8;
+  --text-dark:     #2c2c2c;
+  --text-mid:      #555555;
+  --sage:          #9db88f;
+  --green-dark:    #1a2e1c;
+  --green-mid:     #243d26;
+  --green-accent:  #6b9e7a;
+  --wa-green:      #25d366;
+  --step-accent:   #a8d5b5;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  line-height: 1.7;
+  color: var(--text-dark);
+  background: var(--cream);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-height: 1.3; }
+a { text-decoration: none; }
+
+/* ── Header ── */
+header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(45,80,22,0.15);
+}
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-section { display: flex; align-items: center; gap: 1.2rem; }
+.logo-circle {
+  width: 50px; height: 50px;
+  background: white; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; color: var(--primary);
+}
+.logo-text h1 { font-size: 1.5rem; color: white; }
+nav ul { display: flex; list-style: none; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
+nav a { color: white; font-weight: 500; font-size: 0.88rem; transition: color 0.3s; }
+nav a:hover { color: var(--secondary); }
+.cta-button {
+  background: var(--secondary);
+  color: var(--primary) !important;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  font-weight: 600 !important;
+}
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: 2px solid rgba(255,255,255,0.5);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: var(--primary);
+}
+.mobile-menu a { color: white; font-weight: 500; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.mobile-menu.open { display: flex; }
+
+/* ── Page Hero ── */
+.page-hero {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.page-hero .badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.9);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+.page-hero h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
+.page-hero h1 em { font-style: italic; color: var(--secondary); }
+.page-hero p { font-size: 1.1rem; opacity: 0.85; max-width: 650px; margin: 0 auto; }
+
+/* ── Main section ── */
+.online-consult {
+  padding: 5rem 0;
+  background: linear-gradient(165deg, var(--green-dark) 0%, var(--green-mid) 40%, #1e3520 100%);
+  position: relative;
+  overflow: hidden;
+}
+.online-consult::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(107,158,122,0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+.online-consult::after {
+  content: '';
+  position: absolute;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(107,158,122,0.12) 0%, transparent 70%);
+  top: -100px; right: -150px;
+  pointer-events: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+.online-consult-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* ── Left — Steps ── */
+.section-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
+  border-radius: 50px;
+  margin-bottom: 1.2rem;
+  background: rgba(107,158,122,0.15);
+  color: var(--step-accent);
+  border: 1px solid rgba(107,158,122,0.25);
+}
+.consult-left h2 {
+  font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.consult-left h2 em { font-style: italic; color: var(--step-accent); }
+.consult-intro {
+  color: rgba(255,255,255,0.65);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.consult-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.consult-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(107,158,122,0.15);
+  border-radius: 12px;
+  transition: background 0.2s, border-color 0.2s;
+}
+.consult-step:hover {
+  background: rgba(107,158,122,0.08);
+  border-color: rgba(107,158,122,0.3);
+}
+.step-num {
+  width: 32px; height: 32px;
+  background: rgba(107,158,122,0.2);
+  border: 1px solid rgba(107,158,122,0.35);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--step-accent);
+  flex-shrink: 0;
+}
+.step-body h4 { font-size: 0.92rem; font-weight: 700; color: #fff; margin-bottom: 0.2rem; }
+.step-body p { font-size: 0.82rem; color: rgba(255,255,255,0.55); margin: 0; line-height: 1.5; }
+
+.consult-types {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.consult-type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: 50px;
+  border: 1px solid rgba(107,158,122,0.3);
+  color: var(--step-accent);
+  background: rgba(107,158,122,0.08);
+}
+
+/* ── Right — WA Card ── */
+.consult-right { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.wa-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(107,158,122,0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+}
+.wa-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(107,158,122,0.15);
+}
+.wa-logo {
+  width: 52px; height: 52px;
+  background: var(--wa-green);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(37,211,102,0.3);
+}
+.wa-title h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: #fff; margin-bottom: 0.15rem; }
+.wa-title p { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin: 0; }
+
+.wa-specialties {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+.wa-specialty {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid rgba(107,158,122,0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: rgba(255,255,255,0.03);
+}
+.wa-specialty:hover, .wa-specialty.selected {
+  background: rgba(37,211,102,0.1);
+  border-color: rgba(37,211,102,0.4);
+}
+.wa-specialty span:first-child { font-size: 1rem; }
+.wa-specialty span:last-child { font-size: 0.78rem; font-weight: 500; color: rgba(255,255,255,0.7); line-height: 1.2; }
+
+.wa-time-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.wa-hours {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: var(--step-accent);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding: 0.7rem 1rem;
+  background: rgba(107,158,122,0.08);
+  border-radius: 10px;
+  border: 1px solid rgba(107,158,122,0.18);
+}
+.wa-btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  background: var(--wa-green);
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.25);
+  margin-bottom: 0.8rem;
+}
+.wa-btn-primary:hover { background: #1fb85b; transform: translateY(-2px); box-shadow: 0 6px 24px rgba(37,211,102,0.35); }
+.wa-btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.85rem;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.wa-btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+/* Trust row */
+.consult-trust {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.trust-item {
+  text-align: center;
+  padding: 1rem 0.5rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(107,158,122,0.12);
+  border-radius: 12px;
+}
+.trust-item .trust-icon { font-size: 1.4rem; display: block; margin-bottom: 0.4rem; }
+.trust-item .trust-text { font-size: 0.75rem; color: rgba(255,255,255,0.55); line-height: 1.4; }
+.trust-item .trust-text strong { color: var(--step-accent); display: block; font-size: 0.82rem; }
+
+/* ── Back link ── */
+.back-wrap { background: var(--warm-white); padding: 1rem 2rem; border-bottom: 1px solid #e0ddd5; }
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--primary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: gap 0.2s;
+}
+.back-link:hover { gap: 0.65rem; }
+
+/* ── Footer ── */
+footer { background: linear-gradient(135deg, #1a2e0a, #2d5016); color: white; padding: 3rem 2rem 0; }
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 2rem;
+}
+.footer-about h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+.footer-links h4 { font-size: 1.1rem; margin-bottom: 1.2rem; color: var(--secondary); }
+.footer-links ul { list-style: none; }
+.footer-links li { margin-bottom: 0.6rem; }
+.footer-links a { color: rgba(255,255,255,0.7); font-size: 0.9rem; transition: color 0.2s; }
+.footer-links a:hover { color: var(--secondary); }
+.footer-links p { opacity: 0.7; font-size: 0.9rem; }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  nav ul { display: none; }
+  .mobile-menu-btn { display: block; }
+  .online-consult-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .footer-container { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .footer-container { grid-template-columns: 1fr; }
+  .wa-specialties { grid-template-columns: 1fr; }
+  .consult-trust { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-container">
+    <div class="logo-section">
+      <div class="logo-circle">🌿</div>
+      <div class="logo-text"><h1>Dr. Jaiswal's Homoeopathy</h1></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#treatment">Treatments</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="avoid-surgery.html">Avoid Surgery</a></li>
+        <li><a href="diseases.html">Diseases</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="tips.html">Health Tips</a></li>
+        <li><a href="/#contact" class="cta-button">Book Appointment</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/">Home</a>
+    <a href="/#about">About</a>
+    <a href="/#treatment">Treatments</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="avoid-surgery.html">Avoid Surgery</a>
+    <a href="diseases.html">Diseases</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="tips.html">Health Tips</a>
+    <a href="/#contact" class="cta-button" style="display:inline-block;margin-top:0.5rem;text-align:center;">Book Appointment</a>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="badge">📱 Available Now</div>
+  <h1>How to Start Your<br><em>Treatment via WhatsApp</em></h1>
+  <p>Starting is simple. Send a WhatsApp message, describe your concern, and Dr. Jaiswal will guide you through the next steps — from anywhere in India or abroad.</p>
+</div>
+
+<!-- Back link -->
+<div class="back-wrap">
+  <div style="max-width:1200px;margin:0 auto;">
+    <a class="back-link" href="/">← Back to Home</a>
+  </div>
+</div>
+
+<!-- Main Content -->
+<section class="online-consult">
+  <div class="container">
+    <div class="online-consult-inner">
+
+      <!-- LEFT — Steps -->
+      <div class="consult-left">
+        <span class="section-tag">📋 Simple 5-Step Process</span>
+        <h2>How to Start Your<br><em>Treatment via WhatsApp</em></h2>
+        <p class="consult-intro">
+          Already seen the packages? Starting is simple. Send a WhatsApp message, describe your
+          concern, and Dr. Jaiswal will guide you through the next steps — from anywhere in India or abroad.
+        </p>
+
+        <div class="consult-steps">
+          <div class="consult-step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h4>Send a WhatsApp Message</h4>
+              <p>Message Dr. Jaiswal with your name, age, and brief description of your health concern to begin.</p>
+            </div>
+          </div>
+          <div class="consult-step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h4>Detailed Case Discussion</h4>
+              <p>A thorough case-taking is conducted via WhatsApp chat or voice call — covering symptoms, history, and lifestyle in detail.</p>
+            </div>
+          </div>
+          <div class="consult-step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h4>Personalised Prescription</h4>
+              <p>You receive a customised homoeopathic remedy prescription with clear dosage instructions sent directly to you.</p>
+            </div>
+          </div>
+          <div class="consult-step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <h4>Medicines at Your Doorstep</h4>
+              <p>Medicines can be collected from the clinic or arranged for courier delivery to your location across India.</p>
+            </div>
+          </div>
+          <div class="consult-step">
+            <div class="step-num">5</div>
+            <div class="step-body">
+              <h4>Ongoing Follow-up</h4>
+              <p>Regular follow-ups via WhatsApp to monitor progress and adjust treatment as needed — every 3–4 weeks.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="consult-types">
+          <span class="consult-type-badge">💬 WhatsApp Chat</span>
+          <span class="consult-type-badge">📞 Voice Call</span>
+          <span class="consult-type-badge">📹 Video Call</span>
+          <span class="consult-type-badge">🇮🇳 Pan India</span>
+          <span class="consult-type-badge">✈️ NRI / Overseas</span>
+        </div>
+      </div>
+
+      <!-- RIGHT — WhatsApp Booking Card -->
+      <div class="consult-right">
+        <div class="wa-card">
+
+          <div class="wa-card-header">
+            <div class="wa-logo">💬</div>
+            <div class="wa-title">
+              <h3>Book Your Consultation</h3>
+              <p>Choose your concern &amp; connect instantly</p>
+            </div>
+          </div>
+
+          <div class="wa-specialties" id="specialtyGrid">
+            <div class="wa-specialty selected" onclick="selectSpecialty(this, 'general health concern')">
+              <span>🌿</span><span>General / Chronic<br>Disease</span>
+            </div>
+            <div class="wa-specialty" onclick="selectSpecialty(this, 'skin disorder')">
+              <span>🌸</span><span>Skin Disorder<br>(Eczema, Psoriasis)</span>
+            </div>
+            <div class="wa-specialty" onclick="selectSpecialty(this, 'joint or bone disorder')">
+              <span>🦴</span><span>Joint &amp; Bone<br>Disorders</span>
+            </div>
+            <div class="wa-specialty" onclick="selectSpecialty(this, 'kidney stones or gallstones')">
+              <span>🪨</span><span>Kidney / Gall<br>Stones</span>
+            </div>
+            <div class="wa-specialty" onclick="selectSpecialty(this, 'women\'s health concern (PCOS, menstrual issues)')">
+              <span>👩</span><span>Women's Health<br>(PCOS, Periods)</span>
+            </div>
+            <div class="wa-specialty" onclick="selectSpecialty(this, 'child health concern')">
+              <span>👶</span><span>Pediatric Care<br>(Child Health)</span>
+            </div>
+            <div class="wa-specialty" onclick="selectSpecialty(this, 'stress, anxiety or mental health concern')">
+              <span>🧘</span><span>Stress, Anxiety<br>&amp; Mental Health</span>
+            </div>
+            <div class="wa-specialty" onclick="selectSpecialty(this, 'addiction treatment (alcohol, smoking or tobacco)')">
+              <span>🚭</span><span>Addiction<br>De-addiction</span>
+            </div>
+          </div>
+
+          <div class="wa-time-label">Consultation Hours</div>
+          <div class="wa-hours">
+            🕐 &nbsp; Mon – Sat: &nbsp;<strong>6:30 PM – 9:00 PM</strong> &nbsp;·&nbsp; Sunday: By Appointment
+          </div>
+
+          <a href="https://wa.me/919985188831?text=Hello%20Dr.%20Jaiswal%2C%20I%20would%20like%20an%20online%20consultation%20for%20my%20general%20health%20concern."
+             id="waConsultBtn"
+             class="wa-btn-primary"
+             target="_blank">
+            💬 &nbsp; Start WhatsApp Consultation
+          </a>
+
+          <a href="tel:+919985188831" class="wa-btn-secondary">
+            📞 &nbsp; Call: +91 99851 88831
+          </a>
+
+        </div>
+
+        <!-- Trust indicators -->
+        <div class="consult-trust">
+          <div class="trust-item">
+            <span class="trust-icon">🔒</span>
+            <span class="trust-text"><strong>100% Private</strong>All consultations are strictly confidential</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">⚡</span>
+            <span class="trust-text"><strong>Quick Response</strong>Reply within 2–4 hours during clinic hours</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">🌍</span>
+            <span class="trust-text"><strong>Available Nationwide</strong>Serving patients across India &amp; overseas</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>🌿 Dr. Jaiswal's Homoeopathy</h3>
+      <p style="opacity:0.7;margin-top:1rem;">Dedicated to delivering holistic and personalised homoeopathic care. Dr. D. Rajesh Jaiswal has over 26 years of clinical experience treating 10,000+ patients.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="avoid-surgery.html">Avoid Surgery</a></li>
+        <li><a href="diseases.html">Diseases A–Z</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="tips.html">Health Tips</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Treatments</h4>
+      <ul>
+        <li><a href="chronic-diseases.html">Chronic Diseases</a></li>
+        <li><a href="skin-disorders.html">Skin Disorders</a></li>
+        <li><a href="womens-health.html">Women's Health</a></li>
+        <li><a href="pediatric-care.html">Pediatric Care</a></li>
+        <li><a href="kidney-stones.html">Kidney Stones</a></li>
+        <li><a href="psoriasis.html">Psoriasis</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <p>Street No 14<br>Tarnaka, Secunderabad<br>Telangana 500017, India</p>
+      <p style="margin-top:1rem;">📞 +91 99851 88831</p>
+      <p>🕐 Mon–Sat: 6:30–9:00 PM</p>
+    </div>
+  </div>
+  <div style="text-align:center;padding:1.2rem 2rem 0.5rem;border-top:1px solid rgba(255,255,255,0.08);margin-top:1rem;">
+    <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);margin-bottom:0.8rem;">© 2026 Dr. Jaiswal's Homoeopathy · Street No 14, Tarnaka, Secunderabad, Hyderabad – 500017</p>
+    <div style="display:flex;justify-content:center;gap:0.5rem;flex-wrap:wrap;">
+      <a href="terms-of-service.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Terms of Service</a>
+      <span style="color:rgba(255,255,255,0.2);">·</span>
+      <a href="medical-disclaimer.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Medical Disclaimer</a>
+      <span style="color:rgba(255,255,255,0.2);">·</span>
+      <a href="privacy-policy.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMobileMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+function selectSpecialty(el, concern) {
+  document.querySelectorAll('.wa-specialty').forEach(function(s) { s.classList.remove('selected'); });
+  el.classList.add('selected');
+  var msg = encodeURIComponent('Hello Dr. Jaiswal, I would like an online consultation for my ' + concern + '.');
+  document.getElementById('waConsultBtn').href = 'https://wa.me/919985188831?text=' + msg;
+}
+</script>
+
+</body>
+</html>
