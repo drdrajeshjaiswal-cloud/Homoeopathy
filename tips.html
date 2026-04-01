@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- GitHub Pages → Custom Domain redirect (prevents duplicate indexing) -->
+  <script>
+    (function(){
+      if(window.location.hostname.indexOf('github.io') !== -1){
+        var path = window.location.pathname.replace(/^\/Homoeopathy/, '');
+        window.location.replace('https://drjaiswalhomoeopathy.com' + (path || '/'));
+      }
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Tips | Dr. Jaiswal's Homoeopathy</title>
+  <link rel="canonical" href="https://drjaiswalhomoeopathy.com/tips.html">
+  <meta name="description" content="Natural health tips and homoeopathic wellness advice by Dr. D Rajesh Jaiswal, Homoeopathy Doctor in Hyderabad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --sage:       #4a7c59;
+      --sage-light: #6b9e7a;
+      --sage-pale:  #e8f0eb;
+      --earth:      #8b6f47;
+      --cream:      #faf7f2;
+      --dark:       #1e2d24;
+      --text:       #3a3a3a;
+      --muted:      #7a8a7d;
+      --border:     #d4e0d7;
+      --white:      #ffffff;
+      --shadow:     0 4px 24px rgba(74,124,89,0.10);
+      --shadow-lg:  0 8px 40px rgba(74,124,89,0.15);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* ── NAV ─────────────────────────────────────────────── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(250,247,242,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--sage);
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    .nav-logo span { color: var(--earth); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--sage); }
+    .nav-cta {
+      background: var(--sage);
+      color: #fff !important;
+      padding: 0.45rem 1.1rem;
+      border-radius: 50px;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--sage-light) !important; }
+
+    /* ── HERO ─────────────────────────────────────────────── */
+    .hero {
+      background: linear-gradient(135deg, var(--dark) 0%, #2a4a34 50%, #1e3828 100%);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236b9e7a' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 1;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: rgba(107,158,122,0.2);
+      border: 1px solid rgba(107,158,122,0.4);
+      color: #a8d5b5;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.9rem;
+      border-radius: 50px;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      color: #fff;
+      line-height: 1.2;
+      max-width: 680px;
+      margin: 0 auto 1rem;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: #a8d5b5;
+    }
+    .hero p {
+      color: rgba(255,255,255,0.65);
+      font-size: 1.05rem;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* ── FILTER BAR ───────────────────────────────────────── */
+    .filter-bar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0.9rem 2rem;
+      display: flex; justify-content: center; gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--sage);
+      border-color: var(--sage);
+      color: #fff;
+    }
+
+    /* ── MAIN LAYOUT ──────────────────────────────────────── */
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem 5rem;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* ── TIPS GRID ────────────────────────────────────────── */
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .tip-card {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s, box-shadow 0.25s;
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+    }
+    .tip-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .tip-card-top {
+      padding: 1.5rem 1.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .tip-icon {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+    .tip-meta { text-align: right; }
+    .tip-category {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--sage);
+    }
+    .tip-date {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.1rem;
+    }
+
+    .tip-card-body { padding: 1rem 1.5rem 1.5rem; flex: 1; }
+    .tip-card-body h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--dark);
+      margin-bottom: 0.6rem;
+      line-height: 1.35;
+    }
+    .tip-card-body p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .tip-card-footer {
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--sage-pale);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .tip-tag {
+      display: inline-flex; align-items: center; gap: 0.3rem;
+      background: var(--sage-pale);
+      color: var(--sage);
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.25rem 0.7rem;
+      border-radius: 50px;
+    }
+    .read-more {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--sage);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 0.3rem;
+      transition: gap 0.2s;
+    }
+    .read-more:hover { gap: 0.6rem; }
+
+    /* Featured card */
+    .tip-card.featured {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      align-items: stretch;
+    }
+    .tip-card.featured .featured-accent {
+      width: 8px;
+      background: linear-gradient(180deg, var(--sage) 0%, var(--earth) 100%);
+      flex-shrink: 0;
+      border-radius: 0;
+    }
+    .tip-card.featured .tip-card-body {
+      padding: 1.8rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .tip-card.featured .tip-card-body h2 {
+      font-size: 1.6rem;
+    }
+    .featured-label {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      background: linear-gradient(135deg, var(--sage), var(--sage-light));
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      border-radius: 50px;
+      margin-bottom: 0.8rem;
+      width: fit-content;
+    }
+
+    /* ── SIDEBAR ──────────────────────────────────────────── */
+    .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .sidebar-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 1.4rem;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .sidebar-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--dark);
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--sage-pale);
+    }
+
+    .did-you-know {
+      background: linear-gradient(135deg, var(--dark), #2a4a34);
+      color: #fff;
+      border: none;
+    }
+    .did-you-know h3 {
+      color: #a8d5b5;
+      border-bottom-color: rgba(168,213,181,0.2);
+    }
+    .did-you-know p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.65;
+    }
+    .did-you-know .quote-icon {
+      font-size: 2.5rem;
+      color: rgba(168,213,181,0.3);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .doctor-card { text-align: center; }
+    .doctor-card .doc-avatar-wrap {
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      margin: 0 auto 0.9rem;
+      padding: 3px;
+      background: linear-gradient(135deg, var(--sage), var(--sage-light));
+      display: flex; align-items: center; justify-content: center;
+    }
+    .doctor-card .doc-avatar {
+      width: 100%; height: 100%;
+      background: var(--sage-pale);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem;
+      border: 2px solid #fff;
+      overflow: hidden;
+    }
+    .doctor-card .doc-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 50%;
+      display: block;
+    }
+    .doctor-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem; color: var(--dark);
+    }
+    .doctor-card p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin: 0.2rem 0 1rem;
+    }
+    .btn-appt {
+      display: block;
+      background: var(--sage);
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      padding: 0.65rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn-appt:hover { background: var(--sage-light); }
+
+    .quick-tips-list { list-style: none; }
+    .quick-tips-list li {
+      display: flex; align-items: flex-start; gap: 0.6rem;
+      font-size: 0.85rem;
+      color: var(--text);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--sage-pale);
+      line-height: 1.5;
+    }
+    .quick-tips-list li:last-child { border-bottom: none; }
+    .quick-tips-list li span:first-child { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+
+    /* ── FOOTER ───────────────────────────────────────────── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.55);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.82rem;
+    }
+    footer a { color: #a8d5b5; text-decoration: none; }
+
+    /* ── ANIMATIONS ───────────────────────────────────────── */
+    .tip-card {
+      animation: fadeUp 0.5s ease both;
+    }
+    .tip-card:nth-child(1) { animation-delay: 0.05s; }
+    .tip-card:nth-child(2) { animation-delay: 0.10s; }
+    .tip-card:nth-child(3) { animation-delay: 0.15s; }
+    .tip-card:nth-child(4) { animation-delay: 0.20s; }
+    .tip-card:nth-child(5) { animation-delay: 0.25s; }
+    .tip-card:nth-child(6) { animation-delay: 0.30s; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── RESPONSIVE ───────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .container { grid-template-columns: 1fr; }
+      .tip-card.featured { flex-direction: column; }
+      .tip-card.featured .featured-accent { width: 100%; height: 6px; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 500px) {
+      .tips-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVIGATION ─────────────────────────────────────── -->
+<nav>
+  <a class="nav-logo" href="/">🌿 Dr. Jaiswal's <span>Homoeopathy</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#treatment">Treatment</a></li>
+    <li><a href="tips.html" class="active">Health Tips</a></li>
+    <li><a href="/#contact" class="nav-cta">Book Appointment</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ───────────────────────────────────────────── -->
+<header class="hero">
+  <div class="hero-badge">🌿 Natural Wellness</div>
+  <h1>Health Tips &amp; <em>Homoeopathic</em> Wisdom</h1>
+  <p>Simple, natural advice from Dr. D Rajesh Jaiswal — 26+ years of holistic healing in Hyderabad.</p>
+</header>
+
+<!-- ── FILTER BAR ─────────────────────────────────────── -->
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filterTips('all', this)">All Tips</button>
+  <button class="filter-btn" onclick="filterTips('immunity', this)">Immunity</button>
+  <button class="filter-btn" onclick="filterTips('digestion', this)">Digestion</button>
+  <button class="filter-btn" onclick="filterTips('skin', this)">Skin &amp; Hair</button>
+  <button class="filter-btn" onclick="filterTips('lifestyle', this)">Lifestyle</button>
+  <button class="filter-btn" onclick="filterTips('seasonal', this)">Seasonal</button>
+</div>
+
+<!-- ── MAIN CONTENT ───────────────────────────────────── -->
+<div class="container">
+
+  <main>
+    <div class="tips-grid" id="tipsGrid">
+
+      <!-- Featured tip -->
+      <article class="tip-card featured" data-category="immunity">
+        <div class="featured-accent"></div>
+        <div class="tip-card-body">
+          <span class="featured-label">⭐ Featured Tip</span>
+          <h2>Boost Your Immunity Naturally with Homoeopathy</h2>
+          <p>A strong immune system is your best defence. Homoeopathic remedies like <em>Echinacea</em>, <em>Influenzinum</em>, and <em>Arsenicum Album</em> help the body build resilience against seasonal infections. Combined with a warm diet, adequate sleep, and stress reduction — natural immunity flourishes without side effects.</p>
+          <div style="margin-top:1rem; display:flex; gap:0.6rem; flex-wrap:wrap;">
+            <span class="tip-tag">🛡️ Immunity</span>
+            <span class="tip-tag">💊 Remedies</span>
+            <span class="tip-tag">🌿 Preventive Care</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tip 2 -->
+      <article class="tip-card" data-category="lifestyle">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#e8f0eb;">🌅</div>
+          <div class="tip-meta">
+            <div class="tip-category">Lifestyle</div>
+            <div class="tip-date">Daily Habit</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Start Your Day with Warm Lemon Water</h2>
+          <p>Drinking a glass of warm water with fresh lemon juice on an empty stomach kickstarts digestion, alkalises the body, and gently flushes toxins — a cornerstone of homoeopathic wellness philosophy.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🍋 Detox</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Tip 3 -->
+      <article class="tip-card" data-category="digestion">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#fff3e8;">🫚</div>
+          <div class="tip-meta">
+            <div class="tip-category">Digestion</div>
+            <div class="tip-date">Gut Health</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Eat Mindfully — Chew Every Bite</h2>
+          <p>Digestion begins in the mouth. Chewing food 20–30 times per bite reduces bloating, improves nutrient absorption, and reduces the burden on your digestive system. Homoeopathy treats the root cause — but this habit prevents it.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🫁 Gut Health</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Tip 4 -->
+      <article class="tip-card" data-category="skin">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#f0e8f8;">✨</div>
+          <div class="tip-meta">
+            <div class="tip-category">Skin &amp; Hair</div>
+            <div class="tip-date">Natural Beauty</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Hydrate for Glowing Skin — Inside Out</h2>
+          <p>Most skin problems originate from within. Drinking 8–10 glasses of water daily, eating antioxidant-rich fruits, and managing stress can dramatically improve skin clarity. Homoeopathic remedies address the underlying constitution for lasting results.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">💧 Hydration</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Tip 5 -->
+      <article class="tip-card" data-category="seasonal">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#e8f4fb;">🌧️</div>
+          <div class="tip-meta">
+            <div class="tip-category">Seasonal</div>
+            <div class="tip-date">Monsoon Care</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Monsoon Health: Protect Your Family Naturally</h2>
+          <p>Hyderabad's monsoon brings beautiful rains — and risk of viral fevers, stomach infections, and allergies. Preventive homoeopathy with remedies like <em>Bryonia</em> and <em>Natrum Sulph</em>, combined with avoiding street food and stagnant water, keeps your family safe.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🌧️ Monsoon</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Tip 6 -->
+      <article class="tip-card" data-category="immunity">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#e8f0eb;">😴</div>
+          <div class="tip-meta">
+            <div class="tip-category">Immunity</div>
+            <div class="tip-date">Sleep Wellness</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Sleep Is Your Most Powerful Medicine</h2>
+          <p>7–8 hours of quality sleep is when your body heals, regenerates cells, and consolidates immunity. Poor sleep weakens your body's response to illness. Establish a consistent bedtime — it is as important as any remedy.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🌙 Sleep</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Tip 7 -->
+      <article class="tip-card" data-category="lifestyle">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#fef0e8;">🧘</div>
+          <div class="tip-meta">
+            <div class="tip-category">Lifestyle</div>
+            <div class="tip-date">Mind &amp; Body</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>10 Minutes of Pranayama Changes Everything</h2>
+          <p>Controlled breathing (pranayama) reduces cortisol, improves oxygen circulation, and calms the nervous system. Homoeopathy works at the mental-emotional level too — breathwork is a perfect daily companion to constitutional treatment.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🧘 Breathing</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Tip 8 -->
+      <article class="tip-card" data-category="digestion">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#e8f5e8;">🫚</div>
+          <div class="tip-meta">
+            <div class="tip-category">Digestion</div>
+            <div class="tip-date">Food Wisdom</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Avoid Mixing Incompatible Foods</h2>
+          <p>Ayurvedic and homoeopathic traditions both caution against eating milk with sour fruits, or heavy protein with fruit. These combinations can produce ama (toxins) and disturb digestion. Simple, seasonal, freshly cooked food is always the best choice.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🥗 Nutrition</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+    </div><!-- /tips-grid -->
+  </main>
+
+  <!-- ── SIDEBAR ──────────────────────────────────────── -->
+  <aside class="sidebar">
+
+    <!-- Doctor card -->
+    <div class="sidebar-card doctor-card">
+      <div class="doc-avatar-wrap">
+        <div class="doc-avatar">
+          <img src="doctor.jpg"
+               alt="Dr. D Rajesh Jaiswal – Homoeopathy Doctor Hyderabad"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='👨‍⚕️';" />
+        </div>
+      </div>
+      <h4>Dr. D Rajesh Jaiswal</h4>
+      <p>Classical Homoeopath · 26+ Years · Tarnaka, Hyderabad</p>
+      <a class="btn-appt" href="/#contact">📅 Book a Consultation</a>
+    </div>
+
+    <!-- Did you know -->
+    <div class="sidebar-card did-you-know">
+      <div class="quote-icon">"</div>
+      <h3>Did You Know?</h3>
+      <p>Homoeopathy treats <strong style="color:#a8d5b5;">the person</strong>, not the disease. Two patients with the same illness may receive entirely different remedies based on their individual constitution, emotions, and symptom patterns.</p>
+    </div>
+
+    <!-- Quick tips -->
+    <div class="sidebar-card">
+      <h3>Quick Daily Tips</h3>
+      <ul class="quick-tips-list">
+        <li><span>☀️</span> Get 15 min of morning sunlight</li>
+        <li><span>💧</span> Drink water 30 min before meals</li>
+        <li><span>🚶</span> Walk 30 min after dinner</li>
+        <li><span>📵</span> No screens 1 hour before sleep</li>
+        <li><span>🧂</span> Reduce salt &amp; processed food</li>
+        <li><span>🙏</span> Practice gratitude daily</li>
+      </ul>
+    </div>
+
+    <!-- Call to action -->
+    <div class="sidebar-card" style="background:var(--sage-pale); border-color:var(--sage); text-align:center;">
+      <div style="font-size:2rem; margin-bottom:0.5rem;">📞</div>
+      <h3 style="border-bottom:none; margin-bottom:0.5rem;">Need Personalised Advice?</h3>
+      <p style="font-size:0.83rem; color:var(--muted); margin-bottom:1rem;">Every body is unique. Book a consultation for tailored homoeopathic care.</p>
+      <a class="btn-appt" href="/#contact">Talk to Dr. Jaiswal</a>
+    </div>
+
+  </aside>
+</div>
+
+<!-- ── FOOTER ──────────────────────────────────────────── -->
+<footer>
+  <p>© 2025 Dr. D Rajesh Jaiswal — Homoeopathy, Tarnaka, Secunderabad, Hyderabad &nbsp;|&nbsp;
+     <a href="/">← Back to Home</a>
+  </p>
+
+<!-- Legal Links Bar -->
+<div style="border-top:1px solid rgba(255,255,255,0.12);margin-top:1.5rem;padding-top:1.2rem;text-align:center;">
+    <div style="display:flex;justify-content:center;gap:0.5rem;flex-wrap:wrap;align-items:center;">
+        <a href="terms-of-service.html" style="color:rgba(255,255,255,0.45);text-decoration:none;font-size:0.78rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Terms of Service</a>
+        <span style="color:rgba(255,255,255,0.2);font-size:0.78rem;">&middot;</span>
+        <a href="medical-disclaimer.html" style="color:rgba(255,255,255,0.45);text-decoration:none;font-size:0.78rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Medical Disclaimer</a>
+        <span style="color:rgba(255,255,255,0.2);font-size:0.78rem;">&middot;</span>
+        <a href="privacy-policy.html" style="color:rgba(255,255,255,0.45);text-decoration:none;font-size:0.78rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Privacy Policy</a>
+        <span style="color:rgba(255,255,255,0.2);font-size:0.78rem;">&middot;</span>
+        <a href="teleconsultation-disclaimer.html" style="color:rgba(255,255,255,0.45);text-decoration:none;font-size:0.78rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Teleconsultation Disclaimer</a>
+    </div>
+</div>
+</footer>
+
+<script>
+  function filterTips(category, btn) {
+    // Update active button
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // Filter cards
+    document.querySelectorAll('#tipsGrid .tip-card').forEach(card => {
+      const match = category === 'all' || card.dataset.category === category;
+      card.style.display = match ? '' : 'none';
+    });
+
+    // Hide featured if not all / immunity
+    const featured = document.querySelector('.tip-card.featured');
+    if (featured) {
+      featured.style.display = (category === 'all' || category === 'immunity') ? '' : 'none';
+    }
+  }
+</script>
+
+</body>
+</html>
