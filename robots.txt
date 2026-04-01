@@ -1,0 +1,13 @@
+# robots.txt — Dr. Jaiswal's Homoeopathy
+# https://drjaiswalhomoeopathy.com
+
+User-agent: *
+Allow: /
+
+# Disallow legal/policy pages from indexing (optional — low SEO value)
+Disallow: /terms-of-service.html
+Disallow: /cancellation-refund-policy.html
+Disallow: /teleconsultation-disclaimer.html
+
+# Sitemap location
+Sitemap: https://drjaiswalhomoeopathy.com/sitemap.xml
