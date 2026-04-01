@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- GitHub Pages → Custom Domain redirect (prevents duplicate indexing) -->
+  <script>
+    (function(){
+      if(window.location.hostname.indexOf('github.io') !== -1){
+        var path = window.location.pathname.replace(/^\/Homoeopathy/, '');
+        window.location.replace('https://drjaiswalhomoeopathy.com' + (path || '/'));
+      }
+    })();
+  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diseases Treated with Homoeopathy A–Z | Dr. Jaiswal Hyderabad</title>
+<meta name="description" content="Complete A–Z directory of 100+ diseases treated with homoeopathy by Dr. D Rajesh Jaiswal — arthritis, asthma, PCOS, psoriasis, kidney stones, migraine and more. Tarnaka, Hyderabad.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://drjaiswalhomoeopathy.com/diseases.html">
+<meta property="og:title" content="Diseases Treated A–Z | Dr. Jaiswal's Homoeopathy Hyderabad">
+<meta property="og:description" content="Browse 100+ diseases treated with constitutional homoeopathy by Dr. D Rajesh Jaiswal, Tarnaka Hyderabad.">
+<meta property="og:url" content="https://drjaiswalhomoeopathy.com/diseases.html">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#2d5016;--primary-light:#4a7c2a;--secondary:#d4a574;--cream:#faf8f3;--warm-white:#f5f1e8;--text-dark:#2c2c2c;--text-mid:#555555;--sage:#9db88f;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Karla',sans-serif;line-height:1.7;color:var(--text-dark);background:var(--cream);overflow-x:hidden;}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.3;}
+a{text-decoration:none;}
+header{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-light) 100%);color:white;padding:1rem 0;position:sticky;top:0;z-index:1000;box-shadow:0 4px 20px rgba(45,80,22,0.15);}
+.header-container{max-width:1400px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center;}
+.logo-section{display:flex;align-items:center;gap:1.2rem;}
+.logo-circle{width:50px;height:50px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--primary);}
+.logo-text h1{font-size:1.5rem;color:white;}
+nav ul{display:flex;list-style:none;gap:1.5rem;align-items:center;flex-wrap:wrap;}
+nav a{color:white;font-weight:500;font-size:0.88rem;transition:color 0.3s;}
+nav a:hover{color:var(--secondary);}
+.cta-button{background:var(--secondary);color:var(--primary)!important;padding:0.6rem 1.4rem;border-radius:30px;font-weight:600!important;}
+.mobile-menu-btn{display:none;background:none;border:2px solid rgba(255,255,255,0.5);color:white;padding:0.4rem 0.8rem;border-radius:6px;font-size:1.2rem;cursor:pointer;}
+.mobile-menu{display:none;flex-direction:column;gap:0.5rem;padding:1rem 2rem;background:var(--primary);}
+.mobile-menu a{color:white;font-weight:500;padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.1);}
+.mobile-menu.open{display:flex;}
+
+.page-hero{background:linear-gradient(135deg,var(--primary),var(--primary-light));color:white;padding:4rem 2rem;text-align:center;}
+.page-hero .badge{display:inline-block;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.9);font-size:0.8rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.4rem 1rem;border-radius:50px;margin-bottom:1rem;}
+.page-hero h1{font-size:clamp(2rem,4vw,3rem);margin-bottom:1rem;}
+.page-hero p{font-size:1.1rem;opacity:0.85;max-width:650px;margin:0 auto;}
+
+/* ── Image Marquee Strip ── */
+.marquee-strip{
+  background:linear-gradient(135deg,var(--primary),var(--primary-light));
+  padding:0 0 2rem;
+  overflow:hidden;
+  position:relative;
+  transform:translateZ(0);
+  -webkit-transform:translateZ(0);
+}
+/* Fade edges */
+.marquee-strip::before,
+.marquee-strip::after{
+  content:'';
+  position:absolute;
+  top:0;bottom:0;width:80px;
+  z-index:2;pointer-events:none;
+}
+.marquee-strip::before{left:0;background:linear-gradient(to right,#2d5016,transparent);}
+.marquee-strip::after{right:0;background:linear-gradient(to left,#2d5016,transparent);}
+
+.marquee-track{
+  display:flex;
+  width:max-content;
+  animation:marqueeScroll 28s linear infinite;
+  gap:1rem;
+  padding:0 0.5rem;
+}
+.marquee-strip:hover .marquee-track{animation-play-state:paused;}
+
+@keyframes marqueeScroll{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+
+.marquee-card{
+  flex-shrink:0;
+  width:220px;
+  border-radius:14px;
+  overflow:hidden;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.15);
+  transition:box-shadow 0.25s,border-color 0.25s;
+  cursor:pointer;
+  text-decoration:none;
+}
+.marquee-card:hover{
+  box-shadow:0 6px 20px rgba(0,0,0,0.35);
+  border-color:var(--secondary);
+}
+.marquee-card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  object-position:top;
+  display:block;
+}
+.marquee-card-label{
+  padding:0.45rem 0.6rem;
+  text-align:center;
+  font-size:0.75rem;
+  font-weight:600;
+  color:rgba(255,255,255,0.88);
+  letter-spacing:0.04em;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.search-section{background:white;padding:2rem;border-bottom:1px solid #e8f0eb;position:sticky;top:68px;z-index:100;}
+.search-container{max-width:700px;margin:0 auto;}
+.search-input-wrap{position:relative;}
+.search-input{width:100%;padding:0.9rem 1.2rem 0.9rem 3rem;border:2px solid #e8f0eb;border-radius:50px;font-size:1rem;font-family:'Karla',sans-serif;outline:none;transition:border-color 0.3s;}
+.search-input:focus{border-color:var(--sage);}
+.search-icon{position:absolute;left:1rem;top:50%;transform:translateY(-50%);font-size:1.1rem;color:var(--sage);}
+
+.alphabet-nav{background:var(--warm-white);padding:1rem 2rem;overflow-x:auto;white-space:nowrap;text-align:center;border-bottom:1px solid #e8f0eb;}
+.alpha-btn{display:inline-block;width:36px;height:36px;line-height:36px;text-align:center;border-radius:50%;font-weight:600;font-size:0.9rem;color:var(--primary);cursor:pointer;transition:all 0.2s;margin:0 2px;}
+.alpha-btn:hover,.alpha-btn.active{background:var(--primary);color:white;}
+
+.main-content{max-width:1100px;margin:0 auto;padding:3rem 2rem;}
+.letter-section{margin-bottom:3rem;}
+.letter-heading{font-size:2rem;color:var(--primary);margin-bottom:1.2rem;padding-bottom:0.5rem;border-bottom:3px solid var(--secondary);display:inline-block;}
+.conditions-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;}
+.condition-tag{display:flex;align-items:center;gap:0.6rem;padding:0.8rem 1rem;background:white;border-radius:10px;border:1px solid #e8f0eb;transition:all 0.2s;cursor:pointer;}
+.condition-tag:hover{filter:brightness(0.96);transform:translateX(4px);box-shadow:0 3px 12px rgba(0,0,0,0.08);}
+.condition-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.condition-name{font-size:0.92rem;color:var(--text-dark);font-weight:500;}
+.condition-tag a{color:inherit;display:flex;align-items:center;gap:0.6rem;width:100%;}
+
+/* Per-letter card colours — soft pastels */
+.lc-A{background:#fef3f2;border-color:#fcd9d5;} .lc-A .condition-dot{background:#e57373;}
+.lc-B{background:#fff8ee;border-color:#fde8c4;} .lc-B .condition-dot{background:#f4a83a;}
+.lc-C{background:#f0fdf4;border-color:#bbf0ce;} .lc-C .condition-dot{background:#34c75a;}
+.lc-D{background:#fdf4ff;border-color:#e9c9fb;} .lc-D .condition-dot{background:#b85de8;}
+.lc-E{background:#fff0f6;border-color:#fcc8de;} .lc-E .condition-dot{background:#e8529a;}
+.lc-F{background:#f0f9ff;border-color:#bae3fb;} .lc-F .condition-dot{background:#2eaadf;}
+.lc-G{background:#fffbeb;border-color:#fde9a3;} .lc-G .condition-dot{background:#d9a600;}
+.lc-H{background:#f0fff4;border-color:#b6f0cc;} .lc-H .condition-dot{background:#2ecc71;}
+.lc-I{background:#fff5f0;border-color:#fdd5bb;} .lc-I .condition-dot{background:#e8772e;}
+.lc-J{background:#f5f0ff;border-color:#d8c8fb;} .lc-J .condition-dot{background:#7c5de8;}
+.lc-K{background:#fefce8;border-color:#fae99d;} .lc-K .condition-dot{background:#c9a800;}
+.lc-L{background:#f0fdf9;border-color:#b3edd8;} .lc-L .condition-dot{background:#20b085;}
+.lc-M{background:#fff0fb;border-color:#f9c6f0;} .lc-M .condition-dot{background:#d444b8;}
+.lc-N{background:#f0f8ff;border-color:#bdd8f8;} .lc-N .condition-dot{background:#3b82f6;}
+.lc-O{background:#fff7f0;border-color:#fddcc4;} .lc-O .condition-dot{background:#e8832e;}
+.lc-P{background:#f0fdf4;border-color:#a7f3c4;} .lc-P .condition-dot{background:#16a34a;}
+.lc-R{background:#fff1f0;border-color:#fecdca;} .lc-R .condition-dot{background:#e53935;}
+.lc-S{background:#f5fff0;border-color:#c2f0ae;} .lc-S .condition-dot{background:#58b83a;}
+.lc-T{background:#fdf0ff;border-color:#e8c2fb;} .lc-T .condition-dot{background:#a333d4;}
+.lc-U{background:#f0fbff;border-color:#b3e5fc;} .lc-U .condition-dot{background:#0288d1;}
+.lc-V{background:#fffbf0;border-color:#fde8b0;} .lc-V .condition-dot{background:#c8960a;}
+.lc-W{background:#f0fff8;border-color:#a7f3d0;} .lc-W .condition-dot{background:#059669;}
+
+.not-found{text-align:center;padding:4rem 2rem;display:none;}
+.not-found h3{font-size:1.5rem;color:var(--primary);margin-bottom:1rem;}
+.not-found p{color:var(--text-mid);}
+
+.cta-bottom{background:linear-gradient(135deg,var(--primary),var(--primary-light));color:white;padding:4rem 2rem;text-align:center;}
+.cta-bottom h2{font-size:2rem;margin-bottom:1rem;}
+.cta-bottom p{opacity:0.85;margin-bottom:1.5rem;font-size:1.05rem;max-width:600px;margin-left:auto;margin-right:auto;}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.btn-white{background:white;color:var(--primary);padding:0.9rem 2rem;border-radius:30px;font-weight:700;transition:all 0.3s;}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.2);}
+.btn-outline{background:transparent;color:white;border:2px solid rgba(255,255,255,0.6);padding:0.9rem 2rem;border-radius:30px;font-weight:600;transition:all 0.3s;}
+.btn-outline:hover{background:rgba(255,255,255,0.15);}
+
+footer{background:linear-gradient(135deg,#1a2e0a,#2d5016);color:white;padding:3rem 2rem 0;}
+.footer-container{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:2rem;}
+.footer-about h3{font-size:1.5rem;margin-bottom:1rem;}
+.footer-links h4{font-size:1.1rem;margin-bottom:1.2rem;color:var(--secondary);}
+.footer-links ul{list-style:none;}
+.footer-links li{margin-bottom:0.6rem;}
+.footer-links a{color:rgba(255,255,255,0.7);font-size:0.9rem;transition:color 0.2s;}
+.footer-links a:hover{color:var(--secondary);}
+.footer-links p{opacity:0.7;font-size:0.9rem;}
+
+@media(max-width:900px){nav ul{display:none;}.mobile-menu-btn{display:block;}.footer-container{grid-template-columns:1fr 1fr;}.search-section{top:60px;}}
+@media(max-width:600px){.footer-container{grid-template-columns:1fr;}.conditions-grid{grid-template-columns:1fr 1fr;}}
+
+/* ── Condition Info Modal ── */
+.modal-overlay{position:fixed;inset:0;background:rgba(30,50,15,0.55);backdrop-filter:blur(4px);z-index:2000;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity 0.25s;}
+.modal-overlay.open{opacity:1;pointer-events:all;}
+/* Modal box — fixed max-height, header stays pinned, body scrolls */
+.modal-box{
+  background:var(--cream);border-radius:18px;max-width:560px;width:100%;
+  box-shadow:0 24px 60px rgba(0,0,0,0.25);
+  transform:translateY(24px) scale(0.97);
+  transition:transform 0.28s cubic-bezier(.22,.68,0,1.2),opacity 0.25s;
+  position:relative;overflow:hidden;
+  display:flex;flex-direction:column;
+  max-height:90vh;
+}
+.modal-overlay.open .modal-box{transform:translateY(0) scale(1);}
+
+/* Sticky header */
+.modal-header{
+  background:linear-gradient(135deg,var(--primary),var(--primary-light));
+  color:white;padding:1.4rem 1.6rem 1.2rem;
+  display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;
+  flex-shrink:0;
+}
+.modal-header-left{display:flex;align-items:center;gap:0.9rem;}
+.modal-icon{font-size:2rem;line-height:1;flex-shrink:0;}
+.modal-title{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;line-height:1.2;}
+.modal-subtitle{
+  display:inline-block;
+  margin-top:0.35rem;
+  background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.35);
+  color:rgba(255,255,255,0.95);
+  font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;
+  padding:0.25rem 0.75rem;border-radius:50px;
+}
+.modal-close{
+  background:rgba(255,255,255,0.15);border:none;color:white;
+  width:34px;height:34px;border-radius:50%;font-size:1.1rem;cursor:pointer;
+  flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  transition:background 0.2s;margin-top:2px;
+}
+.modal-close:hover{background:rgba(255,255,255,0.3);}
+
+/* Scrollable body */
+.modal-body{
+  padding:1.5rem 1.6rem 1.6rem;
+  overflow-y:auto;
+  flex:1 1 auto;
+  /* Custom scrollbar */
+  scrollbar-width:thin;
+  scrollbar-color:var(--sage) transparent;
+}
+.modal-body::-webkit-scrollbar{width:5px;}
+.modal-body::-webkit-scrollbar-track{background:transparent;}
+.modal-body::-webkit-scrollbar-thumb{background:var(--sage);border-radius:10px;}
+
+.modal-loading{display:flex;align-items:center;gap:0.8rem;color:var(--text-mid);font-size:0.95rem;padding:0.5rem 0;}
+.modal-loading-dot{width:8px;height:8px;border-radius:50%;background:var(--sage);animation:pulse 1.2s ease-in-out infinite;}
+.modal-loading-dot:nth-child(2){animation-delay:0.2s;}
+.modal-loading-dot:nth-child(3){animation-delay:0.4s;}
+@keyframes pulse{0%,100%{opacity:0.3;transform:scale(0.8);}50%{opacity:1;transform:scale(1.2);}}
+
+.modal-content{font-size:0.95rem;color:var(--text-dark);line-height:1.8;}
+.modal-content p{margin-bottom:0.9rem;}
+.modal-content p:last-child{margin-bottom:0;}
+.modal-content strong{color:var(--primary);font-weight:600;}
+
+/* Section headings inside content */
+.modal-section-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.15rem;font-weight:700;color:var(--primary);
+  margin:1.1rem 0 0.4rem;display:flex;align-items:center;gap:0.4rem;
+}
+.modal-section-title:first-child{margin-top:0;}
+
+.modal-divider{height:1px;background:#e0ead8;margin:1.2rem 0;}
+
+/* CTA area — sticky footer feel */
+.modal-cta-area{
+  border-top:1px solid #e0ead8;
+  padding-top:1.2rem;margin-top:1.4rem;
+}
+.modal-ctas{display:flex;gap:0.75rem;flex-wrap:wrap;}
+.modal-cta-wa{display:inline-flex;align-items:center;gap:0.5rem;background:#25d366;color:white;padding:0.65rem 1.3rem;border-radius:30px;font-weight:600;font-size:0.88rem;transition:all 0.2s;text-decoration:none;}
+.modal-cta-wa:hover{background:#1db954;transform:translateY(-1px);box-shadow:0 4px 14px rgba(37,211,102,0.35);}
+.modal-cta-appt{display:inline-flex;align-items:center;gap:0.5rem;background:var(--primary);color:white;padding:0.65rem 1.3rem;border-radius:30px;font-weight:600;font-size:0.88rem;transition:all 0.2s;text-decoration:none;}
+.modal-cta-appt:hover{background:var(--primary-light);transform:translateY(-1px);box-shadow:0 4px 14px rgba(45,80,22,0.35);}
+.modal-note{font-size:0.78rem;color:var(--text-mid);margin-top:1rem;padding:0.7rem 0.9rem;background:var(--warm-white);border-radius:8px;border-left:3px solid var(--sage);}
+
+@media(max-width:600px){
+  .modal-box{max-height:95vh;border-radius:14px;}
+  .modal-title{font-size:1.4rem;}
+  .modal-body{padding:1.2rem 1.2rem 1.4rem;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="logo-section">
+      <div class="logo-circle">🌿</div>
+      <div class="logo-text"><h1>Dr. Jaiswal's Homoeopathy</h1></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#treatment">Treatments</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="avoid-surgery.html">Avoid Surgery</a></li>
+        <li><a href="diseases.html" style="color:var(--secondary);">Diseases</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="tips.html">Health Tips</a></li>
+        <li><a href="/#contact" class="cta-button">Book Appointment</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/">Home</a><a href="/#about">About</a><a href="/#treatment">Treatments</a>
+    <a href="pricing.html">Pricing</a><a href="avoid-surgery.html">Avoid Surgery</a>
+    <a href="diseases.html">Diseases</a><a href="testimonials.html">Testimonials</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="tips.html">Health Tips</a>
+    <a href="/#contact" class="cta-button" style="display:inline-block;margin-top:0.5rem;text-align:center;">Book Appointment</a>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="badge">🔍 Diseases Directory</div>
+  <h1>Diseases We Treat — A to Z</h1>
+  <p>Comprehensive homoeopathic treatment for 100+ acute and chronic diseases. Browse the full list or search below.</p>
+</div>
+
+<!-- Autoscrolling image strip -->
+<div class="marquee-strip">
+  <div class="marquee-track" id="marqueeTrack">
+    <!-- Set 1 -->
+    <a class="marquee-card" href="psoriasis.html"><img src="Psoriasis_Gallery.png" alt="Psoriasis" loading="lazy"><div class="marquee-card-label">Psoriasis</div></a>
+    <a class="marquee-card" href="skin-disorders.html"><img src="Acne_Gallery.png" alt="Acne" loading="lazy"><div class="marquee-card-label">Acne</div></a>
+    <a class="marquee-card" href="joint-bone-disorders.html"><img src="Arthritis_Gallery.png" alt="Arthritis" loading="lazy"><div class="marquee-card-label">Arthritis</div></a>
+    <a class="marquee-card" href="allergies-respiratory.html"><img src="Asthma_Gallery.png" alt="Asthma" loading="lazy"><div class="marquee-card-label">Asthma</div></a>
+    <a class="marquee-card" href="womens-health.html"><img src="PCOS_Gallery.png" alt="PCOS" loading="lazy"><div class="marquee-card-label">PCOS</div></a>
+    <a class="marquee-card" href="kidney-stones.html"><img src="Kidney Stones_Gallery.jpg" alt="Kidney Stones" loading="lazy"><div class="marquee-card-label">Kidney Stones</div></a>
+    <a class="marquee-card" href="allergies-respiratory.html"><img src="Sinusitis_Gallery.png" alt="Sinusitis" loading="lazy"><div class="marquee-card-label">Sinusitis</div></a>
+    <a class="marquee-card" href="migraines-headaches.html"><img src="Migraines_Gallery.png" alt="Migraines" loading="lazy"><div class="marquee-card-label">Migraines</div></a>
+    <a class="marquee-card" href="chronic-diseases.html"><img src="Obesity_Gallery.png" alt="Obesity" loading="lazy"><div class="marquee-card-label">Obesity</div></a>
+    <a class="marquee-card" href="pediatric-care.html"><img src="Bedwetting_Gallery.png" alt="Bedwetting" loading="lazy"><div class="marquee-card-label">Bedwetting</div></a>
+    <!-- Set 2 — duplicate for seamless infinite loop -->
+    <a class="marquee-card" href="psoriasis.html"><img src="Psoriasis_Gallery.png" alt="Psoriasis" loading="lazy"><div class="marquee-card-label">Psoriasis</div></a>
+    <a class="marquee-card" href="skin-disorders.html"><img src="Acne_Gallery.png" alt="Acne" loading="lazy"><div class="marquee-card-label">Acne</div></a>
+    <a class="marquee-card" href="joint-bone-disorders.html"><img src="Arthritis_Gallery.png" alt="Arthritis" loading="lazy"><div class="marquee-card-label">Arthritis</div></a>
+    <a class="marquee-card" href="allergies-respiratory.html"><img src="Asthma_Gallery.png" alt="Asthma" loading="lazy"><div class="marquee-card-label">Asthma</div></a>
+    <a class="marquee-card" href="womens-health.html"><img src="PCOS_Gallery.png" alt="PCOS" loading="lazy"><div class="marquee-card-label">PCOS</div></a>
+    <a class="marquee-card" href="kidney-stones.html"><img src="Kidney Stones_Gallery.jpg" alt="Kidney Stones" loading="lazy"><div class="marquee-card-label">Kidney Stones</div></a>
+    <a class="marquee-card" href="allergies-respiratory.html"><img src="Sinusitis_Gallery.png" alt="Sinusitis" loading="lazy"><div class="marquee-card-label">Sinusitis</div></a>
+    <a class="marquee-card" href="migraines-headaches.html"><img src="Migraines_Gallery.png" alt="Migraines" loading="lazy"><div class="marquee-card-label">Migraines</div></a>
+    <a class="marquee-card" href="chronic-diseases.html"><img src="Obesity_Gallery.png" alt="Obesity" loading="lazy"><div class="marquee-card-label">Obesity</div></a>
+    <a class="marquee-card" href="pediatric-care.html"><img src="Bedwetting_Gallery.png" alt="Bedwetting" loading="lazy"><div class="marquee-card-label">Bedwetting</div></a>
+  </div>
+</div>
+
+<div class="search-section">
+  <div class="search-container">
+    <div class="search-input-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search-input" id="conditionSearch" placeholder="Search diseases (e.g. arthritis, PCOS, migraine)..." oninput="filterConditions(this.value)">
+    </div>
+  </div>
+</div>
+
+<div class="alphabet-nav" id="alphabetNav">
+  <!-- Generated by JS -->
+</div>
+
+<div class="main-content" id="conditionsContent">
+  <!-- Generated by JS -->
+  <div class="not-found" id="notFound">
+    <h3>Disease not found</h3>
+    <p>We treat many more diseases than listed here. <a href="/#contact" style="color:var(--primary);font-weight:600;">Contact Dr. Jaiswal</a> to discuss your specific health concern.</p>
+  </div>
+</div>
+
+<div class="cta-bottom">
+  <div style="max-width:700px;margin:0 auto;">
+    <h2>Don't See Your Disease?</h2>
+    <p>We treat many more diseases with constitutional homoeopathy. Contact Dr. Jaiswal to discuss your specific health concern — no obligation.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/919985188831?text=Hello+I+would+like+to+ask+about+treatment+for+my+disease" target="_blank" class="btn-white">💬 Ask on WhatsApp</a>
+      <a href="pricing.html" class="btn-outline">💰 View Packages</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>🌿 Dr. Jaiswal's Homoeopathy</h3>
+      <p style="opacity:0.7;margin-top:1rem;">Dedicated to delivering holistic and personalized homoeopathic care. Dr. D. Rajesh Jaiswal has over 26 years of clinical experience treating 10,000+ patients.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="avoid-surgery.html">Avoid Surgery</a></li>
+        <li><a href="diseases.html">Diseases A–Z</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="tips.html">Health Tips</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Treatments</h4>
+      <ul>
+        <li><a href="chronic-diseases.html">Chronic Diseases</a></li>
+        <li><a href="skin-disorders.html">Skin Disorders</a></li>
+        <li><a href="womens-health.html">Women's Health</a></li>
+        <li><a href="pediatric-care.html">Pediatric Care</a></li>
+        <li><a href="kidney-stones.html">Kidney Stones</a></li>
+        <li><a href="gallstones.html">Gallstones</a></li>
+        <li><a href="joint-bone-disorders.html">Joint Disorders</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <p>Street No 14<br>Tarnaka, Secunderabad<br>Telangana 500017, India</p>
+      <p style="margin-top:1rem;">📞 +91 99851 88831</p>
+      <p>🕐 Mon–Sat: 6:30–9:00 PM</p>
+    </div>
+  </div>
+  <div style="text-align:center;padding:1.2rem 2rem 0.5rem;border-top:1px solid rgba(255,255,255,0.08);margin-top:1rem;">
+    <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);margin-bottom:0.8rem;">© 2026 Dr. Jaiswal's Homoeopathy · Street No 14, Tarnaka, Secunderabad, Hyderabad – 500017</p>
+    <div style="display:flex;justify-content:center;gap:0.5rem;flex-wrap:wrap;">
+      <a href="terms-of-service.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Terms of Service</a>
+      <span style="color:rgba(255,255,255,0.2);">·</span>
+      <a href="medical-disclaimer.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Medical Disclaimer</a>
+      <span style="color:rgba(255,255,255,0.2);">·</span>
+      <a href="privacy-policy.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Privacy Policy</a>
+      <span style="color:rgba(255,255,255,0.2);">·</span>
+      <a href="cancellation-refund-policy.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Cancellation & Refund</a>
+      <span style="color:rgba(255,255,255,0.2);">·</span>
+      <a href="teleconsultation-disclaimer.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Teleconsultation Disclaimer</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Condition Info Modal -->
+<div class="modal-overlay" id="condModal" onclick="closeModal(event)">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-header">
+      <div class="modal-header-left">
+        <div class="modal-icon">🌿</div>
+        <div>
+          <div class="modal-title" id="modalTitle">Condition Name</div>
+          <div class="modal-subtitle" id="modalSubtitle">Homoeopathic Treatment</div>
+        </div>
+      </div>
+      <button class="modal-close" onclick="closeModalDirect()" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-loading" id="modalLoading">
+        <div class="modal-loading-dot"></div>
+        <div class="modal-loading-dot"></div>
+        <div class="modal-loading-dot"></div>
+        <span>Loading disease overview…</span>
+      </div>
+      <div class="modal-content" id="modalContent" style="display:none;"></div>
+      <div class="modal-cta-area">
+        <div class="modal-ctas">
+          <a id="modalWaLink" href="#" target="_blank" class="modal-cta-wa">💬 Ask on WhatsApp</a>
+          <a href="/#contact" class="modal-cta-appt">📅 Book Appointment</a>
+        </div>
+        <div class="modal-note">⚠️ This overview is for informational purposes only. Please consult Dr. Jaiswal for personalised diagnosis and treatment.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var CONDITIONS={
+  'A':['Acne','ADHD','Allergic Rhinitis','Allergies','Alopecia (Hair Loss)','Anaemia','Anal Fissure','Anal Fistula','Anxiety Disorder','Arthritis (Rheumatoid)','Arthritis (Osteo)','Asthma','Autism','Autoimmune Disorders'],
+  'B':['Back Pain','Bedwetting (Enuresis)','Bell\'s Palsy','Bronchitis','Burns (Chronic healing)'],
+  'C':['Calculi (Kidney/Gallbladder)','Carpal Tunnel Syndrome','Cervical Spondylosis','Cholesterol (High)','Chronic Fatigue Syndrome','Chronic Sinusitis','Cold & Flu (Recurrent)','Constipation','COPD'],
+  'D':['Dandruff','Depression','Dermatitis','Diabetes (Type 2 management)','Diarrhoea (Chronic)','Digestive Disorders','Dysentery','Dyslexia'],
+  'E':['Ear Infections','Eczema','Endometriosis','Epilepsy (adjunct)','Erectile Dysfunction'],
+  'F':['Fatty Liver','Fibromyalgia','Food Allergies','Frozen Shoulder','Fungal Infections'],
+  'G':['Gallstones','Gastritis','GERD / Acidity','Gout','Growing Pains'],
+  'H':['Haemorrhoids (Piles)','Hair Fall','Hay Fever','Headaches (Chronic)','Hernia (Early stage)','High Blood Pressure','Hormonal Imbalances','Hypothyroidism','Hyperthyroidism'],
+  'I':['IBS (Irritable Bowel Syndrome)','Infertility (Female)','Infertility (Male)','Insomnia','Interstitial Cystitis'],
+  'J':['Joint Pain','Juvenile Arthritis'],
+  'K':['Kidney Stones','Knee Pain'],
+  'L':['Leucorrhoea','Lipoma','Liver Disorders','Lumbar Spondylosis','Lupus (SLE)'],
+  'M':['Menopause symptoms','Menstrual Disorders','Migraine','Molluscum Contagiosum','Multiple Sclerosis (adjunct)'],
+  'N':['Nasal Polyps','Nephrotic Syndrome','Neuralgia','Neuropathy'],
+  'O':['Obesity','OCD','Osteoporosis','Ovarian Cysts'],
+  'P':['PCOS / PCOD','Panic Attacks','Paralysis (adjunct)','Parkinson\'s (adjunct)','PCOS','Pediatric conditions','Pilonidal Cyst','Plantar Fasciitis','Post-COVID fatigue','Psoriasis'],
+  'R':['Recurrent Infections','Rheumatoid Arthritis','Ringworm','Rosacea'],
+  'S':['Sciatica','Sebaceous Cysts','Sinusitis','Skin Allergies','Skin Tags','Sleep Disorders','Stammering','Stress','Stroke (recovery adjunct)'],
+  'T':['Thyroid Disorders','Tinnitus','Tonsillitis','Trigeminal Neuralgia'],
+  'U':['Ulcerative Colitis','Urinary Tract Infections','Urticaria (Hives)','Uterine Fibroids'],
+  'V':['Varicose Veins','Vertigo','Vitiligo'],
+  'W':['Warts','Weight Management'],
+};
+
+var LINKS={
+  'Acne':'skin-disorders.html','Allergies':'allergies-respiratory.html','Allergic Rhinitis':'allergies-respiratory.html','Asthma':'allergies-respiratory.html','ADHD':'pediatric-care.html','Arthritis (Rheumatoid)':'joint-bone-disorders.html','Arthritis (Osteo)':'joint-bone-disorders.html','Anal Fissure':'digestive-disorders.html','Anal Fistula':'digestive-disorders.html','Back Pain':'joint-bone-disorders.html','Bronchitis':'allergies-respiratory.html','Calculi (Kidney/Gallbladder)':'avoid-surgery.html','Chronic Sinusitis':'allergies-respiratory.html','Constipation':'digestive-disorders.html','Depression':'stress-anxiety.html','Diabetes (Type 2 management)':'chronic-diseases.html','Digestive Disorders':'digestive-disorders.html','Eczema':'skin-disorders.html','Endometriosis':'womens-health.html','Frozen Shoulder':'joint-bone-disorders.html','Gallstones':'gallstones.html','Gastritis':'digestive-disorders.html','GERD / Acidity':'digestive-disorders.html','Gout':'joint-bone-disorders.html','Haemorrhoids (Piles)':'digestive-disorders.html','Hair Fall':'skin-disorders.html','Headaches (Chronic)':'migraines-headaches.html','High Blood Pressure':'chronic-diseases.html','Hypothyroidism':'chronic-diseases.html','Hyperthyroidism':'chronic-diseases.html','IBS (Irritable Bowel Syndrome)':'digestive-disorders.html','Insomnia':'stress-anxiety.html','Joint Pain':'joint-bone-disorders.html','Kidney Stones':'kidney-stones.html','Leucorrhoea':'womens-health.html','Migraine':'migraines-headaches.html','Menstrual Disorders':'womens-health.html','Menopause symptoms':'womens-health.html','Nasal Polyps':'allergies-respiratory.html','Obesity':'chronic-diseases.html','Ovarian Cysts':'womens-health.html','PCOS / PCOD':'womens-health.html','PCOS':'womens-health.html','Pediatric conditions':'pediatric-care.html','Psoriasis':'psoriasis.html','Sciatica':'joint-bone-disorders.html','Sinusitis':'allergies-respiratory.html','Skin Allergies':'skin-disorders.html','Stress':'stress-anxiety.html','Thyroid Disorders':'chronic-diseases.html','Tonsillitis':'pediatric-care.html','Uterine Fibroids':'womens-health.html','Varicose Veins':'avoid-surgery.html','Vertigo':'migraines-headaches.html','Vitiligo':'skin-disorders.html','Warts':'skin-disorders.html','OCD':'stress-anxiety.html','Urticaria (Hives)':'skin-disorders.html','Anxiety Disorder':'stress-anxiety.html','Panic Attacks':'stress-anxiety.html','Pilonidal Cyst':'avoid-surgery.html'
+};
+
+function buildPage(){
+  var nav=document.getElementById('alphabetNav');
+  var content=document.getElementById('conditionsContent');
+  var html='';
+  Object.keys(CONDITIONS).sort().forEach(function(letter){
+    var lc='lc-'+letter;
+    nav.innerHTML+='<span class="alpha-btn" id="alpha-'+letter+'" onclick="scrollToLetter(\''+letter+'\')">' +letter+'</span>';
+    html+='<div class="letter-section" id="letter-'+letter+'">';
+    html+='<h2 class="letter-heading">'+letter+'</h2>';
+    html+='<div class="conditions-grid">';
+    CONDITIONS[letter].forEach(function(cond){
+      var link=LINKS[cond];
+      if(link){
+        html+='<div class="condition-tag linked '+lc+'"><a href="'+link+'"><div class="condition-dot"></div><span class="condition-name">'+cond+'</span></a></div>';
+      } else {
+        html+='<div class="condition-tag '+lc+'" onclick="openConditionModal(\''+cond.replace(/'/g,"\\'")+'\')" title="Click for homoeopathic overview"><div class="condition-dot"></div><span class="condition-name">'+cond+'</span></div>';
+      }
+    });
+    html+='</div></div>';
+  });
+  content.innerHTML=html+'<div class="not-found" id="notFound"><h3>Disease not found</h3><p>We treat many more diseases. <a href="/#contact" style="color:var(--primary);font-weight:600;">Contact Dr. Jaiswal</a> to discuss your concern.</p></div>';
+}
+
+function scrollToLetter(l){
+  var el=document.getElementById('letter-'+l);
+  if(el){el.scrollIntoView({behavior:'smooth',block:'start'});}
+  document.querySelectorAll('.alpha-btn').forEach(function(b){b.classList.remove('active');});
+  var btn=document.getElementById('alpha-'+l);
+  if(btn)btn.classList.add('active');
+}
+
+function filterConditions(query){
+  var q=query.toLowerCase().trim();
+  if(!q){
+    document.querySelectorAll('.letter-section').forEach(function(s){s.style.display='';});
+    document.querySelectorAll('.condition-tag').forEach(function(t){t.style.display='';});
+    document.getElementById('notFound').style.display='none';
+    document.getElementById('alphabetNav').style.display='block';
+    return;
+  }
+  document.getElementById('alphabetNav').style.display='none';
+  var found=0;
+  document.querySelectorAll('.letter-section').forEach(function(section){
+    var visible=0;
+    section.querySelectorAll('.condition-tag').forEach(function(tag){
+      var name=tag.querySelector('.condition-name').textContent.toLowerCase();
+      if(name.includes(q)){tag.style.display='';visible++;}
+      else{tag.style.display='none';}
+    });
+    section.style.display=visible?'':'none';
+    found+=visible;
+  });
+  document.getElementById('notFound').style.display=found?'none':'block';
+}
+
+function toggleMobileMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+
+function openConditionModal(condName){
+  var overlay=document.getElementById('condModal');
+  document.getElementById('modalTitle').textContent=condName;
+  // Set subtitle: use local data category if available, else generic
+  var local=findLocalDiseaseInfo(condName);
+  var subtitle=document.getElementById('modalSubtitle');
+  subtitle.textContent=local?local.category:'Homoeopathic Treatment';
+  document.getElementById('modalLoading').style.display='flex';
+  document.getElementById('modalContent').style.display='none';
+  document.getElementById('modalContent').innerHTML='';
+  // Scroll body back to top on open
+  document.getElementById('condModal').querySelector('.modal-body').scrollTop=0;
+  var waText=encodeURIComponent('Hello, I would like to know more about homoeopathic treatment for '+condName);
+  document.getElementById('modalWaLink').href='https://wa.me/919985188831?text='+waText;
+  overlay.classList.add('open');
+  document.body.style.overflow='hidden';
+  fetchConditionInfo(condName);
+}
+
+function closeModal(e){
+  if(e.target===document.getElementById('condModal')) closeModalDirect();
+}
+function closeModalDirect(){
+  document.getElementById('condModal').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape') closeModalDirect();});
+
+// ── Local disease info database (pre-written detailed data) ──────────
+var diseaseInfo = {
+  'acne': { name: 'Acne & Pimples', category: 'Skin Disorder', description: 'Acne is a common skin condition that occurs when hair follicles become clogged with oil and dead skin cells, leading to pimples, blackheads, and whiteheads.', symptoms: ['Pimples on face, chest, back', 'Blackheads and whiteheads', 'Painful cysts', 'Oily skin', 'Redness and inflammation', 'Scarring'], causes: ['Hormonal changes', 'Excess oil production', 'Bacteria', 'Inflammation', 'Diet factors', 'Stress'], treatment: 'Homoeopathy treats acne by addressing the root cause — hormonal imbalances, digestive issues, and individual constitution. Treatment is personalized based on your specific symptoms, skin type, and overall health. Common remedies include Pulsatilla, Sulphur, Hepar Sulph, and Antimonium Crudum.', duration: 'Typically 3-6 months for significant improvement' },
+  'adenoids': { name: 'Adenoids (Enlarged)', category: 'Respiratory Disorder', description: 'Enlarged adenoids cause breathing difficulties, especially in children. Adenoids are lymphoid tissue at the back of the nose that can become swollen.', symptoms: ['Mouth breathing', 'Snoring', 'Nasal congestion', 'Sleep disturbances', 'Recurrent ear infections', 'Difficulty swallowing'], causes: ['Repeated infections', 'Allergies', 'Genetic factors', 'Chronic inflammation'], treatment: 'Constitutional homoeopathy helps reduce adenoid size naturally without surgery. Treatment strengthens immunity and reduces inflammation. Remedies like Agraphis Nutans, Calcarea Carb, and Tuberculinum are effective.', duration: '6-9 months for noticeable reduction' },
+  'adhd': { name: 'ADHD', category: 'Neurological Disorder', description: 'ADHD is a neurodevelopmental disorder characterized by inattention, hyperactivity, and impulsivity affecting daily functioning.', symptoms: ['Difficulty focusing', 'Hyperactivity', 'Impulsive behavior', 'Forgetfulness', 'Disorganization', 'Restlessness'], causes: ['Genetic factors', 'Brain structure differences', 'Premature birth', 'Environmental toxins'], treatment: 'Homoeopathic treatment improves concentration, reduces hyperactivity, and promotes emotional balance naturally. Constitutional remedies like Stramonium, Hyoscyamus, and Tarentula are prescribed based on individual symptoms.', duration: '8-12 months for significant behavioral improvement' },
+  'allergic-rhinitis': { name: 'Allergic Rhinitis', category: 'Respiratory Disorder', description: 'Allergic rhinitis (hay fever) causes inflammation of nasal passages due to allergens, leading to sneezing and congestion.', symptoms: ['Sneezing', 'Runny nose', 'Nasal congestion', 'Itchy eyes', 'Post-nasal drip', 'Watery eyes'], causes: ['Pollen', 'Dust mites', 'Pet dander', 'Mold', 'Genetic predisposition'], treatment: 'Constitutional homoeopathy strengthens immunity and reduces allergic reactions permanently. Treatment is customized based on triggers and symptoms. Remedies like Allium Cepa, Sabadilla, and Natrum Mur provide relief.', duration: '4-8 months for lasting improvement' },
+  'allergies': { name: 'Allergies', category: 'Immune Disorder', description: 'Allergies occur when the immune system reacts abnormally to normally harmless substances, causing various symptoms.', symptoms: ['Sneezing', 'Itching', 'Rashes', 'Swelling', 'Breathing difficulties', 'Digestive issues'], causes: ['Food allergens', 'Environmental factors', 'Pollen', 'Pet dander', 'Genetic factors'], treatment: 'Homoeopathy treats the hypersensitive immune response, reducing allergic reactions permanently. Constitutional treatment addresses the root cause. Common remedies include Apis Mel, Urtica Urens, and Sulphur.', duration: '6-12 months for immune system rebalancing' },
+  'alopecia': { name: 'Alopecia (Hair Loss)', category: 'Autoimmune Disorder', description: 'Alopecia Areata is an autoimmune condition causing patchy hair loss on the scalp or body.', symptoms: ['Circular bald patches', 'Sudden hair loss', 'Hair thinning', 'Nail changes', 'Regrowth of white hair'], causes: ['Autoimmune response', 'Genetic factors', 'Stress', 'Hormonal changes'], treatment: 'Constitutional homoeopathy regulates the immune system and stimulates hair regrowth naturally. Treatment is personalized based on pattern and severity. Remedies like Fluoricum Acidum, Phosphorus, and Lycopodium are effective.', duration: '8-18 months for significant regrowth' },
+  'anal-fissure': { name: 'Anal Fissure', category: 'Digestive Disorder', description: 'An anal fissure is a small tear in the lining of the anus, causing severe pain during bowel movements.', symptoms: ['Sharp pain during defecation', 'Bleeding', 'Burning sensation', 'Anal spasm', 'Discomfort'], causes: ['Constipation', 'Hard stools', 'Chronic diarrhea', 'Childbirth trauma'], treatment: 'Homoeopathy heals fissures naturally without surgery, reduces pain, and prevents recurrence. Remedies like Ratanhia, Graphites, and Nitric Acid promote healing and regulate bowel movements.', duration: '2-4 months for complete healing' },
+  'anal-fistula': { name: 'Anal Fistula', category: 'Digestive Disorder', description: 'An anal fistula is an abnormal tunnel connecting the anal canal to the skin near the anus, often resulting from infection.', symptoms: ['Discharge of pus', 'Pain and swelling', 'Irritation', 'Bleeding', 'Recurrent abscesses'], causes: ['Anal abscess', 'Infection', "Crohn's disease", 'Trauma'], treatment: 'Constitutional homoeopathy treats fistulas without surgery by healing the tract and preventing infection. Treatment is individualized. Remedies like Silicea, Berberis Vulgaris, and Calcarea Sulph are commonly used.', duration: '6-12 months for complete healing' },
+  'anemia': { name: 'Anaemia', category: 'Blood Disorder', description: 'Anemia is a condition where you lack enough healthy red blood cells to carry adequate oxygen to body tissues.', symptoms: ['Fatigue', 'Weakness', 'Pale skin', 'Shortness of breath', 'Dizziness', 'Cold hands and feet'], causes: ['Iron deficiency', 'Vitamin B12 deficiency', 'Chronic diseases', 'Blood loss', 'Genetic factors'], treatment: 'Homoeopathy improves iron absorption, stimulates red blood cell production, and addresses underlying causes. Remedies like Ferrum Met, China, and Natrum Mur are prescribed based on type and symptoms.', duration: '3-6 months for improvement in haemoglobin levels' },
+  'ankylosing': { name: 'Ankylosing Spondylitis', category: 'Autoimmune Disorder', description: 'Ankylosing Spondylitis is a chronic inflammatory disease primarily affecting the spine, causing stiffness and pain.', symptoms: ['Lower back pain', 'Stiffness in morning', 'Reduced flexibility', 'Fatigue', 'Stooped posture'], causes: ['Genetic factors (HLA-B27)', 'Immune system dysfunction', 'Environmental triggers'], treatment: 'Constitutional homoeopathy reduces inflammation, relieves pain, and prevents progression of spinal fusion. Treatment is personalized. Remedies like Rhus Tox, Kali Carb, and Aesculus are effective.', duration: '12-24 months for significant improvement' },
+  'anxiety': { name: 'Anxiety Disorder', category: 'Mental Health', description: 'Anxiety disorders involve excessive worry, fear, and nervousness that interfere with daily activities.', symptoms: ['Excessive worry', 'Restlessness', 'Rapid heartbeat', 'Sweating', 'Sleep problems', 'Difficulty concentrating'], causes: ['Stress', 'Genetics', 'Brain chemistry', 'Traumatic events', 'Personality factors'], treatment: 'Homoeopathy treats anxiety at root level by balancing mind and emotions naturally. Constitutional treatment addresses individual triggers. Remedies like Aconite, Argentum Nitricum, and Gelsemium provide relief.', duration: '4-8 months for significant emotional stability' },
+  'arthritis': { name: 'Arthritis', category: 'Joint Disorder', description: 'Arthritis is inflammation of one or more joints, causing pain, stiffness, and reduced mobility. Common types include Osteoarthritis and Rheumatoid Arthritis.', symptoms: ['Joint pain and stiffness', 'Swelling around joints', 'Reduced range of motion', 'Morning stiffness', 'Weakness', 'Deformity in advanced cases'], causes: ['Age-related wear and tear', 'Autoimmune factors', 'Injury or trauma', 'Genetic predisposition', 'Obesity', 'Infections'], treatment: 'Homoeopathic treatment focuses on reducing inflammation, relieving pain, and improving joint mobility naturally. Treatment is customized based on the type, location, and individual symptoms. Remedies like Rhus Tox, Bryonia, Calcarea Carb, and Colchicum are commonly used.', duration: 'Usually 6-12 months for chronic conditions' },
+  'asthma': { name: 'Asthma', category: 'Respiratory Disorder', description: 'Asthma is a chronic respiratory condition where airways become inflamed and narrow, making breathing difficult.', symptoms: ['Shortness of breath', 'Wheezing', 'Chest tightness', 'Coughing (especially at night)', 'Difficulty breathing', 'Rapid breathing'], causes: ['Allergies', 'Respiratory infections', 'Air pollution', 'Cold air', 'Exercise', 'Stress', 'Genetic factors'], treatment: 'Homoeopathy aims to reduce the frequency and intensity of asthma attacks by strengthening the immune system and addressing allergic tendencies. Treatment is individualized based on triggers, symptoms, and constitution. Medicines like Arsenicum Album, Natrum Sulph, and Blatta Orientalis are effective.', duration: '6-18 months for significant improvement' },
+  'atopic-dermatitis': { name: 'Atopic Dermatitis', category: 'Skin Disorder', description: 'Atopic dermatitis is a chronic inflammatory skin condition causing dry, itchy, and inflamed skin.', symptoms: ['Dry skin', 'Intense itching', 'Red patches', 'Thickened skin', 'Oozing and crusting', 'Sleep disturbance'], causes: ['Genetic factors', 'Immune system dysfunction', 'Allergens', 'Stress', 'Environmental triggers'], treatment: 'Constitutional homoeopathy treats eczema from within, reducing flare-ups and healing skin naturally. Treatment addresses immune imbalance. Remedies like Graphites, Sulphur, and Petroleum are commonly used.', duration: '6-12 months for significant skin healing' },
+  'autism': { name: 'Autism', category: 'Developmental Disorder', description: 'Autism is a neurodevelopmental disorder affecting communication, social interaction, and behavior.', symptoms: ['Difficulty with communication', 'Social interaction challenges', 'Repetitive behaviors', 'Sensory sensitivities', 'Limited interests'], causes: ['Genetic factors', 'Brain development differences', 'Environmental factors', 'Prenatal complications'], treatment: 'Constitutional homoeopathy supports developmental progress, improves social skills, and reduces behavioral issues. Treatment is highly individualized. Remedies like Carcinosin, Baryta Carb, and Tuberculinum are prescribed.', duration: '18-36 months for developmental improvement' },
+  'back-pain': { name: 'Back Pain', category: 'Musculoskeletal Disorder', description: 'Back pain can range from muscle aching to shooting or burning sensations, affecting daily activities.', symptoms: ['Muscle ache', 'Shooting pain', 'Limited flexibility', 'Pain radiating down leg', 'Difficulty standing'], causes: ['Muscle strain', 'Disc problems', 'Arthritis', 'Poor posture', 'Osteoporosis', 'Injury'], treatment: 'Homoeopathy provides natural pain relief, promotes healing, and prevents recurrence. Treatment is based on location and nature of pain. Remedies like Rhus Tox, Hypericum, and Arnica are effective.', duration: '2-6 months depending on severity' },
+  'bedwetting': { name: 'Bedwetting (Enuresis)', category: 'Urinary Disorder', description: 'Bedwetting (enuresis) is involuntary urination during sleep, common in children.', symptoms: ['Nighttime urination', 'Wet bed in morning', 'Sleep disturbances', 'Embarrassment'], causes: ['Delayed bladder maturation', 'Deep sleep', 'Hormonal factors', 'Stress', 'Urinary tract infection'], treatment: 'Homoeopathy treats bedwetting effectively by strengthening bladder control and addressing underlying causes. Remedies like Equisetum, Causticum, and Kreosotum are highly effective.', duration: '3-6 months for complete control' },
+  'bronchitis': { name: 'Bronchitis', category: 'Respiratory Disorder', description: 'Bronchitis is inflammation of bronchial tubes causing cough and mucus production.', symptoms: ['Persistent cough', 'Mucus production', 'Chest discomfort', 'Fatigue', 'Shortness of breath', 'Wheezing'], causes: ['Viral infection', 'Bacterial infection', 'Smoking', 'Air pollution', 'Weak immunity'], treatment: 'Constitutional homoeopathy treats chronic bronchitis, strengthens respiratory immunity, and reduces flare-ups. Remedies like Bryonia, Antimonium Tart, and Phosphorus are effective.', duration: '3-6 months for chronic cases' },
+  'cervical-spondylosis': { name: 'Cervical Spondylosis', category: 'Musculoskeletal Disorder', description: 'Cervical spondylosis is age-related wear and tear affecting spinal discs in the neck.', symptoms: ['Neck pain', 'Stiffness', 'Headaches', 'Numbness in arms', 'Weakness', 'Loss of balance'], causes: ['Age-related degeneration', 'Herniated discs', 'Bone spurs', 'Poor posture', 'Injury'], treatment: 'Homoeopathy reduces pain, improves mobility, and prevents progression naturally. Treatment is individualized. Remedies like Kali Carb, Rhus Tox, and Cimicifuga are commonly used.', duration: '6-9 months for significant relief' },
+  'colitis': { name: 'Ulcerative Colitis', category: 'Autoimmune Digestive Disorder', description: 'Ulcerative colitis causes chronic inflammation and ulcers in the colon.', symptoms: ['Bloody diarrhea', 'Abdominal pain', 'Urgency to defecate', 'Weight loss', 'Fatigue', 'Fever'], causes: ['Autoimmune response', 'Genetic factors', 'Environmental triggers', 'Stress'], treatment: 'Homoeopathy heals colonic inflammation, controls bleeding, and prevents relapse naturally. Constitutional remedies like Merc Sol, Nux Vomica, and Aloe provide relief.', duration: '10-18 months for remission' },
+  'constipation': { name: 'Constipation', category: 'Digestive Disorder', description: 'Constipation is infrequent bowel movements or difficulty passing stools.', symptoms: ['Hard stools', 'Straining', 'Incomplete evacuation', 'Abdominal discomfort', 'Bloating'], causes: ['Low fibre diet', 'Dehydration', 'Lack of exercise', 'Medications', 'Ignoring urge'], treatment: 'Homoeopathy treats chronic constipation by improving bowel function naturally without laxatives. Remedies like Nux Vomica, Bryonia, and Alumina regulate the digestive system.', duration: '2-4 months for regular bowel habits' },
+  'crohns': { name: "Crohn's Disease", category: 'Autoimmune Digestive Disorder', description: "Crohn's disease causes chronic inflammation of the digestive tract.", symptoms: ['Abdominal pain', 'Severe diarrhea', 'Fatigue', 'Weight loss', 'Malnutrition', 'Blood in stool'], causes: ['Autoimmune factors', 'Genetics', 'Environmental triggers', 'Smoking'], treatment: 'Constitutional homoeopathy reduces inflammation, heals intestinal lining, and prevents flare-ups naturally. Remedies like Mercurius Cor, Phosphorus, and Aloe are commonly prescribed.', duration: '12-18 months for symptom control' },
+  'dandruff': { name: 'Dandruff', category: 'Scalp Disorder', description: 'Dandruff causes flaky, itchy scalp with white or yellow flakes.', symptoms: ['Scalp flakes', 'Itchy scalp', 'Dry scalp', 'Greasy scalp', 'Hair fall'], causes: ['Yeast overgrowth', 'Dry skin', 'Oily skin', 'Sensitive skin', 'Not shampooing enough'], treatment: 'Constitutional homoeopathy treats underlying scalp conditions, controls fungal growth, and prevents recurrence. Remedies like Thuja, Kali Sulph, and Natrum Mur are effective.', duration: '2-4 months for clear scalp' },
+  'depression': { name: 'Depression', category: 'Mental Health', description: 'Depression is a mood disorder causing persistent sadness and loss of interest in activities.', symptoms: ['Persistent sadness', 'Loss of interest', 'Fatigue', 'Sleep changes', 'Appetite changes', 'Difficulty concentrating'], causes: ['Brain chemistry', 'Genetics', 'Life events', 'Hormonal changes', 'Medical conditions'], treatment: 'Constitutional homoeopathy treats depression naturally by balancing neurotransmitters and emotions. Treatment is individualized. Remedies like Ignatia, Natrum Mur, and Aurum Met are effective.', duration: '6-12 months for emotional stability' },
+  'dermatitis': { name: 'Dermatitis', category: 'Skin Disorder', description: 'Dermatitis is inflammation of the skin causing itchiness, redness, and rashes.', symptoms: ['Itchy skin', 'Red patches', 'Dry or cracked skin', 'Swelling', 'Blisters'], causes: ['Allergens', 'Irritants', 'Stress', 'Genetics', 'Immune dysfunction'], treatment: 'Constitutional homoeopathy addresses the immune imbalance at the root, reducing flare-ups and promoting lasting skin healing. Remedies like Sulphur, Graphites, and Mezereum are commonly prescribed.', duration: '4-10 months for significant improvement' },
+  'diabetes': { name: 'Diabetes (Type 2 management)', category: 'Metabolic Disorder', description: 'Diabetes is a chronic condition affecting how your body processes blood sugar (glucose).', symptoms: ['Increased thirst', 'Frequent urination', 'Fatigue', 'Blurred vision', 'Slow healing wounds'], causes: ['Insulin resistance', 'Pancreatic dysfunction', 'Genetic factors', 'Obesity', 'Sedentary lifestyle'], treatment: 'Homoeopathy supports conventional treatment, helps regulate blood sugar, reduces complications, and improves overall health. Remedies like Syzygium, Uranium Nitricum, and Phosphoric Acid are used as adjunct therapy.', duration: 'Ongoing supportive care alongside medical treatment' },
+  'disc-prolapse': { name: 'Disc Prolapse', category: 'Spinal Disorder', description: 'Disc prolapse (herniated disc) occurs when spinal disc material pushes out, pressing on nerves.', symptoms: ['Severe back pain', 'Leg pain (sciatica)', 'Numbness', 'Weakness', 'Tingling', 'Difficulty walking'], causes: ['Age-related degeneration', 'Injury', 'Heavy lifting', 'Sudden twisting', 'Obesity'], treatment: 'Homoeopathy provides pain relief, reduces inflammation, and promotes disc healing naturally without surgery. Remedies like Hypericum, Ruta, and Colocynthis are highly effective.', duration: '4-8 months for pain relief and healing' },
+  'dysentery': { name: 'Dysentery', category: 'Digestive Infection', description: 'Dysentery is intestinal infection causing bloody diarrhea with severe abdominal pain.', symptoms: ['Bloody stools', 'Severe cramping', 'Fever', 'Nausea', 'Dehydration', 'Urgent bowel movements'], causes: ['Bacterial infection', 'Parasitic infection', 'Contaminated food/water'], treatment: 'Homoeopathy treats acute dysentery effectively, controls infection, and restores gut health. Remedies like Merc Cor, Aloe, and Ipecac provide quick relief.', duration: '1-2 weeks for acute cases' },
+  'dyslexia': { name: 'Dyslexia', category: 'Learning Disorder', description: 'Dyslexia is a learning disorder that affects reading and language processing.', symptoms: ['Difficulty reading', 'Poor spelling', 'Slow reading pace', 'Trouble with word recognition', 'Difficulty following instructions'], causes: ['Genetic factors', 'Brain structure differences', 'Environmental influences'], treatment: 'Constitutional homoeopathy supports neurological development, improves focus, and aids learning. Remedies are selected based on the individual child\'s complete symptom picture and constitution.', duration: '12-24 months for developmental improvement' },
+  'eczema': { name: 'Eczema', category: 'Skin Disorder', description: 'Eczema is a condition making skin red, inflamed, itchy, and prone to rashes.', symptoms: ['Dry skin', 'Itching', 'Red patches', 'Cracked skin', 'Oozing', 'Thickened skin'], causes: ['Genetic factors', 'Immune dysfunction', 'Allergens', 'Irritants', 'Stress'], treatment: 'Constitutional homoeopathy heals eczema from within, reducing flare-ups permanently. Treatment addresses immune imbalance. Remedies like Graphites, Sulphur, and Mezereum are effective.', duration: '6-12 months for skin healing' },
+  'endometriosis': { name: 'Endometriosis', category: 'Gynecological Disorder', description: 'Endometriosis occurs when tissue similar to uterine lining grows outside the uterus.', symptoms: ['Pelvic pain', 'Painful periods', 'Pain during intercourse', 'Infertility', 'Heavy bleeding'], causes: ['Hormonal factors', 'Immune dysfunction', 'Genetics', 'Retrograde menstruation'], treatment: 'Constitutional homoeopathy reduces pain, regulates hormones, and improves fertility naturally. Remedies like Sepia, Thuja, and Lachesis are commonly prescribed.', duration: '8-12 months for pain relief and improvement' },
+  'epilepsy': { name: 'Epilepsy (adjunct)', category: 'Neurological Disorder', description: 'Epilepsy is a neurological disorder causing recurrent seizures.', symptoms: ['Seizures', 'Temporary confusion', 'Staring spells', 'Jerking movements', 'Loss of consciousness'], causes: ['Brain injury', 'Genetics', 'Prenatal injury', 'Developmental disorders', 'Infections'], treatment: 'Homoeopathy provides supportive care, reduces seizure frequency and intensity alongside conventional treatment. Constitutional remedies like Cuprum Met, Cicuta, and Bufo are used.', duration: 'Ongoing supportive care' },
+  'fatty-liver': { name: 'Fatty Liver', category: 'Liver Disorder', description: 'Fatty liver is excessive fat accumulation in liver cells.', symptoms: ['Fatigue', 'Abdominal discomfort', 'Enlarged liver', 'Often no symptoms initially'], causes: ['Obesity', 'High cholesterol', 'Alcohol', 'Diabetes', 'Medications'], treatment: 'Constitutional homoeopathy helps reduce liver fat, improves liver function, and prevents progression. Remedies like Chelidonium, Lycopodium, and Cardus Mar support liver health.', duration: '6-12 months for liver improvement' },
+  'fibromyalgia': { name: 'Fibromyalgia', category: 'Musculoskeletal Disorder', description: 'Fibromyalgia causes widespread musculoskeletal pain with fatigue and mood issues.', symptoms: ['Widespread pain', 'Fatigue', 'Sleep problems', 'Cognitive difficulties', 'Morning stiffness'], causes: ['Genetics', 'Infections', 'Physical trauma', 'Emotional stress', 'Central sensitization'], treatment: 'Constitutional homoeopathy reduces pain, improves energy, and enhances quality of life naturally. Treatment is highly individualized. Remedies like Rhus Tox, Arnica, and Kali Phos are effective.', duration: '8-12 months for significant improvement' },
+  'food-allergies': { name: 'Food Allergies', category: 'Immune Disorder', description: 'Food allergies trigger an immune response when certain foods are eaten.', symptoms: ['Hives', 'Swelling', 'Nausea', 'Vomiting', 'Abdominal pain', 'Difficulty breathing'], causes: ['Immune hypersensitivity', 'Genetic factors', 'Early food exposure', 'Gut microbiome imbalance'], treatment: 'Constitutional homoeopathy helps desensitize the immune response, reducing allergic reactions over time. Remedies are chosen based on the specific foods and symptom pattern.', duration: '6-12 months for immune rebalancing' },
+  'frozen-shoulder': { name: 'Frozen Shoulder', category: 'Joint Disorder', description: 'Frozen shoulder causes stiffness and pain in shoulder joint, limiting movement.', symptoms: ['Shoulder pain', 'Stiffness', 'Limited range of motion', 'Difficulty with daily tasks', 'Night pain'], causes: ['Prolonged immobility', 'Diabetes', 'Thyroid disorders', 'Heart disease', 'Injury'], treatment: 'Homoeopathy restores shoulder mobility, relieves pain, and promotes healing naturally. Remedies like Ferrum Met, Rhus Tox, and Sanguinaria are highly effective.', duration: '6-12 months for full recovery' },
+  'gallstones': { name: 'Gallstones', category: 'Digestive Disorder', description: 'Gallstones are hardened deposits in the gallbladder.', symptoms: ['Sudden severe pain in upper right abdomen', 'Back pain', 'Nausea', 'Vomiting', 'Indigestion'], causes: ['Excess cholesterol', 'Bile salt imbalance', 'Obesity', 'Rapid weight loss', 'Genetics'], treatment: 'Homoeopathy helps dissolve small stones, relieves pain, and prevents surgery in early cases. Remedies like Chelidonium, Berberis Vulgaris, and Cardus Mar are commonly used.', duration: '6-12 months for stone dissolution' },
+  'gastritis': { name: 'Gastritis', category: 'Digestive Disorder', description: 'Gastritis is inflammation of the stomach lining.', symptoms: ['Upper abdominal pain', 'Nausea', 'Vomiting', 'Bloating', 'Loss of appetite', 'Indigestion'], causes: ['H. pylori infection', 'Alcohol', 'NSAIDs', 'Stress', 'Autoimmune factors'], treatment: 'Constitutional homoeopathy heals stomach lining, reduces inflammation, and prevents recurrence. Remedies like Nux Vomica, Arsenic Album, and Kali Bich are effective.', duration: '3-6 months for healing' },
+  'gerd': { name: 'GERD / Acidity', category: 'Digestive Disorder', description: 'GERD is chronic acid reflux where stomach acid flows back into the esophagus.', symptoms: ['Heartburn', 'Regurgitation', 'Chest pain', 'Difficulty swallowing', 'Chronic cough'], causes: ['Weak lower esophageal sphincter', 'Hiatal hernia', 'Obesity', 'Smoking', 'Certain foods'], treatment: 'Homoeopathy treats GERD naturally without antacids, healing the esophagus and strengthening the sphincter. Remedies like Robinia, Natrum Phos, and Carbo Veg provide lasting relief.', duration: '4-6 months for complete relief' },
+  'gout': { name: 'Gout', category: 'Metabolic Disorder', description: 'Gout is a form of arthritis caused by excess uric acid crystals in joints.', symptoms: ['Sudden severe joint pain', 'Swelling', 'Redness', 'Warmth', 'Limited mobility', 'Often affects big toe'], causes: ['High uric acid levels', 'Diet high in purines', 'Obesity', 'Alcohol', 'Genetics', 'Kidney disease'], treatment: 'Constitutional homoeopathy reduces uric acid levels, prevents attacks, and relieves pain naturally. Remedies like Colchicum, Urtica Urens, and Benzoic Acid are commonly used.', duration: '4-8 months for uric acid control' },
+  'growing-pains': { name: 'Growing Pains', category: 'Paediatric Disorder', description: 'Growing pains are aching or throbbing pains in the legs of children, usually at night.', symptoms: ['Leg pain at night', 'Aching in thighs or calves', 'Pain relieved by morning', 'No joint swelling'], causes: ['Rapid growth', 'Overactivity', 'Muscular fatigue'], treatment: 'Homoeopathy relieves pain, supports healthy bone and muscle development, and improves sleep quality. Remedies like Calcarea Phos, Phosphoric Acid, and Rhus Tox are commonly used.', duration: '2-4 months for relief' },
+  'hair-loss': { name: 'Hair Fall', category: 'Hair Disorder', description: 'Hair loss can range from thinning to complete baldness, affecting the scalp or entire body.', symptoms: ['Gradual thinning', 'Circular bald spots', 'Sudden loosening', 'Full-body hair loss', 'Patches of scaling'], causes: ['Genetics', 'Hormonal changes', 'Medical conditions', 'Medications', 'Stress', 'Nutritional deficiency'], treatment: 'Constitutional homoeopathy stimulates hair regrowth, strengthens hair follicles, and treats underlying causes. Remedies like Lycopodium, Phosphorus, and Fluoricum Acidum are effective.', duration: '6-12 months for visible regrowth' },
+  'haemorrhoids': { name: 'Haemorrhoids (Piles)', category: 'Digestive Disorder', description: 'Haemorrhoids are swollen veins in the lower rectum and anus causing discomfort and bleeding.', symptoms: ['Painless bleeding', 'Itching', 'Pain and discomfort', 'Swelling around anus', 'Lump near anus'], causes: ['Straining during bowel movements', 'Chronic constipation', 'Sitting for long periods', 'Obesity', 'Pregnancy'], treatment: 'Homoeopathy treats piles naturally without surgery, reduces pain, controls bleeding, and prevents recurrence. Remedies like Aesculus, Hamamelis, and Collinsonia are highly effective.', duration: '3-6 months for complete relief' },
+  'hay-fever': { name: 'Hay Fever', category: 'Respiratory Disorder', description: 'Hay fever is an allergic response to airborne pollens causing nasal and eye symptoms.', symptoms: ['Sneezing', 'Runny or blocked nose', 'Itchy eyes', 'Watery eyes', 'Itchy throat'], causes: ['Tree pollen', 'Grass pollen', 'Weed pollen', 'Genetic predisposition'], treatment: 'Constitutional homoeopathy reduces seasonal allergic reactivity, providing long-lasting relief. Remedies like Allium Cepa, Euphrasia, and Sabadilla are selected based on specific symptoms.', duration: '4-8 months for lasting improvement' },
+  'headaches': { name: 'Headaches (Chronic)', category: 'Neurological Disorder', description: 'Chronic headaches occur frequently and can significantly impact daily life.', symptoms: ['Recurring pain in head', 'Pressure or tightness', 'Throbbing', 'Sensitivity to light or sound', 'Nausea'], causes: ['Stress', 'Poor posture', 'Dehydration', 'Hormonal changes', 'Eye strain', 'Sinus issues'], treatment: 'Constitutional homoeopathy identifies and addresses the root cause of headaches, reducing frequency and intensity naturally. Remedies like Belladonna, Gelsemium, and Natrum Mur are commonly used.', duration: '3-6 months for significant reduction' },
+  'hepatitis': { name: 'Hepatitis', category: 'Liver Disorder', description: 'Hepatitis is inflammation of the liver, often caused by viral infection.', symptoms: ['Jaundice', 'Fatigue', 'Abdominal pain', 'Nausea', 'Loss of appetite', 'Dark urine', 'Fever'], causes: ['Viral infection (A, B, C)', 'Alcohol', 'Medications', 'Autoimmune disease'], treatment: 'Constitutional homoeopathy supports liver healing, boosts immunity, and prevents chronic hepatitis. Remedies like Chelidonium, Phosphorus, and Lycopodium support liver recovery.', duration: '6-12 months for chronic cases' },
+  'hernia': { name: 'Hernia (Early stage)', category: 'Structural Disorder', description: 'A hernia occurs when an organ pushes through an opening in muscle or tissue.', symptoms: ['Bulge in abdomen or groin', 'Discomfort or pain', 'Heaviness', 'Weakness', 'Aching'], causes: ['Muscle weakness', 'Straining', 'Chronic cough', 'Obesity', 'Pregnancy', 'Heavy lifting'], treatment: 'Homoeopathy provides supportive care in early-stage hernias, reducing discomfort and strengthening surrounding tissues. Remedies like Nux Vomica, Lycopodium, and Aesculus can be helpful.', duration: 'Individualized — surgery may be needed for large hernias' },
+  'high-bp': { name: 'High Blood Pressure', category: 'Cardiovascular Disorder', description: 'Hypertension is consistently elevated blood pressure in the arteries.', symptoms: ['Often no symptoms', 'Headaches', 'Dizziness', 'Nosebleeds', 'Shortness of breath'], causes: ['Obesity', 'Stress', 'High salt intake', 'Lack of exercise', 'Genetics', 'Kidney disease'], treatment: 'Homoeopathy helps regulate blood pressure naturally, reduces stress, and improves cardiovascular health as supportive care. Remedies like Rauwolfia, Baryta Mur, and Crataegus are used alongside medical treatment.', duration: 'Ongoing supportive care' },
+  'hormonal': { name: 'Hormonal Imbalances', category: 'Endocrine Disorder', description: 'Hormonal imbalances affect many body processes including metabolism, mood, growth, and reproduction.', symptoms: ['Fatigue', 'Mood swings', 'Weight changes', 'Irregular periods', 'Hair changes', 'Sleep problems'], causes: ['Stress', 'Poor diet', 'Thyroid disorders', 'PCOS', 'Menopause', 'Medications'], treatment: 'Constitutional homoeopathy restores hormonal balance naturally by addressing the underlying glandular dysfunction. Remedies like Sepia, Pulsatilla, and Lycopodium are frequently used.', duration: '6-12 months for hormonal stabilization' },
+  'hypothyroidism': { name: 'Hypothyroidism', category: 'Endocrine Disorder', description: 'Hypothyroidism is underactive thyroid gland producing insufficient thyroid hormone.', symptoms: ['Fatigue', 'Weight gain', 'Cold sensitivity', 'Constipation', 'Dry skin', 'Hair loss', 'Depression'], causes: ["Autoimmune disease (Hashimoto's)", 'Thyroid surgery', 'Radiation therapy', 'Medications', 'Iodine deficiency'], treatment: 'Constitutional homoeopathy stimulates thyroid function naturally, reduces symptoms, and improves metabolism. Remedies like Calcarea Carb, Graphites, and Lycopodium are prescribed based on symptoms.', duration: '8-12 months for hormone stabilization' },
+  'hyperthyroidism': { name: 'Hyperthyroidism', category: 'Endocrine Disorder', description: 'Hyperthyroidism is an overactive thyroid gland producing excess thyroid hormone.', symptoms: ['Rapid heartbeat', 'Weight loss', 'Nervousness', 'Tremors', 'Excessive sweating', 'Heat intolerance'], causes: ["Graves' disease", 'Thyroid nodules', 'Thyroiditis', 'Excess iodine'], treatment: 'Constitutional homoeopathy helps calm thyroid overactivity, reduces symptoms, and supports hormonal balance as adjunct care. Remedies like Iodum, Natrum Mur, and Lycopodium are used.', duration: '8-12 months for stabilization' },
+  'ibs': { name: 'IBS (Irritable Bowel Syndrome)', category: 'Digestive Disorder', description: 'IBS is a common disorder affecting the large intestine causing abdominal pain and altered bowel habits.', symptoms: ['Abdominal pain', 'Bloating', 'Diarrhea', 'Constipation', 'Mucus in stool', 'Gas'], causes: ['Gut-brain interaction', 'Stress', 'Food sensitivities', 'Gut bacteria imbalance', 'Intestinal infection'], treatment: 'Constitutional homoeopathy treats IBS by regulating gut function, reducing stress response, and healing intestinal lining. Remedies like Nux Vomica, Lycopodium, and Colocynthis are effective.', duration: '4-8 months for digestive stability' },
+  'infertility-f': { name: 'Infertility (Female)', category: 'Reproductive Disorder', description: 'Female infertility is difficulty conceiving due to ovulation disorders, structural problems, or hormonal imbalances.', symptoms: ['Inability to conceive', 'Irregular periods', 'Painful periods', 'Hormonal imbalances'], causes: ['Ovulation disorders', 'Tubal blockage', 'Endometriosis', 'Age', 'PCOS'], treatment: 'Constitutional homoeopathy improves reproductive health, regulates hormones, and enhances fertility naturally. Remedies like Sepia, Conium, and Agnus Castus are prescribed.', duration: '6-12 months for conception support' },
+  'infertility-m': { name: 'Infertility (Male)', category: 'Reproductive Disorder', description: 'Male infertility involves low sperm count, poor motility, or abnormal sperm shape.', symptoms: ['Inability to conceive', 'Low sperm count', 'Sexual dysfunction', 'Hormonal imbalances'], causes: ['Low sperm count', 'Hormonal issues', 'Varicocele', 'Infections', 'Lifestyle factors'], treatment: 'Homoeopathy improves sperm count, motility, and morphology naturally. Constitutional remedies like Agnus Castus, Conium, and X-ray are prescribed based on individual assessment.', duration: '6-12 months for sperm parameter improvement' },
+  'insomnia': { name: 'Insomnia', category: 'Sleep Disorder', description: 'Insomnia is persistent difficulty falling asleep or staying asleep.', symptoms: ['Difficulty falling asleep', 'Waking during night', 'Waking too early', 'Daytime fatigue', 'Irritability'], causes: ['Stress', 'Anxiety', 'Depression', 'Medical conditions', 'Poor sleep habits', 'Medications'], treatment: 'Homoeopathy treats insomnia naturally without sleep pills by addressing underlying causes. Constitutional remedies like Coffea, Nux Vomica, and Passiflora restore natural sleep.', duration: '2-4 months for sleep pattern restoration' },
+  'interstitial-cystitis': { name: 'Interstitial Cystitis', category: 'Urinary Disorder', description: 'Interstitial cystitis is chronic bladder pain and pressure.', symptoms: ['Pelvic pain', 'Urinary urgency', 'Frequent urination', 'Pain during intercourse', 'Discomfort'], causes: ['Bladder lining defects', 'Autoimmune factors', 'Nerve dysfunction', 'Infections'], treatment: 'Constitutional homoeopathy reduces bladder inflammation, relieves pain, and improves urinary symptoms. Remedies like Cantharis, Causticum, and Staphisagria are commonly used.', duration: '4-8 months for symptom control' },
+  'juvenile-arthritis': { name: 'Juvenile Arthritis', category: 'Autoimmune Disorder', description: 'Juvenile arthritis is autoimmune joint inflammation in children under 16.', symptoms: ['Joint pain and swelling', 'Morning stiffness', 'Limping', 'Fever', 'Eye inflammation'], causes: ['Autoimmune response', 'Genetic factors', 'Environmental triggers'], treatment: 'Constitutional homoeopathy reduces inflammation, relieves pain, and supports healthy development without the side effects of long-term steroids. Remedies are individualized for each child.', duration: '12-18 months for significant improvement' },
+  'keloids': { name: 'Keloids', category: 'Skin Disorder', description: 'Keloids are raised overgrown scars extending beyond original wound boundaries.', symptoms: ['Raised scar tissue', 'Thick texture', 'Darker than surrounding skin', 'Itching', 'Tenderness'], causes: ['Genetic predisposition', 'Skin injury', 'Surgery', 'Burns', 'Acne', 'Piercings'], treatment: 'Constitutional homoeopathy reduces keloid size, prevents new formation, and improves appearance. Remedies like Silicea, Graphites, and Fluoric Acid are commonly used.', duration: '8-12 months for reduction' },
+  'kidney-stones': { name: 'Kidney Stones', category: 'Urinary Disorder', description: 'Kidney stones are hard deposits of minerals and salts forming inside kidneys.', symptoms: ['Severe pain in side and back', 'Pain radiating to lower abdomen', 'Painful urination', 'Blood in urine', 'Nausea'], causes: ['Dehydration', 'Diet high in salt/protein', 'Obesity', 'Medical conditions', 'Family history'], treatment: 'Homoeopathy helps dissolve stones naturally, provides pain relief, and prevents recurrence. Remedies like Berberis Vulgaris, Lycopodium, and Sarsaparilla are effective.', duration: '3-6 months for stone dissolution' },
+  'knee-pain': { name: 'Knee Pain', category: 'Joint Disorder', description: 'Knee pain can result from injuries, arthritis, or mechanical problems.', symptoms: ['Pain', 'Swelling', 'Stiffness', 'Weakness', 'Popping sounds', 'Inability to straighten knee'], causes: ['Injury', 'Arthritis', 'Mechanical problems', 'Overuse', 'Obesity'], treatment: 'Homoeopathy provides natural pain relief, reduces inflammation, and improves mobility. Remedies like Rhus Tox, Bryonia, and Ruta are highly effective.', duration: '3-6 months for chronic pain' },
+  'leucorrhea': { name: 'Leucorrhoea', category: 'Gynecological Disorder', description: 'Leucorrhoea is abnormal vaginal discharge, often white or yellowish.', symptoms: ['White/yellow discharge', 'Itching', 'Burning', 'Foul odour', 'Weakness', 'Backache'], causes: ['Infection', 'Hormonal changes', 'Poor hygiene', 'Diabetes', 'Anaemia'], treatment: 'Constitutional homoeopathy treats underlying causes, controls discharge, and prevents recurrence. Remedies like Sepia, Calcarea Carb, and Pulsatilla are effective.', duration: '3-6 months for complete cure' },
+  'lichen-planus': { name: 'Lichen Planus', category: 'Autoimmune Skin Disorder', description: 'Lichen planus causes purple, itchy, flat bumps on skin or white patches in mouth.', symptoms: ['Purple bumps', 'Itching', 'White patches in mouth', 'Painful mouth sores', 'Hair loss'], causes: ['Immune system dysfunction', 'Hepatitis C', 'Medications', 'Allergens', 'Stress'], treatment: 'Constitutional homoeopathy treats immune dysfunction, heals lesions, and prevents recurrence. Remedies like Sulphur, Arsenic Album, and Borax are commonly used.', duration: '8-12 months for healing' },
+  'lipoma': { name: 'Lipoma', category: 'Benign Tumor', description: 'Lipomas are soft, movable lumps of fatty tissue under the skin.', symptoms: ['Soft lump under skin', 'Movable', 'Usually painless', 'Slow-growing'], causes: ['Genetic factors', 'Age', 'Obesity', 'Lipid metabolism disorders'], treatment: 'Constitutional homoeopathy helps reduce lipoma size and prevents new formation without surgery. Remedies like Calcarea Carb, Belladonna, and Phytolacca are effective.', duration: '8-18 months for size reduction' },
+  'liver-disorders': { name: 'Liver Disorders', category: 'Liver Disorder', description: 'Liver disorders encompass a range of conditions affecting liver function, from fatty liver to cirrhosis.', symptoms: ['Fatigue', 'Jaundice', 'Abdominal swelling', 'Nausea', 'Dark urine', 'Easy bruising'], causes: ['Alcohol', 'Viral infections', 'Obesity', 'Medications', 'Autoimmune conditions', 'Genetics'], treatment: 'Constitutional homoeopathy supports liver repair, reduces inflammation, and improves liver enzyme levels naturally. Remedies like Chelidonium, Cardus Mar, and Phosphorus are widely used.', duration: '6-12 months for liver improvement' },
+  'lumbar-spondylosis': { name: 'Lumbar Spondylosis', category: 'Spinal Disorder', description: 'Lumbar spondylosis is age-related degeneration of the lower spine causing back pain and stiffness.', symptoms: ['Lower back pain', 'Stiffness', 'Pain radiating to buttocks', 'Numbness', 'Difficulty walking'], causes: ['Age-related disc degeneration', 'Poor posture', 'Obesity', 'Injury', 'Repetitive stress'], treatment: 'Homoeopathy reduces pain, improves spinal mobility, and slows degeneration naturally. Remedies like Kali Carb, Rhus Tox, and Aesculus are commonly used.', duration: '6-12 months for significant relief' },
+  'lupus': { name: 'Lupus (SLE)', category: 'Autoimmune Disorder', description: 'Lupus (Systemic Lupus Erythematosus) is a chronic autoimmune disease where the immune system attacks healthy tissue.', symptoms: ['Butterfly-shaped facial rash', 'Fatigue', 'Joint pain', 'Fever', 'Photosensitivity', 'Kidney problems'], causes: ['Autoimmune dysfunction', 'Genetic factors', 'Sunlight exposure', 'Hormonal factors', 'Medications'], treatment: 'Constitutional homoeopathy helps manage lupus flares, reduces inflammation, and improves quality of life as supportive treatment. Remedies are highly individualized based on organ involvement.', duration: '12-24 months for symptom management' },
+  'menopause': { name: 'Menopause symptoms', category: 'Hormonal Transition', description: 'Menopause marks the end of menstrual cycles, causing hormonal changes.', symptoms: ['Hot flashes', 'Night sweats', 'Mood changes', 'Sleep problems', 'Vaginal dryness', 'Weight gain'], causes: ['Natural ageing', 'Decline in reproductive hormones', 'Surgery', 'Medical treatments'], treatment: 'Constitutional homoeopathy eases menopausal transition, reduces symptoms naturally without HRT. Remedies like Sepia, Lachesis, and Pulsatilla provide relief.', duration: 'Ongoing symptom management' },
+  'menstrual': { name: 'Menstrual Disorders', category: 'Gynecological Disorder', description: 'Menstrual disorders include irregular, painful, heavy, or absent periods affecting quality of life.', symptoms: ['Irregular cycles', 'Heavy bleeding', 'Painful periods', 'Absent periods', 'Pre-menstrual symptoms'], causes: ['Hormonal imbalance', 'PCOS', 'Thyroid disorders', 'Stress', 'Fibroids', 'Endometriosis'], treatment: 'Constitutional homoeopathy regulates the menstrual cycle naturally by correcting hormonal imbalances. Remedies like Pulsatilla, Sepia, and Calcarea Carb are commonly prescribed.', duration: '3-6 months for cycle regulation' },
+  'migraine': { name: 'Migraine', category: 'Neurological Disorder', description: 'Migraine is a severe headache often accompanied by nausea, vomiting, and sensitivity to light and sound.', symptoms: ['Severe throbbing headache', 'Nausea and vomiting', 'Light sensitivity', 'Sound sensitivity', 'Visual disturbances (aura)', 'Dizziness'], causes: ['Stress', 'Hormonal changes', 'Food triggers', 'Sleep disturbances', 'Weather changes', 'Genetic factors'], treatment: 'Homoeopathic treatment reduces migraine frequency, intensity, and duration by addressing triggers and individual susceptibility. Personalized remedies like Belladonna, Iris Versicolor, Sanguinaria, and Natrum Mur provide lasting relief.', duration: '4-8 months for significant reduction in attacks' },
+  'molluscum': { name: 'Molluscum Contagiosum', category: 'Viral Skin Disorder', description: 'Molluscum contagiosum is a viral skin infection causing small, raised bumps.', symptoms: ['Small flesh-coloured bumps', 'Dimple in centre of bumps', 'Itching', 'Spread by touch'], causes: ['Poxvirus infection', 'Direct contact', 'Sharing towels', 'Weak immunity'], treatment: 'Constitutional homoeopathy stimulates immune response to clear the infection naturally. Remedies like Thuja, Dulcamara, and Natrum Mur are effective in resolving lesions.', duration: '3-6 months for clearance' },
+  'ms': { name: 'Multiple Sclerosis (adjunct)', category: 'Neurological Disorder', description: 'Multiple Sclerosis is a chronic disease of the central nervous system affecting the brain and spinal cord.', symptoms: ['Fatigue', 'Numbness', 'Muscle weakness', 'Balance problems', 'Vision changes', 'Cognitive difficulties'], causes: ['Autoimmune dysfunction', 'Genetic factors', 'Environmental triggers', 'Vitamin D deficiency'], treatment: 'Homoeopathy provides supportive care, helps manage symptoms, and improves quality of life alongside conventional treatment. Constitutional remedies are prescribed based on individual symptom pattern.', duration: 'Ongoing supportive care' },
+  'muscle-pain': { name: 'Muscle Pain', category: 'Musculoskeletal Disorder', description: 'Muscle pain (myalgia) can affect a small area or the whole body with varying intensity.', symptoms: ['Aching muscles', 'Tenderness', 'Stiffness', 'Weakness', 'Cramps'], causes: ['Overuse', 'Injury', 'Stress', 'Infections', 'Nutritional deficiency', 'Fibromyalgia'], treatment: 'Homoeopathy relieves muscle pain, reduces inflammation, and promotes recovery. Remedies like Arnica, Rhus Tox, and Mag Phos are highly effective for muscle complaints.', duration: '2-6 months depending on cause' },
+  'nasal-polyps': { name: 'Nasal Polyps', category: 'Respiratory Disorder', description: 'Nasal polyps are soft, painless growths in nasal passages.', symptoms: ['Nasal congestion', 'Reduced sense of smell', 'Runny nose', 'Postnasal drip', 'Facial pressure', 'Snoring'], causes: ['Chronic inflammation', 'Asthma', 'Allergies', 'Repeated infections', 'Cystic fibrosis'], treatment: 'Constitutional homoeopathy shrinks polyps naturally without surgery, reduces inflammation, and prevents recurrence. Remedies like Calcarea Carb, Lemna Minor, and Teucrium are effective.', duration: '8-12 months for reduction' },
+  'nephrotic': { name: 'Nephrotic Syndrome', category: 'Kidney Disorder', description: 'Nephrotic syndrome is a kidney disorder causing too much protein to be excreted in urine.', symptoms: ['Swelling around eyes, feet, ankles', 'Foamy urine', 'Weight gain', 'Fatigue', 'Loss of appetite'], causes: ['Minimal change disease', 'Membranous nephropathy', 'Diabetes', 'Lupus', 'Infections'], treatment: 'Constitutional homoeopathy supports kidney function, reduces protein loss, and controls swelling naturally. Remedies like Apis Mel, Arsenicum Album, and Phosphorus are prescribed based on individual symptoms.', duration: '6-12 months for kidney stabilization' },
+  'neuralgia': { name: 'Neuralgia', category: 'Neurological Disorder', description: 'Neuralgia is sharp, shooting pain along a nerve caused by irritation or damage.', symptoms: ['Sharp pain along a nerve', 'Burning sensation', 'Sensitivity to touch', 'Muscle weakness', 'Numbness'], causes: ['Nerve compression', 'Shingles', 'Diabetes', 'Multiple sclerosis', 'Injury'], treatment: 'Constitutional homoeopathy reduces nerve inflammation, relieves pain, and promotes nerve healing. Remedies like Hypericum, Spigelia, and Magnesium Phos are effective.', duration: '3-6 months for pain reduction' },
+  'neuropathy': { name: 'Neuropathy', category: 'Neurological Disorder', description: 'Peripheral neuropathy involves damage to the peripheral nerves causing weakness and pain.', symptoms: ['Numbness or tingling', 'Sharp pain', 'Weakness', 'Lack of coordination', 'Sensitivity to touch'], causes: ['Diabetes', 'Infections', 'Autoimmune diseases', 'Vitamin deficiencies', 'Medications'], treatment: 'Constitutional homoeopathy promotes nerve healing, reduces pain, and improves sensation. Remedies like Hypericum, Phosphorus, and Plumbum are effective.', duration: '8-12 months for nerve regeneration' },
+  'obesity': { name: 'Obesity', category: 'Metabolic Disorder', description: 'Obesity is excessive body fat accumulation that increases the risk of other diseases.', symptoms: ['Excess body fat', 'Difficulty with physical activity', 'Breathlessness', 'Joint pain', 'Fatigue', 'Sweating'], causes: ['Poor diet', 'Sedentary lifestyle', 'Hormonal imbalances', 'Thyroid issues', 'Genetics', 'Stress'], treatment: 'Constitutional homoeopathy boosts metabolism, addresses hormonal imbalances, and supports healthy weight loss naturally. Remedies like Phytolacca, Fucus, and Calcarea Carb are commonly used.', duration: '6-12 months for sustained weight management' },
+  'ocd': { name: 'OCD', category: 'Mental Health', description: 'OCD causes unwanted repetitive thoughts (obsessions) and behaviors (compulsions).', symptoms: ['Intrusive thoughts', 'Repetitive behaviors', 'Excessive checking', 'Fear of contamination', 'Need for symmetry'], causes: ['Brain chemistry', 'Genetics', 'Stress', 'Childhood trauma'], treatment: 'Constitutional homoeopathy reduces obsessions and compulsions naturally, balances mind, and improves quality of life. Remedies like Arsenicum Album, Syphilinum, and Medorrhinum are prescribed.', duration: '10-18 months for significant improvement' },
+  'osteoarthritis': { name: 'Arthritis (Osteo)', category: 'Joint Disorder', description: 'Osteoarthritis is degenerative joint disease caused by breakdown of cartilage.', symptoms: ['Joint pain', 'Stiffness', 'Tenderness', 'Loss of flexibility', 'Bone spurs', 'Grating sensation'], causes: ['Age', 'Obesity', 'Joint injuries', 'Genetics', 'Bone deformities', 'Certain occupations'], treatment: 'Homoeopathy slows cartilage degeneration, reduces pain, and improves joint function naturally. Remedies like Rhus Tox, Calcarea Fluor, and Ruta are commonly prescribed.', duration: '8-12 months for joint improvement' },
+  'osteoporosis': { name: 'Osteoporosis', category: 'Bone Disorder', description: 'Osteoporosis is a condition where bones become weak and brittle.', symptoms: ['Back pain', 'Loss of height', 'Stooped posture', 'Easy fractures', 'Bone pain'], causes: ['Calcium/Vitamin D deficiency', 'Hormonal changes', 'Age', 'Sedentary lifestyle', 'Medications'], treatment: 'Constitutional homoeopathy supports bone density, reduces fracture risk, and relieves pain. Remedies like Calcarea Phos, Silicea, and Symphytum promote bone health.', duration: '12-18 months for bone strengthening' },
+  'ovarian-cysts': { name: 'Ovarian Cysts', category: 'Gynecological Disorder', description: 'Ovarian cysts are fluid-filled sacs on or inside the ovary.', symptoms: ['Pelvic pain', 'Bloating', 'Painful periods', 'Irregular periods', 'Painful intercourse'], causes: ['Hormonal imbalance', 'Endometriosis', 'Pelvic infections', 'PCOS'], treatment: 'Constitutional homoeopathy dissolves cysts naturally, regulates hormones, and prevents recurrence. Remedies like Apis Mel, Lachesis, and Colocynthis are effective.', duration: '6-12 months for cyst resolution' },
+  'pancreatitis': { name: 'Pancreatitis (Chronic)', category: 'Digestive Disorder', description: 'Chronic pancreatitis is ongoing inflammation of the pancreas.', symptoms: ['Upper abdominal pain', 'Weight loss', 'Oily stools', 'Nausea', 'Vomiting', 'Diabetes'], causes: ['Alcohol abuse', 'Gallstones', 'Genetic factors', 'High triglycerides', 'Smoking'], treatment: 'Constitutional homoeopathy reduces inflammation, relieves pain, and supports pancreatic function. Remedies like Iris Versicolor, Phosphorus, and Conium are commonly used.', duration: '6-12 months for symptom control' },
+  'panic-attacks': { name: 'Panic Attacks', category: 'Mental Health', description: 'Panic attacks are sudden episodes of intense fear causing physical symptoms.', symptoms: ['Racing heart', 'Shortness of breath', 'Dizziness', 'Sweating', 'Trembling', 'Fear of losing control'], causes: ['Anxiety disorder', 'Stress', 'Genetics', 'Phobias', 'Traumatic events'], treatment: 'Constitutional homoeopathy reduces panic attack frequency and intensity by addressing the underlying anxiety. Remedies like Aconite, Argentum Nitricum, and Ignatia are highly effective.', duration: '4-8 months for significant improvement' },
+  'paralysis': { name: 'Paralysis (adjunct)', category: 'Neurological Disorder', description: 'Paralysis is loss of muscle function in part of the body, often following stroke or nerve injury.', symptoms: ['Inability to move limbs', 'Weakness', 'Numbness', 'Muscle stiffness', 'Loss of sensation'], causes: ['Stroke', 'Spinal cord injury', 'Multiple sclerosis', 'Cerebral palsy', 'Bell\'s palsy'], treatment: 'Homoeopathy supports recovery alongside physiotherapy, improving nerve function and muscle strength. Remedies like Causticum, Gelsemium, and Plumbum are used in supportive care.', duration: 'Ongoing supportive care — improvement varies' },
+  'parkinsons': { name: "Parkinson's (adjunct)", category: 'Neurological Disorder', description: "Parkinson's disease is a progressive disorder affecting movement.", symptoms: ['Tremor', 'Slowness', 'Stiffness', 'Balance problems', 'Changes in speech', 'Writing changes'], causes: ['Loss of dopamine-producing neurons', 'Genetics', 'Environmental factors', 'Age'], treatment: 'Homoeopathy provides supportive care, slows progression, and improves quality of life alongside conventional treatment. Remedies like Zincum Met, Rhus Tox, and Agaricus are used.', duration: 'Ongoing supportive care' },
+  'pcos': { name: 'PCOS / PCOD', category: 'Hormonal Disorder', description: 'PCOS is a hormonal disorder causing enlarged ovaries with small cysts, affecting menstrual cycles and fertility.', symptoms: ['Irregular periods', 'Excessive hair growth', 'Acne', 'Weight gain', 'Hair loss', 'Difficulty conceiving'], causes: ['Hormonal imbalance', 'Insulin resistance', 'Inflammation', 'Genetic factors'], treatment: 'Homoeopathy treats PCOS by regulating hormones naturally, improving ovulation, and reducing symptoms. Treatment is individualized based on specific symptoms and hormone levels. Remedies like Pulsatilla, Sepia, and Calcarea Carb are effective.', duration: '6-12 months for hormonal balance' },
+  'pediatric': { name: 'Pediatric conditions', category: 'Paediatric Disorder', description: 'Children face a range of acute and chronic health conditions that respond well to gentle homoeopathic treatment.', symptoms: ['Varies by condition', 'Recurrent infections', 'Behavioural issues', 'Growth concerns', 'Allergies'], causes: ['Infections', 'Immune immaturity', 'Genetic factors', 'Environmental exposure'], treatment: 'Constitutional homoeopathy is safe and effective for children, addressing both acute and chronic conditions. Dr. Jaiswal prescribes individualized remedies suited to each child\'s unique constitution.', duration: 'Varies by condition' },
+  'pilonidal-cyst': { name: 'Pilonidal Cyst', category: 'Structural Disorder', description: 'A pilonidal cyst is a cyst near the tailbone that can become infected and painful.', symptoms: ['Pain at base of spine', 'Swelling', 'Redness', 'Discharge of pus', 'Fever if infected'], causes: ['Ingrown hair', 'Prolonged sitting', 'Trauma to area', 'Obesity'], treatment: 'Constitutional homoeopathy helps heal pilonidal cysts, controls infection, and may prevent recurrence. Remedies like Silicea, Hepar Sulph, and Calcarea Sulph are effective.', duration: '4-8 months for complete healing' },
+  'plantar-fasciitis': { name: 'Plantar Fasciitis', category: 'Joint Disorder', description: 'Plantar fasciitis causes heel pain due to inflammation of the plantar fascia ligament.', symptoms: ['Sharp heel pain', 'Stiffness in the morning', 'Pain after prolonged standing', 'Aching arch'], causes: ['Overuse', 'Flat feet', 'Tight calf muscles', 'Obesity', 'Unsupportive footwear'], treatment: 'Homoeopathy reduces inflammation, relieves heel pain, and promotes healing of the ligament. Remedies like Rhus Tox, Ruta, and Calcarea Fluor are effective.', duration: '3-6 months for relief' },
+  'post-covid': { name: 'Post-COVID fatigue', category: 'Post-Viral Syndrome', description: 'Post-COVID syndrome involves persistent symptoms weeks or months after recovering from COVID-19.', symptoms: ['Fatigue', 'Brain fog', 'Shortness of breath', 'Joint pain', 'Sleep disturbances', 'Anxiety'], causes: ['Prolonged immune activation', 'Nerve damage', 'Inflammation', 'Viral persistence'], treatment: 'Constitutional homoeopathy addresses post-viral fatigue, restores energy, and supports immune recovery. Remedies like Phosphoric Acid, Kali Phos, and Arsenicum Album are commonly used.', duration: '3-8 months for recovery support' },
+  'psoriasis': { name: 'Psoriasis', category: 'Autoimmune Skin Disorder', description: 'Psoriasis is an autoimmune condition causing rapid skin cell buildup, resulting in scaling and inflammation.', symptoms: ['Red patches with silvery scales', 'Dry cracked skin', 'Itching and burning', 'Thickened nails', 'Swollen joints'], causes: ['Immune system dysfunction', 'Genetics', 'Stress', 'Infections', 'Skin injury', 'Weather'], treatment: 'Constitutional homoeopathy treats psoriasis from within by regulating immune response and healing skin permanently. Remedies like Arsenicum Album, Graphites, and Kali Arsenicosum are effective.', duration: '12-18 months for significant skin clearing' },
+  'recurrent-infections': { name: 'Recurrent Infections', category: 'Immune Disorder', description: 'Recurrent infections indicate an underlying immune weakness requiring constitutional treatment.', symptoms: ['Frequent colds', 'Repeated throat infections', 'Recurring ear infections', 'Frequent fevers', 'Slow recovery'], causes: ['Weak immunity', 'Nutritional deficiency', 'Chronic stress', 'Environmental exposure', 'Genetics'], treatment: 'Constitutional homoeopathy strengthens the immune system, reducing the frequency and severity of infections. Remedies like Tuberculinum, Calcarea Carb, and Baryta Carb are prescribed.', duration: '6-12 months for immune strengthening' },
+  'rheumatoid-arthritis': { name: 'Arthritis (Rheumatoid)', category: 'Autoimmune Disorder', description: 'Rheumatoid Arthritis is a chronic autoimmune disorder primarily affecting joints.', symptoms: ['Joint pain and swelling', 'Morning stiffness', 'Fatigue', 'Fever', 'Weight loss', 'Joint deformity'], causes: ['Autoimmune response', 'Genetic factors', 'Environmental triggers', 'Smoking'], treatment: 'Constitutional homoeopathy reduces inflammation, prevents joint damage, and improves mobility without steroids. Treatment is highly individualized. Remedies like Rhus Tox, Bryonia, and Actaea Spicata are commonly used.', duration: '10-18 months for significant improvement' },
+  'ringworm': { name: 'Ringworm', category: 'Fungal Skin Disorder', description: 'Ringworm is a fungal infection causing ring-shaped rashes on the skin.', symptoms: ['Ring-shaped red rash', 'Itching', 'Scaly skin', 'Blistering around the ring', 'Hair loss if on scalp'], causes: ['Dermatophyte fungi', 'Direct contact', 'Sharing items', 'Weak immunity'], treatment: 'Homoeopathy treats fungal infections from within, strengthening immunity and preventing recurrence. Remedies like Sepia, Tellurium, and Sulphur are effective.', duration: '2-4 months for clearance' },
+  'rosacea': { name: 'Rosacea', category: 'Skin Disorder', description: 'Rosacea is a chronic skin condition causing redness and visible blood vessels on the face.', symptoms: ['Facial redness', 'Visible blood vessels', 'Swollen red bumps', 'Eye irritation', 'Enlarged nose'], causes: ['Genetic factors', 'Environmental triggers', 'Immune dysfunction', 'Sun exposure', 'Hot drinks'], treatment: 'Constitutional homoeopathy reduces skin inflammation, controls flare-ups, and improves complexion. Remedies like Carbo Animalis, Lachesis, and Belladonna are commonly used.', duration: '6-12 months for significant improvement' },
+  'sciatica': { name: 'Sciatica', category: 'Neurological Disorder', description: 'Sciatica is pain radiating along the sciatic nerve from lower back down the legs.', symptoms: ['Pain radiating from lower back to leg', 'Numbness', 'Tingling', 'Muscle weakness', 'Difficulty moving'], causes: ['Herniated disc', 'Bone spur', 'Spinal stenosis', 'Injury', 'Prolonged sitting'], treatment: 'Homoeopathy provides natural pain relief, reduces nerve inflammation, and promotes healing. Remedies like Colocynthis, Rhus Tox, and Hypericum are highly effective.', duration: '3-6 months for complete relief' },
+  'sebaceous-cysts': { name: 'Sebaceous Cysts', category: 'Skin Disorder', description: 'Sebaceous cysts are non-cancerous lumps below the skin surface filled with keratin.', symptoms: ['Soft lump under skin', 'Foul-smelling cheesy material', 'Redness if infected', 'Tenderness'], causes: ['Blocked sebaceous glands', 'Swollen hair follicles', 'Skin injury', 'Hereditary conditions'], treatment: 'Homoeopathy helps dissolve cysts without surgery and prevents new ones forming. Remedies like Silicea, Graphites, and Baryta Carb are effective.', duration: '4-8 months for resolution' },
+  'sinusitis': { name: 'Sinusitis', category: 'Respiratory Disorder', description: 'Sinusitis is inflammation or swelling of the tissue lining the sinuses.', symptoms: ['Facial pain and pressure', 'Nasal congestion', 'Thick nasal discharge', 'Reduced sense of smell', 'Cough', 'Headache'], causes: ['Viral infection', 'Allergies', 'Nasal polyps', 'Deviated septum', 'Immune disorders'], treatment: 'Constitutional homoeopathy treats chronic sinusitis by strengthening immunity and reducing inflammation naturally. Remedies like Kali Bichromicum, Pulsatilla, and Silicea are effective.', duration: '4-8 months for chronic cases' },
+  'skin-allergies': { name: 'Skin Allergies', category: 'Allergic Skin Disorder', description: 'Skin allergies cause reactions such as itching, redness, hives, or rashes after contact with allergens.', symptoms: ['Itching', 'Redness', 'Hives', 'Swelling', 'Burning', 'Rashes'], causes: ['Allergens', 'Irritants', 'Stress', 'Immune dysfunction', 'Food triggers'], treatment: 'Constitutional homoeopathy stabilizes the immune response and reduces allergic skin reactions permanently. Remedies like Apis Mel, Sulphur, and Urtica Urens are effective.', duration: '4-8 months for lasting relief' },
+  'skin-tags': { name: 'Skin Tags', category: 'Skin Disorder', description: 'Skin tags are small, soft growths that hang off the skin, usually in areas of friction.', symptoms: ['Small soft growths', 'Flesh-coloured', 'Usually painless', 'May catch on clothing'], causes: ['Friction', 'Hormonal changes', 'Obesity', 'Genetics'], treatment: 'Constitutional homoeopathy can help in reducing and clearing skin tags naturally. Remedies like Thuja and Causticum are commonly used.', duration: '3-6 months for clearance' },
+  'sleep-disorders': { name: 'Sleep Disorders', category: 'Sleep Disorder', description: 'Sleep disorders include insomnia, sleep apnoea, and restless leg syndrome affecting quality of rest.', symptoms: ['Difficulty sleeping', 'Excessive daytime sleepiness', 'Snoring', 'Restless legs', 'Waking frequently'], causes: ['Stress', 'Anxiety', 'Medical conditions', 'Poor sleep habits', 'Medications'], treatment: 'Constitutional homoeopathy addresses the underlying causes of sleep disorders, restoring natural sleep patterns. Remedies like Coffea, Nux Vomica, and Arsenicum Album are effective.', duration: '2-4 months for sleep restoration' },
+  'stammering': { name: 'Stammering', category: 'Speech Disorder', description: 'Stammering is a speech disorder involving disruptions in the flow and rhythm of speech.', symptoms: ['Repetition of sounds or words', 'Prolonged sounds', 'Blocks in speech', 'Physical tension during speech', 'Anxiety about speaking'], causes: ['Genetic factors', 'Neurological factors', 'Developmental delays', 'Anxiety', 'Stress'], treatment: 'Constitutional homoeopathy reduces speech anxiety, improves confidence, and promotes fluency. Remedies like Stramonium, Spigelia, and Lachesis are prescribed.', duration: '8-12 months for speech improvement' },
+  'stress': { name: 'Stress', category: 'Mental Health', description: 'Chronic stress causes physical and emotional strain affecting overall health.', symptoms: ['Tension', 'Worry', 'Headaches', 'Sleep problems', 'Fatigue', 'Digestive issues', 'Irritability'], causes: ['Work pressure', 'Life changes', 'Financial problems', 'Relationships', 'Health concerns'], treatment: 'Constitutional homoeopathy reduces stress response, promotes relaxation, and improves coping naturally. Remedies like Kali Phos, Ignatia, and Nux Vomica are effective.', duration: '3-6 months for stress management' },
+  'stroke': { name: 'Stroke (recovery adjunct)', category: 'Neurological Disorder', description: 'Stroke recovery involves rehabilitation to regain function lost due to brain damage.', symptoms: ['Weakness on one side', 'Speech difficulties', 'Memory problems', 'Balance issues', 'Fatigue', 'Emotional changes'], causes: ['Blood clot', 'Bleeding in brain', 'Hypertension', 'Diabetes', 'Atrial fibrillation'], treatment: 'Homoeopathy supports stroke rehabilitation alongside physiotherapy, improving nerve recovery and reducing spasticity. Remedies like Causticum, Arnica, and Lachesis aid recovery.', duration: 'Ongoing supportive care' },
+  'thyroid': { name: 'Thyroid Disorders', category: 'Endocrine Disorder', description: 'Thyroid disorders include Hypothyroidism (underactive thyroid) and Hyperthyroidism (overactive thyroid), affecting metabolism and energy levels.', symptoms: ['Fatigue', 'Weight changes', 'Hair loss', 'Temperature sensitivity', 'Mood changes', 'Heart rate changes'], causes: ['Autoimmune conditions', 'Iodine deficiency', 'Genetic factors', 'Stress', 'Hormonal imbalances'], treatment: 'Homoeopathy helps regulate thyroid function naturally by addressing the underlying causes. Treatment is based on individual symptoms and thyroid levels. Remedies like Calcarea Carb, Lycopodium, and Iodum are used.', duration: '8-12 months for hormone stabilization' },
+  'tinnitus': { name: 'Tinnitus', category: 'ENT Disorder', description: 'Tinnitus is ringing or noise in the ears without an external source.', symptoms: ['Ringing in ears', 'Buzzing', 'Roaring', 'Clicking', 'Hissing sounds', 'Hearing loss'], causes: ['Noise exposure', 'Ear infections', 'Age-related hearing loss', 'Medications', 'Head injuries'], treatment: 'Constitutional homoeopathy reduces tinnitus intensity, improves hearing, and addresses underlying causes. Remedies like Chininum Sulph, Kali Iod, and Natrum Salicylicum are effective.', duration: '6-12 months for significant relief' },
+  'tonsillitis': { name: 'Tonsillitis', category: 'Respiratory Disorder', description: 'Tonsillitis is inflammation of the tonsils causing sore throat and difficulty swallowing.', symptoms: ['Sore throat', 'Swollen tonsils', 'Difficulty swallowing', 'Fever', 'Swollen lymph nodes', 'Bad breath'], causes: ['Viral infection', 'Bacterial infection', 'Weak immunity', 'Environmental factors'], treatment: 'Constitutional homoeopathy treats recurrent tonsillitis, strengthens immunity, and prevents surgery. Remedies like Baryta Carb, Calcarea Carb, and Hepar Sulph are effective.', duration: '6-9 months to prevent recurrence' },
+  'trigeminal-neuralgia': { name: 'Trigeminal Neuralgia', category: 'Neurological Disorder', description: 'Trigeminal neuralgia causes severe facial pain along trigeminal nerve.', symptoms: ['Sudden severe facial pain', 'Electric shock-like pain', 'Triggered by touch/eating', 'Pain on one side'], causes: ['Blood vessel pressure on nerve', 'Multiple sclerosis', 'Tumor', 'Stroke'], treatment: 'Constitutional homoeopathy provides pain relief and reduces attack frequency naturally. Remedies like Spigelia, Verbascum, and Magnesium Phos are highly effective.', duration: '4-8 months for pain control' },
+  'ulcerative-colitis': { name: 'Ulcerative Colitis', category: 'Autoimmune Digestive Disorder', description: 'Ulcerative colitis causes chronic inflammation and ulcers in the colon.', symptoms: ['Bloody diarrhea', 'Abdominal pain', 'Urgency to defecate', 'Weight loss', 'Fatigue', 'Fever'], causes: ['Autoimmune response', 'Genetic factors', 'Environmental triggers', 'Stress'], treatment: 'Homoeopathy heals colonic inflammation, controls bleeding, and prevents relapse naturally. Constitutional remedies like Merc Sol, Nux Vomica, and Aloe provide relief.', duration: '10-18 months for remission' },
+  'urinary-tract': { name: 'Urinary Tract Infections', category: 'Urinary Disorder', description: 'UTI is infection in any part of the urinary system.', symptoms: ['Burning urination', 'Frequent urination', 'Urgent urination', 'Cloudy urine', 'Pelvic pain', 'Blood in urine'], causes: ['Bacterial infection (E. coli)', 'Sexual activity', 'Poor hygiene', 'Kidney stones', 'Weak immunity'], treatment: 'Homoeopathy treats UTI naturally, prevents recurrence, and strengthens urinary immunity. Remedies like Cantharis, Sarsaparilla, and Berberis are highly effective.', duration: '1-2 weeks for acute, 3-6 months for recurrent' },
+  'urticaria': { name: 'Urticaria (Hives)', category: 'Allergic Skin Disorder', description: 'Urticaria causes red, itchy welts on the skin due to allergic reactions.', symptoms: ['Red raised welts', 'Intense itching', 'Swelling', 'Burning sensation', 'Welts that disappear and reappear'], causes: ['Food allergens', 'Medications', 'Insect bites', 'Temperature extremes', 'Stress', 'Infections'], treatment: 'Constitutional homoeopathy treats the hypersensitive immune response, providing lasting relief from hives. Remedies like Apis Mel, Urtica Urens, and Sulphur are commonly used.', duration: '4-8 months for immune stabilization' },
+  'uterine-fibroids': { name: 'Uterine Fibroids', category: 'Gynecological Disorder', description: 'Uterine fibroids are non-cancerous growths in the uterus.', symptoms: ['Heavy periods', 'Prolonged periods', 'Pelvic pain', 'Frequent urination', 'Constipation', 'Backache'], causes: ['Hormonal factors', 'Genetics', 'Growth factors', 'Obesity'], treatment: 'Constitutional homoeopathy shrinks fibroids naturally, controls bleeding, and prevents surgery. Remedies like Calcarea Carb, Thuja, and Fraxinus are effective.', duration: '8-18 months for fibroid reduction' },
+  'varicose-veins': { name: 'Varicose Veins', category: 'Vascular Disorder', description: 'Varicose veins are enlarged, twisted veins visible under the skin.', symptoms: ['Visible twisted veins', 'Aching legs', 'Heaviness', 'Swelling', 'Skin discoloration', 'Ulcers in severe cases'], causes: ['Weak vein valves', 'Pregnancy', 'Obesity', 'Standing for long periods', 'Age', 'Genetics'], treatment: 'Constitutional homoeopathy improves circulation, strengthens vein walls, and reduces discomfort naturally. Remedies like Hamamelis, Pulsatilla, and Carbo Veg are effective.', duration: '8-12 months for improvement' },
+  'vertigo': { name: 'Vertigo', category: 'Neurological Disorder', description: 'Vertigo is sensation of spinning or losing balance.', symptoms: ['Spinning sensation', 'Dizziness', 'Nausea', 'Vomiting', 'Balance problems', 'Hearing changes'], causes: ['BPPV', "Meniere's disease", 'Inner ear infection', 'Migraine', 'Head injury'], treatment: 'Constitutional homoeopathy treats underlying causes, reduces episodes, and improves balance. Remedies like Conium, Gelsemium, and Cocculus are commonly prescribed.', duration: '3-6 months for control' },
+  'vitiligo': { name: 'Vitiligo', category: 'Autoimmune Skin Disorder', description: 'Vitiligo causes loss of skin colour in patches due to destruction of melanocytes.', symptoms: ['White patches on skin', 'Premature greying of hair', 'Loss of colour in mouth', 'Colour loss in eyes'], causes: ['Autoimmune condition', 'Genetic factors', 'Stress', 'Sunburn', 'Exposure to chemicals'], treatment: 'Constitutional homoeopathy stimulates melanocyte production, controls spread, and promotes repigmentation naturally. Remedies like Arsenicum Sulph Flavum, Phosphorus, and Silicea are effective.', duration: '12-24 months for visible repigmentation' },
+  'warts': { name: 'Warts', category: 'Viral Skin Disorder', description: 'Warts are small, rough growths caused by HPV infection.', symptoms: ['Rough bumps', 'Flesh-coloured', 'Painless (usually)', 'Common on hands and feet'], causes: ['Human papillomavirus (HPV)', 'Weak immunity', 'Skin contact', 'Shared surfaces'], treatment: 'Constitutional homoeopathy removes warts naturally without burning or freezing, strengthens immunity to prevent recurrence. Remedies like Thuja, Causticum, and Nitric Acid are highly effective.', duration: '3-6 months for complete removal' },
+  'weight-management': { name: 'Weight Management', category: 'Metabolic Disorder', description: 'Difficulty losing weight or maintaining healthy weight.', symptoms: ['Obesity', 'Difficulty losing weight', 'Slow metabolism', 'Fatigue', 'Low energy'], causes: ['Poor diet', 'Sedentary lifestyle', 'Hormonal imbalances', 'Thyroid issues', 'Genetics', 'Stress'], treatment: 'Constitutional homoeopathy boosts metabolism, addresses hormonal imbalances, and supports healthy weight loss naturally. Remedies like Phytolacca, Fucus, and Calcarea Carb are commonly used.', duration: '6-12 months for sustained weight management' }
+};
+
+// ── Find local disease info by condition name ─────────────────────────
+function findLocalDiseaseInfo(condName) {
+  var nameLower = condName.toLowerCase();
+  // 1) Try to match by .name property in diseaseInfo
+  for (var k in diseaseInfo) {
+    if (diseaseInfo[k].name.toLowerCase() === nameLower) return diseaseInfo[k];
+  }
+  // 2) Try slug-based key lookup
+  var slug = condName.toLowerCase()
+    .replace(/[()&,'/]/g, '').trim()
+    .replace(/\s+/g, '-').replace(/-+/g, '-');
+  if (diseaseInfo[slug]) return diseaseInfo[slug];
+  // 3) Try partial match — condition name starts with or contains a key's name
+  for (var k2 in diseaseInfo) {
+    var dname = diseaseInfo[k2].name.toLowerCase();
+    if (nameLower.includes(dname) || dname.includes(nameLower)) return diseaseInfo[k2];
+  }
+  return null;
+}
+
+// ── Build rich HTML from local disease data ───────────────────────────
+function buildLocalDiseaseHTML(d) {
+  var syms = d.symptoms.map(function(s){ return '<li style="padding:0.2rem 0;">✓ '+s+'</li>'; }).join('');
+  var causes = d.causes.map(function(c){ return '<li style="padding:0.2rem 0;">'+c+'</li>'; }).join('');
+  return '<p style="font-size:1rem;color:var(--text-dark);line-height:1.75;margin-bottom:1rem;">'+d.description+'</p>'
+    +'<div class="modal-divider"></div>'
+    +'<div class="modal-section-title">🩺 Common Symptoms</div>'
+    +'<ul style="list-style:none;padding:0;margin:0 0 1rem 0;font-size:0.93rem;line-height:1.7;color:var(--text-dark);">'+syms+'</ul>'
+    +'<div class="modal-divider"></div>'
+    +'<div class="modal-section-title">🔍 Possible Causes</div>'
+    +'<ul style="list-style:disc;padding-left:1.3rem;margin:0 0 1rem 0;font-size:0.93rem;line-height:1.7;color:var(--text-dark);">'+causes+'</ul>'
+    +'<div class="modal-divider"></div>'
+    +'<div class="modal-section-title">🌿 Homoeopathic Treatment</div>'
+    +'<p style="font-size:0.93rem;line-height:1.75;margin-bottom:0.6rem;">'+d.treatment+'</p>'
+    +'<p style="font-size:0.88rem;background:var(--warm-white);padding:0.6rem 0.9rem;border-radius:8px;border-left:3px solid var(--sage);margin:0;"><strong>Expected Duration:</strong> '+d.duration+'</p>';
+}
+
+function fetchConditionInfo(condName){
+  // Check local database first
+  var local = findLocalDiseaseInfo(condName);
+  if (local) {
+    document.getElementById('modalLoading').style.display='none';
+    document.getElementById('modalContent').innerHTML=buildLocalDiseaseHTML(local);
+    document.getElementById('modalContent').style.display='block';
+    return;
+  }
+  // Fall back to API for conditions not in local database
+  fetch('https://api.anthropic.com/v1/messages',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({
+      model:'claude-sonnet-4-20250514',
+      max_tokens:1000,
+      system:'You are Dr. Jaiswal\'s homoeopathy clinic assistant. Write a concise, patient-friendly homoeopathic overview for a given condition. Structure your response in exactly 3 short paragraphs using simple HTML <p> tags only (no headings, no lists, no markdown). Paragraph 1: Brief description of the condition and common symptoms (2-3 sentences). Paragraph 2: How constitutional homoeopathy helps — mention that remedies are selected based on the individual\'s complete symptom picture (2-3 sentences). Paragraph 3: Encouraging note about consulting Dr. Jaiswal with 26+ years of experience at Tarnaka, Hyderabad (1-2 sentences). Use <strong> sparingly for key terms. Keep total response under 150 words.',
+      messages:[{role:'user',content:'Condition: '+condName}]
+    })
+  })
+  .then(function(r){return r.json();})
+  .then(function(data){
+    var text='';
+    if(data.content && data.content.length){
+      data.content.forEach(function(block){if(block.type==='text') text+=block.text;});
+    }
+    if(!text) text='<p>Homoeopathy offers a personalised, constitutional approach to treating <strong>'+condName+'</strong>. Dr. Jaiswal selects remedies based on your complete symptom picture for lasting relief.</p>';
+    document.getElementById('modalLoading').style.display='none';
+    document.getElementById('modalContent').innerHTML=text;
+    document.getElementById('modalContent').style.display='block';
+  })
+  .catch(function(){
+    document.getElementById('modalLoading').style.display='none';
+    document.getElementById('modalContent').innerHTML='<p>Homoeopathy offers an effective, individualised approach to treating <strong>'+condName+'</strong>. Dr. Jaiswal will assess your complete case history and recommend the most suitable constitutional remedy for lasting results.</p>';
+    document.getElementById('modalContent').style.display='block';
+  });
+}
+
+buildPage();
+</script>
+</body>
+</html>
