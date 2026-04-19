@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function(){
+      if(window.location.hostname.indexOf('github.io') !== -1){
+        var path = window.location.pathname.replace(/^\/Homoeopathy/, '');
+        window.location.replace('https://drjaiswalhomoeopathy.com' + (path || '/'));
+      }
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vitamins &amp; Minerals Deficiency Guide | Dr. Jaiswal's Homoeopathy</title>
+  <link rel="canonical" href="https://drjaiswalhomoeopathy.com/vitamins.html">
+  <meta name="description" content="Complete guide to vitamins and minerals, their deficiency signs, linked diseases, best food sources, and homoeopathic connections — by Dr. D Rajesh Jaiswal, Hyderabad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --sage:       #4a7c59;
+      --sage-light: #6b9e7a;
+      --sage-pale:  #e8f0eb;
+      --earth:      #8b6f47;
+      --cream:      #faf7f2;
+      --dark:       #1e2d24;
+      --text:       #3a3a3a;
+      --muted:      #7a8a7d;
+      --border:     #d4e0d7;
+      --white:      #ffffff;
+      --shadow:     0 4px 24px rgba(74,124,89,0.10);
+      --shadow-lg:  0 8px 40px rgba(74,124,89,0.15);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(250,247,242,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.6rem; font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--sage); text-decoration: none; font-weight: 700; letter-spacing: -0.01em; }
+    .nav-logo img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+    .nav-logo span { color: var(--earth); }
+    .nav-links { display: flex; gap: 1.2rem; list-style: none; flex-wrap: nowrap; }
+    .nav-links a { text-decoration: none; color: var(--muted); font-size: 0.83rem; font-weight: 500; white-space: nowrap; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--sage); }
+    .nav-cta { background: var(--sage); color: #fff !important; padding: 0.45rem 1rem; border-radius: 50px; font-size: 0.83rem; white-space: nowrap; transition: background 0.2s !important; }
+    .nav-cta:hover { background: var(--sage-light) !important; }
+    .hamburger-btn { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; z-index: 1100; flex-shrink: 0; }
+    .hamburger-btn span { display: block; width: 24px; height: 2px; background: var(--sage); border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
+    .hamburger-btn.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .hamburger-btn.open span:nth-child(2) { opacity: 0; }
+    .hamburger-btn.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+    @media (max-width: 900px) { .nav-links { display: none; } .hamburger-btn { display: flex; } }
+
+    /* ── MOBILE DRAWER ── */
+    .menu-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1200; cursor: pointer; }
+    .menu-overlay.show { display: block; }
+    #mobile-menu { display: none; position: fixed; top: 0; right: 0; width: 78%; max-width: 300px; height: 100vh; background: #fff; z-index: 1300; overflow-y: auto; box-shadow: -6px 0 30px rgba(74,124,89,0.2); transform: translateX(100%); transition: transform 0.32s cubic-bezier(0.4,0,0.2,1); flex-direction: column; }
+    #mobile-menu.open { display: flex; transform: translateX(0); }
+    #mobile-menu .mob-header { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.2rem; background: linear-gradient(135deg, var(--dark), #2a4a34); color: white; }
+    #mobile-menu .mob-header span { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; }
+    #mobile-menu .mob-close { background: none; border: none; color: white; font-size: 1.6rem; cursor: pointer; line-height: 1; padding: 2px 6px; }
+    #mobile-menu ul { list-style: none; margin: 0; padding: 0.5rem 0 2rem; display: flex; flex-direction: column; }
+    #mobile-menu ul li { border-bottom: 1px solid #f0ebe1; }
+    #mobile-menu ul li:last-child { border-bottom: none; padding: 1rem 1rem 0; }
+    #mobile-menu ul li a { display: flex; align-items: center; gap: 0.7rem; padding: 13px 20px; color: var(--text); text-decoration: none; font-size: 0.93rem; font-weight: 500; transition: background 0.2s, color 0.2s; }
+    #mobile-menu ul li a:hover { background: var(--sage-pale); color: var(--sage); }
+    #mobile-menu ul li a .mob-icon { font-size: 1.1rem; width: 22px; text-align: center; flex-shrink: 0; }
+    #mobile-menu ul li:last-child a { display: block; text-align: center; padding: 0.8rem 1.2rem; background: var(--sage); color: white; border-radius: 30px; font-weight: 600; }
+
+    /* ── HERO ── */
+    .hero { background: linear-gradient(135deg, var(--dark) 0%, #2a4a34 50%, #1e3828 100%); padding: 3.5rem 2rem 3rem; text-align: center; color: white; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.9); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.35rem 1rem; border-radius: 50px; margin-bottom: 1rem; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem,4vw,2.8rem); margin-bottom: 0.7rem; font-weight: 700; }
+    .hero p { font-size: 1rem; opacity: 0.85; max-width: 620px; margin: 0 auto; }
+
+    /* ── FILTER BAR ── */
+    .filter-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center; padding: 1.5rem 2rem; background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 68px; z-index: 90; }
+    .filter-btn { background: var(--sage-pale); color: var(--sage); border: 1px solid transparent; padding: 0.4rem 1.1rem; border-radius: 50px; font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 500; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+    .filter-btn:hover { border-color: var(--sage); }
+    .filter-btn.active { background: var(--sage); color: white; }
+
+    /* ── PAGE LAYOUT ── */
+    .page-wrap { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    .page-intro { background: var(--white); border-radius: 16px; padding: 1.5rem 1.8rem; border: 1px solid var(--border); margin-bottom: 2rem; display: flex; gap: 1rem; align-items: flex-start; }
+    .page-intro-icon { font-size: 2rem; flex-shrink: 0; }
+    .page-intro h2 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--dark); margin-bottom: 0.3rem; }
+    .page-intro p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
+
+    /* ── GROUP HEADING ── */
+    .group-heading { display: flex; align-items: center; gap: 0.8rem; margin: 2rem 0 1rem; }
+    .group-heading h2 { font-family: 'Playfair Display', serif; font-size: 1.35rem; color: var(--dark); }
+    .group-line { flex: 1; height: 1px; background: var(--border); }
+
+    /* ── NUTRIENT CARDS GRID ── */
+    .nutrient-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.2rem; }
+
+    /* ── NUTRIENT CARD ── (same style as tip-card) */
+    .nutrient-card { background: var(--white); border-radius: 16px; border: 1px solid var(--border); box-shadow: var(--shadow); display: flex; flex-direction: column; transition: transform 0.25s, box-shadow 0.25s; overflow: hidden; }
+    .nutrient-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .nutrient-card-top { padding: 1.2rem 1.2rem 0; display: flex; align-items: center; justify-content: space-between; }
+    .nutrient-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+    .nutrient-meta { text-align: right; }
+    .nutrient-group-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sage); }
+    .nutrient-type { font-size: 0.73rem; color: var(--muted); margin-top: 0.1rem; }
+    .nutrient-card-body { padding: 0.8rem 1.2rem 1rem; flex: 1; }
+    .nutrient-card-body h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--dark); margin-bottom: 0.5rem; line-height: 1.3; }
+    .nutrient-card-body p { font-size: 0.85rem; color: var(--muted); line-height: 1.65; margin-bottom: 0.6rem; }
+    .deficiency-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.5rem; }
+    .dtag { display: inline-block; background: #ffeaea; color: #c0392b; font-size: 0.72rem; font-weight: 500; padding: 0.18rem 0.5rem; border-radius: 4px; }
+    .source-line { font-size: 0.78rem; color: var(--muted); margin-top: 0.7rem; padding-top: 0.6rem; border-top: 1px solid var(--sage-pale); }
+    .source-line strong { color: var(--sage); font-weight: 600; }
+    .homoeo-line { font-size: 0.78rem; color: var(--sage); font-style: italic; margin-top: 0.4rem; }
+    .nutrient-card-footer { padding: 0.8rem 1.2rem; border-top: 1px solid var(--sage-pale); display: flex; align-items: center; justify-content: space-between; }
+    .tip-tag { display: inline-flex; align-items: center; gap: 0.3rem; background: var(--sage-pale); color: var(--sage); font-size: 0.75rem; font-weight: 500; padding: 0.25rem 0.7rem; border-radius: 50px; }
+
+    /* ── HOMOEO NOTE BOX ── */
+    .homoeo-note-box { background: var(--sage-pale); border-left: 3px solid var(--sage); border-radius: 0 12px 12px 0; padding: 1.2rem 1.5rem; margin: 2.5rem 0 1rem; }
+    .homoeo-note-box h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--sage); margin-bottom: 0.5rem; }
+    .homoeo-note-box p { font-size: 0.88rem; color: var(--dark); line-height: 1.7; }
+    .homoeo-note-box ul { list-style: none; padding: 0; margin-top: 0.6rem; }
+    .homoeo-note-box ul li { font-size: 0.85rem; color: var(--text); padding: 0.25rem 0; display: flex; gap: 0.5rem; }
+
+    /* ── CTA STRIP ── */
+    .cta-strip { background: linear-gradient(135deg, var(--dark), #2a4a34); border-radius: 16px; padding: 2rem; text-align: center; color: white; margin-top: 3rem; }
+    .cta-strip h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .cta-strip p { opacity: 0.85; font-size: 0.92rem; margin-bottom: 1.2rem; }
+    .cta-btns { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+    .cta-btn-wa { background: #d4a574; color: #1e2d24; padding: 0.7rem 1.6rem; border-radius: 30px; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: all 0.2s; }
+    .cta-btn-wa:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(212,165,116,0.4); }
+    .cta-btn-back { background: rgba(255,255,255,0.12); color: white; padding: 0.7rem 1.6rem; border-radius: 30px; font-weight: 600; font-size: 0.9rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.3); transition: all 0.2s; }
+    .cta-btn-back:hover { background: rgba(255,255,255,0.2); }
+
+    /* ── FOOTER ── */
+    footer { background: linear-gradient(135deg, #1a3009, #2d5016); color: white; padding: 2rem; text-align: center; margin-top: 3rem; font-size: 0.82rem; color: rgba(255,255,255,0.5); }
+    footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+    footer a:hover { color: #a8d5b5; }
+    /* ── SYMPTOM CHECKER TOOL ── */
+    .checker-section { background: linear-gradient(135deg, #f0f7eb, #e8f5e9); border: 1.5px solid var(--sage); border-radius: 20px; padding: 2rem; margin-bottom: 2.5rem; }
+    .checker-section h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--dark); margin-bottom: 0.4rem; }
+    .checker-section > p { font-size: 0.88rem; color: var(--muted); margin-bottom: 1.5rem; line-height: 1.6; }
+    .checker-input-row { display: flex; gap: 0.7rem; align-items: stretch; margin-bottom: 1rem; }
+    .checker-input { flex: 1; padding: 0.75rem 1rem; border: 1.5px solid var(--border); border-radius: 10px; font-family: 'DM Sans', sans-serif; font-size: 0.92rem; color: var(--text); background: var(--white); outline: none; transition: border-color 0.2s; }
+    .checker-input:focus { border-color: var(--sage); box-shadow: 0 0 0 3px rgba(74,124,89,0.1); }
+    .checker-btn { padding: 0.75rem 1.4rem; background: var(--sage); color: white; border: none; border-radius: 10px; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap; transition: all 0.2s; }
+    .checker-btn:hover { background: var(--sage-light); transform: translateY(-1px); }
+    .checker-clear { padding: 0.75rem 1rem; background: transparent; color: var(--muted); border: 1.5px solid var(--border); border-radius: 10px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; cursor: pointer; transition: all 0.2s; }
+    .checker-clear:hover { border-color: #c0392b; color: #c0392b; }
+    .checker-tags-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 0.5rem; }
+    .checker-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.2rem; }
+    .sym-tag { background: var(--white); border: 1px solid var(--border); color: var(--text); font-size: 0.78rem; font-weight: 500; padding: 0.3rem 0.75rem; border-radius: 50px; cursor: pointer; transition: all 0.18s; font-family: 'DM Sans', sans-serif; }
+    .sym-tag:hover { border-color: var(--sage); color: var(--sage); background: var(--sage-pale); }
+    .sym-tag.active { background: var(--sage); color: white; border-color: var(--sage); }
+    .checker-results-header { display: flex; align-items: center; justify-content: space-between; margin: 1.5rem 0 0.8rem; }
+    .checker-results-header h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--dark); }
+    .results-count { font-size: 0.8rem; color: var(--muted); }
+    .checker-results-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.9rem; }
+    /* Result card — inherits nutrient-card style */
+    .result-card { background: var(--white); border-radius: 14px; border: 1.5px solid var(--border); padding: 1.1rem 1.2rem; display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.2s, box-shadow 0.2s; }
+    .result-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .result-card-top { display: flex; align-items: center; justify-content: space-between; }
+    .result-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--dark); }
+    .result-badge { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.2rem 0.55rem; border-radius: 30px; white-space: nowrap; }
+    .result-badge.vitamin { background: #e8f0eb; color: var(--sage); }
+    .result-badge.mineral { background: #fff3e0; color: #b45309; }
+    .result-deficiency { font-size: 0.8rem; color: var(--muted); font-style: italic; }
+    .result-symptoms { font-size: 0.82rem; color: var(--text); line-height: 1.55; }
+    .result-match-bar { height: 4px; background: #e8f0eb; border-radius: 2px; overflow: hidden; }
+    .result-match-fill { height: 100%; background: linear-gradient(90deg, var(--sage), var(--sage-light)); border-radius: 2px; transition: width 0.4s ease; }
+    .result-match-label { font-size: 0.72rem; color: var(--sage); font-weight: 600; }
+    .result-matched-terms { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.2rem; }
+    .match-term { font-size: 0.7rem; background: var(--sage-pale); color: var(--sage); padding: 0.15rem 0.45rem; border-radius: 4px; }
+    .checker-empty { text-align: center; padding: 2rem 1rem; color: var(--muted); font-size: 0.88rem; }
+    .checker-empty span { font-size: 2rem; display: block; margin-bottom: 0.5rem; }
+    .checker-no-result { text-align: center; padding: 1.5rem 1rem; color: var(--muted); font-size: 0.88rem; }
+    .combo-alert { background: #fff8e1; border: 1px solid #ffe082; border-radius: 12px; padding: 1rem 1.2rem; margin-top: 1rem; }
+    .combo-alert h4 { font-family: 'Playfair Display', serif; font-size: 0.95rem; color: #b45309; margin-bottom: 0.5rem; }
+    .combo-item { font-size: 0.82rem; color: var(--text); padding: 0.2rem 0; display: flex; gap: 0.5rem; align-items: flex-start; }
+    .checker-disclaimer { font-size: 0.78rem; color: var(--muted); margin-top: 1rem; padding: 0.7rem 1rem; background: rgba(255,255,255,0.6); border-radius: 8px; line-height: 1.6; }
+    @media (max-width: 600px) { .checker-input-row { flex-direction: column; } .checker-results-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a class="nav-logo" href="/"><img src="logo-green.png" alt="Dr. Jaiswal's Homoeopathy Logo">Dr. Jaiswal's <span>Homoeopathy</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#treatment">Treatments</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="avoid-surgery.html">Avoid Surgery</a></li>
+    <li><a href="diseases.html">Diseases</a></li>
+    <li><a href="calculator.html">Calculators</a></li>
+    <li><a href="testimonials.html">Testimonials</a></li>
+    <li><a href="tips.html" class="active">Health Tips</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="/#contact" class="nav-cta">Book Appointment</a></li>
+  </ul>
+  <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="mobile-menu" role="dialog" aria-label="Navigation menu">
+  <div class="mob-header">
+    <span style="display:flex;align-items:center;gap:0.5rem;"><img src="logo-green.png" alt="" style="width:28px;height:28px;border-radius:50%;object-fit:cover;">Dr. Jaiswal's Homoeopathy</span>
+    <button class="mob-close" id="mob-close-btn" aria-label="Close menu">&#x2715;</button>
+  </div>
+  <ul>
+    <li><a href="/"><span class="mob-icon">🏠</span>Home</a></li>
+    <li><a href="/#about"><span class="mob-icon">👨‍⚕️</span>About</a></li>
+    <li><a href="/#treatment"><span class="mob-icon">💊</span>Treatments</a></li>
+    <li><a href="pricing.html"><span class="mob-icon">💰</span>Pricing</a></li>
+    <li><a href="avoid-surgery.html"><span class="mob-icon">🛡️</span>Avoid Surgery</a></li>
+    <li><a href="diseases.html"><span class="mob-icon">🔬</span>Diseases</a></li>
+    <li><a href="calculator.html"><span class="mob-icon">🧮</span>Calculators</a></li>
+    <li><a href="testimonials.html"><span class="mob-icon">⭐</span>Testimonials</a></li>
+    <li><a href="tips.html"><span class="mob-icon">💡</span>Health Tips</a></li>
+    <li><a href="gallery.html"><span class="mob-icon">🖼️</span>Gallery</a></li>
+    <li><a href="/#contact">📅 Book Appointment</a></li>
+  </ul>
+</div>
+<div class="menu-overlay" id="menu-overlay"></div>
+
+<!-- ── HERO ── -->
+<header class="hero">
+  <div class="hero-badge">💊 Nutrition Reference</div>
+  <h1>Vitamins &amp; Minerals — Deficiency Guide</h1>
+  <p>Understand what each nutrient does, the signs of deficiency, the best food sources, and how homoeopathy complements nutritional correction.</p>
+</header>
+
+<!-- ── FILTER BAR ── -->
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filterGroup('all',this)">All Nutrients</button>
+  <button class="filter-btn" onclick="filterGroup('fat-soluble',this)">Fat-Soluble Vitamins</button>
+  <button class="filter-btn" onclick="filterGroup('water-soluble',this)">Water-Soluble Vitamins</button>
+  <button class="filter-btn" onclick="filterGroup('mineral',this)">Minerals</button>
+</div>
+
+<!-- ── PAGE ── -->
+<div class="page-wrap">
+
+  <div class="page-intro">
+    <div class="page-intro-icon">💡</div>
+    <div>
+      <h2>How to use this guide</h2>
+      <p>Each card shows the deficiency signs as red tags, the best Indian food sources, and the related homoeopathic remedy pattern. This is a reference tool — always consult Dr. Jaiswal for a complete assessment. Nutritional deficiencies and constitutional imbalances often co-exist and respond well when treated together.</p>
+    </div>
+  </div>
+
+  <!-- ── SYMPTOM CHECKER TOOL ── -->
+  <div class="checker-section">
+    <h2>🔍 Symptom Checker</h2>
+    <p>Type your symptoms or click the quick-select tags below. The tool will identify which vitamins or minerals may be deficient based on your input — sourced from clinical nutritional data.</p>
+
+    <div class="checker-input-row">
+      <input class="checker-input" id="symInput" type="text" placeholder="e.g. fatigue, hair fall, muscle cramps, anxiety…" autocomplete="off" onkeydown="if(event.key==='Enter')runChecker()">
+      <button class="checker-btn" onclick="runChecker()">🔍 Check</button>
+      <button class="checker-clear" onclick="clearChecker()">✕ Clear</button>
+    </div>
+
+    <div class="checker-tags-label">Quick select — common symptoms:</div>
+    <div class="checker-tags" id="symTags">
+      <span class="sym-tag" onclick="tagClick(this,'fatigue')">Fatigue / Tiredness</span>
+      <span class="sym-tag" onclick="tagClick(this,'hair fall')">Hair Fall</span>
+      <span class="sym-tag" onclick="tagClick(this,'anxiety')">Anxiety</span>
+      <span class="sym-tag" onclick="tagClick(this,'muscle cramps')">Muscle Cramps</span>
+      <span class="sym-tag" onclick="tagClick(this,'numbness')">Numbness / Tingling</span>
+      <span class="sym-tag" onclick="tagClick(this,'bone pain')">Bone Pain</span>
+      <span class="sym-tag" onclick="tagClick(this,'poor immunity')">Frequent Infections</span>
+      <span class="sym-tag" onclick="tagClick(this,'memory')">Memory / Brain Fog</span>
+      <span class="sym-tag" onclick="tagClick(this,'depression')">Depression / Low Mood</span>
+      <span class="sym-tag" onclick="tagClick(this,'brittle nails')">Brittle Nails</span>
+      <span class="sym-tag" onclick="tagClick(this,'dry skin')">Dry Skin</span>
+      <span class="sym-tag" onclick="tagClick(this,'bleeding gums')">Bleeding Gums</span>
+      <span class="sym-tag" onclick="tagClick(this,'weight gain')">Weight Gain</span>
+      <span class="sym-tag" onclick="tagClick(this,'insomnia')">Insomnia / Poor Sleep</span>
+      <span class="sym-tag" onclick="tagClick(this,'acne')">Acne / Skin Rash</span>
+      <span class="sym-tag" onclick="tagClick(this,'bruising')">Easy Bruising</span>
+      <span class="sym-tag" onclick="tagClick(this,'palpitations')">Palpitations</span>
+      <span class="sym-tag" onclick="tagClick(this,'headache')">Headache / Migraine</span>
+      <span class="sym-tag" onclick="tagClick(this,'anemia')">Anaemia / Pallor</span>
+      <span class="sym-tag" onclick="tagClick(this,'poor growth')">Poor Growth (children)</span>
+      <span class="sym-tag" onclick="tagClick(this,'thyroid')">Thyroid Issues</span>
+      <span class="sym-tag" onclick="tagClick(this,'wound healing')">Slow Wound Healing</span>
+    </div>
+
+    <div id="checkerOutput">
+      <div class="checker-empty"><span>🔍</span>Enter your symptoms above and press Check — results will appear here.</div>
+    </div>
+
+    <div class="checker-disclaimer">⚕️ <strong>Disclaimer:</strong> This tool is for educational awareness only. It is not a medical diagnosis. Many symptoms overlap across multiple deficiencies and conditions. Please consult Dr. Jaiswal for blood tests, proper diagnosis, and personalised treatment.</div>
+  </div>
+
+  <!-- ── GROUP HEADINGS & CARDS ── -->
+  <div class="group-heading" data-group="fat-soluble">
+    <h2>🔆 Fat-Soluble Vitamins</h2>
+    <div class="group-line"></div>
+  </div>
+  <div class="nutrient-grid" id="grid-fat-soluble">
+
+    <div class="nutrient-card" data-group="fat-soluble">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#fff8e1;">🥕</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Vitamin A</div><div class="nutrient-type">Fat-soluble</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Vitamin A (Retinol)</h3>
+        <p>Essential for vision, immune defence, and skin cell turnover. Deficiency is one of the leading preventable causes of childhood blindness globally.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Night blindness</span><span class="dtag">Dry / gritty eyes</span><span class="dtag">Rough dry skin</span><span class="dtag">Frequent infections</span><span class="dtag">Poor wound healing</span><span class="dtag">Xerophthalmia</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Liver, egg yolk, carrot, sweet potato, mango, papaya, dark leafy greens</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Euphrasia</em> (eye complaints), <em>Graphites</em> (skin/nail issues)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">👁️ Vision</span><span class="tip-tag">🛡️ Immunity</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="fat-soluble">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#fff3cd;">☀️</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Vitamin D</div><div class="nutrient-type">Fat-soluble · Hormone-like</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Vitamin D (Calciferol)</h3>
+        <p>The most common deficiency in urban India — even in sunny Hyderabad. Critical for bone strength, immune regulation, mood, and hormone balance.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Bone &amp; muscle pain</span><span class="dtag">Fatigue</span><span class="dtag">Depression</span><span class="dtag">Hair fall</span><span class="dtag">Frequent infections</span><span class="dtag">Rickets (children)</span><span class="dtag">Osteomalacia</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Sunlight (15–20 min daily), fatty fish, egg yolk, fortified milk, mushrooms (sun-dried)</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Calcarea Carb</em>, <em>Silicea</em> (bone/growth patterns)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">🦴 Bones</span><span class="tip-tag">😊 Mood</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="fat-soluble">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#fff0e0;">🌻</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Vitamin E</div><div class="nutrient-type">Fat-soluble · Antioxidant</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Vitamin E (Tocopherol)</h3>
+        <p>A powerful antioxidant protecting cells from oxidative stress. Rarely deficient alone — usually co-occurs with fat malabsorption disorders.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Nerve damage</span><span class="dtag">Muscle weakness</span><span class="dtag">Vision disturbances</span><span class="dtag">Immune dysfunction</span><span class="dtag">Dry skin</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Almonds, sunflower seeds, wheat germ oil, spinach, avocado, hazelnuts</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Phosphorus</em> (nerve/antioxidant patterns)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">🧬 Antioxidant</span><span class="tip-tag">🧠 Nerves</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="fat-soluble">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#e8f5e9;">🥦</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Vitamin K</div><div class="nutrient-type">Fat-soluble · Clotting</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Vitamin K (Phylloquinone / MK)</h3>
+        <p>Essential for blood clotting and bone mineralisation. K2 (from fermented foods) is especially important for directing calcium into bones, not arteries.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Easy bruising</span><span class="dtag">Excessive bleeding</span><span class="dtag">Heavy periods</span><span class="dtag">Osteoporosis</span><span class="dtag">Calcification of arteries</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Leafy greens (K1), natto, cheese, egg yolk (K2), broccoli, soybean oil</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Phosphorus</em>, <em>Crotalus Horridus</em> (bleeding tendencies)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">🩸 Clotting</span><span class="tip-tag">🦴 Bones</span></div>
+    </div>
+
+  </div><!-- /fat-soluble grid -->
+
+  <!-- ═══ WATER-SOLUBLE VITAMINS ═══ -->
+  <div class="group-heading" data-group="water-soluble">
+    <h2>💧 Water-Soluble Vitamins</h2>
+    <div class="group-line"></div>
+  </div>
+  <div class="nutrient-grid" id="grid-water-soluble">
+
+    <div class="nutrient-card" data-group="water-soluble">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#e8f0eb;">🌾</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Vitamin B1</div><div class="nutrient-type">Thiamine</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Vitamin B1 — Thiamine</h3>
+        <p>Key for energy metabolism and nerve function. Deficiency is seen in diets high in polished white rice and in alcoholism.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Beriberi</span><span class="dtag">Nerve tingling/numbness</span><span class="dtag">Fatigue &amp; weakness</span><span class="dtag">Memory problems</span><span class="dtag">Heart enlargement</span><span class="dtag">Wernicke's encephalopathy</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Whole grains, legumes, nuts, seeds, pork, sunflower seeds, yeast extract</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Phosphorus</em>, <em>Zincum Met</em> (nerve exhaustion)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">⚡ Energy</span><span class="tip-tag">🧠 Nerves</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="water-soluble">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#fce4ec;">🥛</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Vitamin B2</div><div class="nutrient-type">Riboflavin</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Vitamin B2 — Riboflavin</h3>
+        <p>Critical for energy production, red blood cell formation, and growth. Often deficient in those avoiding dairy and meat.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Cracked lips/corners (Angular cheilitis)</span><span class="dtag">Sore red throat</span><span class="dtag">Skin rash</span><span class="dtag">Red inflamed eyes</span><span class="dtag">Anaemia</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Milk, yoghurt, eggs, lean meat, almonds, dark leafy greens, mushrooms</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Natrum Mur</em>, <em>Condurango</em> (lip/mouth cracks)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">👄 Mouth</span><span class="tip-tag">👀 Eyes</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="water-soluble">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#fff8e1;">🍗</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Vitamin B3</div><div class="nutrient-type">Niacin</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Vitamin B3 — Niacin</h3>
+        <p>Involved in over 400 enzyme reactions. Severe deficiency causes Pellagra — classically described by the "4 Ds".</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Pellagra (4 Ds)</span><span class="dtag">Diarrhoea</span><span class="dtag">Dermatitis (sun-exposed skin)</span><span class="dtag">Dementia</span><span class="dtag">Fatigue</span><span class="dtag">Headache</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Chicken, tuna, peanuts, brown rice, mushrooms, avocado, sunflower seeds</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Sulphur</em> (skin eruptions with burning), <em>Arsenicum</em></p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">🧬 Metabolism</span><span class="tip-tag">🧠 Brain</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="water-soluble">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#e8f5e9;">🥑</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Vitamin B5</div><div class="nutrient-type">Pantothenic Acid</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Vitamin B5 — Pantothenic Acid</h3>
+        <p>Needed for hormone synthesis, fatty acid metabolism, and adrenal function. Found in almost all foods, so isolated deficiency is rare.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Burning feet syndrome</span><span class="dtag">Fatigue</span><span class="dtag">Insomnia</span><span class="dtag">Irritability</span><span class="dtag">Numbness in extremities</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Avocado, mushrooms, chicken liver, eggs, lentils, sweet potato, broccoli</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Causticum</em> (burning pains in extremities)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">⚡ Adrenals</span><span class="tip-tag">😴 Sleep</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="water-soluble">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#e3f2fd;">🍌</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Vitamin B6</div><div class="nutrient-type">Pyridoxine</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Vitamin B6 — Pyridoxine</h3>
+        <p>Critical for neurotransmitter synthesis (serotonin, dopamine) and red blood cell production. Linked to PMS, depression, and carpal tunnel.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Anaemia</span><span class="dtag">Peripheral neuropathy</span><span class="dtag">Depression &amp; irritability</span><span class="dtag">Cracked lips</span><span class="dtag">Weakened immunity</span><span class="dtag">PMS worsening</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Bananas, chickpeas, potatoes, salmon, poultry, sunflower seeds, spinach</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Sepia</em>, <em>Pulsatilla</em> (hormonal/mood patterns)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">😊 Mood</span><span class="tip-tag">🩸 Blood</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="water-soluble">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#fce4ec;">🥚</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Vitamin B7</div><div class="nutrient-type">Biotin</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Vitamin B7 — Biotin</h3>
+        <p>Popularly known for hair and nail health. Raw egg white contains avidin which blocks biotin absorption — always cook eggs.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Hair thinning &amp; loss</span><span class="dtag">Brittle nails</span><span class="dtag">Skin rash (eyes/nose/mouth)</span><span class="dtag">Fatigue</span><span class="dtag">Depression</span><span class="dtag">Neurological symptoms</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Cooked egg yolk, almonds, walnuts, sweet potato, salmon, sunflower seeds</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Silicea</em>, <em>Phosphoric Acid</em> (hair loss, debility)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">💇 Hair</span><span class="tip-tag">💅 Nails</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="water-soluble">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#e8f5e9;">🥬</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Vitamin B9</div><div class="nutrient-type">Folate / Folic Acid</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Vitamin B9 — Folate</h3>
+        <p>Critical before and during pregnancy for preventing neural tube defects. Works in tandem with B12 for DNA synthesis and cell division.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Megaloblastic anaemia</span><span class="dtag">Neural tube defects (pregnancy)</span><span class="dtag">Mouth ulcers</span><span class="dtag">Fatigue &amp; weakness</span><span class="dtag">Poor concentration</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Dark leafy greens, lentils, chickpeas, beetroot, fortified cereals, orange, broccoli</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Ferrum Phos</em>, <em>Natrum Mur</em> (anaemia, mouth ulcers)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">🤰 Pregnancy</span><span class="tip-tag">🧬 DNA</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="water-soluble">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#e3f2fd;">🥩</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Vitamin B12</div><div class="nutrient-type">Cobalamin · Very common deficiency</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Vitamin B12 — Cobalamin</h3>
+        <p>One of the most common deficiencies in India, especially in vegetarians and vegans. Stores last 2–5 years, so deficiency develops slowly but is serious.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Pernicious anaemia</span><span class="dtag">Tingling hands/feet</span><span class="dtag">Memory loss</span><span class="dtag">Depression</span><span class="dtag">Pale/jaundiced skin</span><span class="dtag">Mouth ulcers</span><span class="dtag">Weakness</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Meat, fish, eggs, dairy (vegetarians), fortified plant milk &amp; nutritional yeast (vegans)</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Natrum Mur</em>, <em>Phosphorus</em> (nerve &amp; anaemia patterns)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">🧠 Nerves</span><span class="tip-tag">🩸 Anaemia</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="water-soluble">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#fff3e0;">🍋</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Vitamin C</div><div class="nutrient-type">Ascorbic Acid · Antioxidant</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Vitamin C — Ascorbic Acid</h3>
+        <p>India's richest source is <em>Amla</em> (Indian gooseberry) — 20× more than orange. Vitamin C dramatically enhances non-haem iron absorption from plant foods.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Scurvy</span><span class="dtag">Bleeding gums</span><span class="dtag">Slow wound healing</span><span class="dtag">Easy bruising</span><span class="dtag">Joint pain</span><span class="dtag">Frequent infections</span><span class="dtag">Dry rough skin</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Amla, guava, lemon, orange, bell pepper, tomato, kiwi, strawberry</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Phosphorus</em>, <em>Hamamelis</em> (bleeding tendencies)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">🛡️ Immunity</span><span class="tip-tag">🔩 Collagen</span></div>
+    </div>
+
+  </div><!-- /water-soluble grid -->
+
+  <!-- ═══ MINERALS ═══ -->
+  <div class="group-heading" data-group="mineral">
+    <h2>⚙️ Essential Minerals</h2>
+    <div class="group-line"></div>
+  </div>
+  <div class="nutrient-grid" id="grid-mineral">
+
+    <div class="nutrient-card" data-group="mineral">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#fce4ec;">🥬</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Iron</div><div class="nutrient-type">Macro mineral · Most common deficiency</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Iron</h3>
+        <p>The most widespread nutritional deficiency worldwide. Affects women, children, and those with poor absorption especially. Vitamin C doubles non-haem iron absorption from plants.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Iron-deficiency anaemia</span><span class="dtag">Fatigue &amp; pallor</span><span class="dtag">Spoon nails (Koilonychia)</span><span class="dtag">Pica</span><span class="dtag">Poor concentration</span><span class="dtag">Cold intolerance</span><span class="dtag">Breathlessness</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Ragi, bajra, drumstick leaves, lentils, jaggery, dark leafy greens, sesame, meat</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Ferrum Met</em>, <em>Ferrum Phos</em>, <em>China</em> (iron-deficiency anaemia patterns)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">🩸 Anaemia</span><span class="tip-tag">⚡ Energy</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="mineral">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#e8f0eb;">🥛</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Calcium</div><div class="nutrient-type">Macro mineral</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Calcium</h3>
+        <p>The most abundant mineral in the body — 99% in bones and teeth. Requires adequate Vitamin D and K2 for proper absorption and utilisation.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Osteoporosis</span><span class="dtag">Weak bones &amp; fractures</span><span class="dtag">Muscle cramps &amp; spasms</span><span class="dtag">Dental decay</span><span class="dtag">Numbness/tingling</span><span class="dtag">Rickets (children)</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Milk, curd, ragi (finger millet), sesame seeds, amaranth, broccoli, tofu, almonds</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Calcarea Carb</em>, <em>Calcarea Phos</em>, <em>Silicea</em> (bone, growth, teeth)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">🦴 Bones</span><span class="tip-tag">💪 Muscles</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="mineral">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#e8f5e9;">🎃</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Magnesium</div><div class="nutrient-type">Macro mineral · Often overlooked</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Magnesium</h3>
+        <p>Involved in over 300 enzyme reactions. Modern processed diets and high stress deplete magnesium rapidly. Often called "the relaxation mineral".</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Muscle twitching &amp; cramps</span><span class="dtag">Insomnia</span><span class="dtag">Anxiety</span><span class="dtag">Migraine</span><span class="dtag">Constipation</span><span class="dtag">High blood pressure</span><span class="dtag">Heart arrhythmia</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Pumpkin seeds, almonds, dark chocolate, spinach, black beans, banana, cashews</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Magnesium Carb/Mur/Phos</em>, <em>Colocynthis</em> (cramps, spasms, anxiety)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">😴 Sleep</span><span class="tip-tag">😌 Anxiety</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="mineral">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#fff8e1;">🌻</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Zinc</div><div class="nutrient-type">Micro mineral</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Zinc</h3>
+        <p>Critical for wound healing, immunity, taste/smell, and skin health. Phytic acid in grains reduces zinc absorption — soaking/sprouting helps.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Slow wound healing</span><span class="dtag">Hair loss</span><span class="dtag">Loss of taste &amp; smell</span><span class="dtag">Acne</span><span class="dtag">Recurrent infections</span><span class="dtag">Poor growth (children)</span><span class="dtag">Diarrhoea</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Pumpkin seeds, sesame, cashews, chickpeas, meat, shellfish, hemp seeds</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Zincum Met</em>, <em>Silicea</em> (skin, immunity, growth)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">🛡️ Immunity</span><span class="tip-tag">💇 Hair</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="mineral">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#e3f2fd;">🧂</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Iodine</div><div class="nutrient-type">Micro mineral · Thyroid</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Iodine</h3>
+        <p>The thyroid gland cannot produce hormones without iodine. Iodised salt is the easiest preventive measure. Particularly critical during pregnancy.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Hypothyroidism</span><span class="dtag">Goitre (enlarged thyroid)</span><span class="dtag">Weight gain</span><span class="dtag">Fatigue &amp; brain fog</span><span class="dtag">Developmental delay (pregnancy)</span><span class="dtag">Dry skin</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Iodised salt, seaweed, dairy, eggs, seafood, prunes, lima beans</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Iodum</em>, <em>Thyroidinum</em> (thyroid-related patterns)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">🦋 Thyroid</span><span class="tip-tag">🧠 Brain</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="mineral">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#e8f5e9;">🍌</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Potassium</div><div class="nutrient-type">Macro mineral · Electrolyte</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Potassium</h3>
+        <p>Regulates fluid balance, nerve signals, and muscle contractions including the heart. High sodium diets and diuretics increase potassium loss.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Muscle weakness &amp; cramps</span><span class="dtag">Irregular heartbeat</span><span class="dtag">Fatigue</span><span class="dtag">Constipation</span><span class="dtag">High blood pressure</span><span class="dtag">Numbness</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Banana, coconut water, potato, lentils, spinach, tomato, avocado, sweet potato</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Kali Carb</em>, <em>Kali Phos</em> (weakness, heart rhythm, nerve)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">❤️ Heart</span><span class="tip-tag">💪 Muscles</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="mineral">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#fff3e0;">🌰</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Selenium</div><div class="nutrient-type">Micro mineral · Antioxidant</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Selenium</h3>
+        <p>A powerful antioxidant mineral essential for thyroid function and immune defence. Just 2 Brazil nuts per day meet the daily requirement.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Thyroid dysfunction</span><span class="dtag">Weakened immunity</span><span class="dtag">Hair &amp; nail loss</span><span class="dtag">Fatigue</span><span class="dtag">Muscle weakness</span><span class="dtag">Keshan disease (heart)</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Brazil nuts (richest), sunflower seeds, tuna, eggs, mushrooms, chicken, brown rice</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Selenium Met</em> (debility, hair fall, thyroid patterns)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">🦋 Thyroid</span><span class="tip-tag">🧬 Antioxidant</span></div>
+    </div>
+
+    <div class="nutrient-card" data-group="mineral">
+      <div class="nutrient-card-top">
+        <div class="nutrient-icon" style="background:#e8f0eb;">🐟</div>
+        <div class="nutrient-meta"><div class="nutrient-group-label">Omega-3</div><div class="nutrient-type">Essential Fatty Acid</div></div>
+      </div>
+      <div class="nutrient-card-body">
+        <h3>Omega-3 (ALA, EPA, DHA)</h3>
+        <p>Essential fats that the body cannot make. DHA is critical for brain and eye development. Plant sources provide ALA which converts poorly — preformed EPA/DHA from fish or algae is more effective.</p>
+        <div class="deficiency-tags">
+          <span class="dtag">Dry skin &amp; hair</span><span class="dtag">Depression &amp; mood swings</span><span class="dtag">Brain fog</span><span class="dtag">Dry eyes</span><span class="dtag">Joint inflammation</span><span class="dtag">Poor concentration</span>
+        </div>
+        <p class="source-line"><strong>Best sources:</strong> Flaxseeds, walnuts, chia seeds (ALA); fatty fish — sardines, salmon (EPA/DHA); algae oil (vegan)</p>
+        <p class="homoeo-line">🌿 Homoeopathic link: <em>Phosphorus</em>, <em>Natrum Mur</em> (dry skin, mood, neural patterns)</p>
+      </div>
+      <div class="nutrient-card-footer"><span class="tip-tag">🧠 Brain</span><span class="tip-tag">❤️ Anti-inflammatory</span></div>
+    </div>
+
+  </div><!-- /mineral grid -->
+
+  <!-- Homoeopathic note -->
+  <div class="homoeo-note-box">
+    <h3>🌿 Homoeopathy &amp; Nutritional Deficiency</h3>
+    <p>In classical homoeopathy, nutritional deficiencies are viewed through the lens of the patient's constitution and miasmatic background. The same deficiency pattern manifests differently in different individuals — which is why constitutional treatment individualises the approach.</p>
+    <ul>
+      <li>🦴 <strong>Calcarea Carb</strong> — calcium/D deficiency patterns; slow, cold, sweaty, anxious constitution</li>
+      <li>🩸 <strong>Ferrum Met / Ferrum Phos</strong> — iron deficiency anaemia; pallor, weakness, easy flushing</li>
+      <li>🧂 <strong>Natrum Mur</strong> — B12, folate patterns; reserved, grief, craves salt, headaches</li>
+      <li>💊 <strong>Silicea</strong> — zinc/calcium patterns; fine-boned, chilly, offensive sweat, poor assimilation</li>
+      <li>🌿 <strong>Phosphorus</strong> — Vitamin C, D, B12 patterns; open, expressive, easy bleeding, tall and lean</li>
+      <li>⚡ <strong>Kali Phos</strong> — B-vitamin nerve exhaustion; mental fatigue, anxiety, weak memory</li>
+    </ul>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-strip">
+    <h3>Think You Have a Deficiency?</h3>
+    <p>Don't self-supplement without a diagnosis. Dr. Jaiswal assesses your full nutritional and constitutional picture and recommends targeted correction alongside homoeopathic treatment.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/919985188831?text=Hello+I+would+like+to+discuss+nutritional+deficiency+symptoms" target="_blank" class="cta-btn-wa">💬 Book on WhatsApp</a>
+      <a href="tips.html" class="cta-btn-back">← Back to Health Tips</a>
+    </div>
+  </div>
+
+</div><!-- /page-wrap -->
+
+<footer>
+  <p>© 2026 Dr. Jaiswal's Homoeopathy · Street No 14, Tarnaka, Secunderabad, Hyderabad – 500017 &nbsp;|&nbsp;
+  <a href="/">Home</a> &nbsp;|&nbsp; <a href="tips.html">Health Tips</a> &nbsp;|&nbsp; <a href="calculator.html">Calculators</a></p>
+</footer>
+
+<script>
+function filterGroup(group, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.nutrient-card').forEach(card => {
+    card.style.display = (group === 'all' || card.dataset.group === group) ? '' : 'none';
+  });
+  document.querySelectorAll('.group-heading').forEach(h => {
+    h.style.display = (group === 'all' || h.dataset.group === group) ? '' : 'none';
+  });
+}
+
+/* ════════ SYMPTOM CHECKER ENGINE ════════ */
+var NUTRIENTS = [{"name":"Vitamin A","type":"vitamin","subtype":"fat-soluble","deficiency":"Night blindness, dry eye","symptoms":"Poor night vision, dry skin, recurrent infections"},{"name":"Vitamin B1 (Thiamine)","type":"vitamin","subtype":"water-soluble","deficiency":"Beriberi","symptoms":"Weakness, neuropathy, edema"},{"name":"Vitamin B2 (Riboflavin)","type":"vitamin","subtype":"water-soluble","deficiency":"Ariboflavinosis","symptoms":"Cracked lips, angular cheilitis, glossitis"},{"name":"Vitamin B3 (Niacin)","type":"vitamin","subtype":"water-soluble","deficiency":"Pellagra","symptoms":"Dermatitis, diarrhea, dementia"},{"name":"Vitamin B5 (Pantothenic acid)","type":"vitamin","subtype":"water-soluble","deficiency":"Rare","symptoms":"Fatigue, burning feet"},{"name":"Vitamin B6 (Pyridoxine)","type":"vitamin","subtype":"water-soluble","deficiency":"Neuropathy, anemia","symptoms":"Irritability, seizures, anemia"},{"name":"Vitamin B7 (Biotin)","type":"vitamin","subtype":"water-soluble","deficiency":"Dermatitis","symptoms":"Hair loss, brittle nails"},{"name":"Vitamin B9 (Folate)","type":"vitamin","subtype":"water-soluble","deficiency":"Megaloblastic anemia","symptoms":"Fatigue, glossitis"},{"name":"Vitamin B12","type":"vitamin","subtype":"water-soluble","deficiency":"Pernicious anemia","symptoms":"Numbness, memory issues, anemia"},{"name":"Vitamin C","type":"vitamin","subtype":"water-soluble","deficiency":"Scurvy","symptoms":"Bleeding gums, poor wound healing"},{"name":"Vitamin D","type":"vitamin","subtype":"fat-soluble","deficiency":"Osteomalacia, osteoporosis","symptoms":"Bone pain, weakness, anxiety"},{"name":"Vitamin E","type":"vitamin","subtype":"fat-soluble","deficiency":"Neuropathy","symptoms":"Muscle weakness, coordination problems"},{"name":"Vitamin K","type":"vitamin","subtype":"fat-soluble","deficiency":"Bleeding disorders","symptoms":"Easy bruising, prolonged clotting"},{"name":"Iron","type":"mineral","subtype":"mineral","deficiency":"Iron deficiency anemia","symptoms":"Fatigue, hair fall, pallor"},{"name":"Calcium","type":"mineral","subtype":"mineral","deficiency":"Osteopenia","symptoms":"Muscle cramps, bone pain"},{"name":"Magnesium","type":"mineral","subtype":"mineral","deficiency":"Neuromuscular irritability","symptoms":"Anxiety, palpitations, cramps"},{"name":"Zinc","type":"mineral","subtype":"mineral","deficiency":"Immune weakness","symptoms":"Hair loss, poor healing"},{"name":"Iodine","type":"mineral","subtype":"mineral","deficiency":"Hypothyroidism","symptoms":"Weight gain, fatigue"},{"name":"Selenium","type":"mineral","subtype":"mineral","deficiency":"Thyroid dysfunction","symptoms":"Weakness, low immunity"},{"name":"Potassium","type":"mineral","subtype":"mineral","deficiency":"Hypokalemia","symptoms":"Weakness, arrhythmia"},{"name":"Sodium","type":"mineral","subtype":"mineral","deficiency":"Hyponatremia","symptoms":"Confusion, headache"},{"name":"Copper","type":"mineral","subtype":"mineral","deficiency":"Anemia","symptoms":"Neuropathy"},{"name":"Chromium","type":"mineral","subtype":"mineral","deficiency":"Glucose intolerance","symptoms":"Sugar cravings"},{"name":"Phosphorus","type":"mineral","subtype":"mineral","deficiency":"Bone weakness","symptoms":"Fatigue"},{"name":"Manganese","type":"mineral","subtype":"mineral","deficiency":"Rare","symptoms":"Bone issues"},{"name":"Molybdenum","type":"mineral","subtype":"mineral","deficiency":"Very rare","symptoms":"Neurological symptoms"}];
+
+var CLUES = {"fatigue":["Iron","Vitamin B12","Vitamin D","Vitamin B9 (Folate)","Iodine","Magnesium","Phosphorus","Vitamin B5 (Pantothenic acid)"],"tired":["Iron","Vitamin B12","Vitamin D","Vitamin B9 (Folate)","Iodine","Magnesium"],"tiredness":["Iron","Vitamin B12","Vitamin D","Vitamin B9 (Folate)","Iodine","Magnesium"],"weakness":["Iron","Vitamin B12","Vitamin D","Selenium","Potassium","Vitamin B1 (Thiamine)"],"energy":["Iron","Vitamin B12","Vitamin D","Magnesium"],"low energy":["Iron","Vitamin B12","Vitamin D","Magnesium"],"exhaustion":["Iron","Vitamin B12","Vitamin D","Magnesium","Iodine"],"hair fall":["Iron","Zinc","Vitamin B7 (Biotin)","Vitamin D","Selenium"],"hair loss":["Iron","Zinc","Vitamin B7 (Biotin)","Vitamin D","Selenium"],"alopecia":["Iron","Zinc","Vitamin D","Vitamin B7 (Biotin)"],"dandruff":["Zinc","Vitamin B7 (Biotin)"],"brittle nails":["Vitamin B7 (Biotin)","Iron","Zinc","Calcium"],"spoon nails":["Iron"],"koilonychia":["Iron"],"nails":["Vitamin B7 (Biotin)","Iron","Zinc","Calcium"],"skin":["Vitamin A","Vitamin B2 (Riboflavin)","Zinc","Vitamin C"],"dry skin":["Vitamin A","Vitamin E","Vitamin C"],"acne":["Zinc","Vitamin A","Vitamin B6 (Pyridoxine)"],"eczema":["Vitamin D","Zinc","Vitamin B7 (Biotin)"],"psoriasis":["Vitamin D","Zinc"],"rash":["Vitamin B2 (Riboflavin)","Vitamin B3 (Niacin)","Zinc","Vitamin A"],"skin rash":["Vitamin B2 (Riboflavin)","Vitamin B3 (Niacin)","Zinc"],"dermatitis":["Vitamin B2 (Riboflavin)","Vitamin B3 (Niacin)","Vitamin B7 (Biotin)","Zinc"],"anxiety":["Magnesium","Vitamin B12","Vitamin D","Vitamin B6 (Pyridoxine)"],"depression":["Vitamin D","Vitamin B12","Magnesium","Vitamin B6 (Pyridoxine)","Iron"],"mood":["Vitamin D","Vitamin B12","Magnesium","Vitamin B6 (Pyridoxine)","Iron"],"irritability":["Vitamin B6 (Pyridoxine)","Magnesium","Iron"],"stress":["Magnesium","Vitamin B5 (Pantothenic acid)","Vitamin C"],"low mood":["Vitamin D","Vitamin B12","Magnesium","Iron"],"sadness":["Vitamin D","Vitamin B12","Magnesium"],"nervousness":["Magnesium","Vitamin B6 (Pyridoxine)"],"panic":["Magnesium","Vitamin B6 (Pyridoxine)"],"memory":["Vitamin B12","Vitamin B9 (Folate)","Vitamin D","Magnesium"],"brain fog":["Vitamin B12","Vitamin D","Magnesium","Iron"],"forgetful":["Vitamin B12","Vitamin D","Magnesium"],"confusion":["Sodium","Vitamin B12","Vitamin B1 (Thiamine)"],"dementia":["Vitamin B3 (Niacin)","Vitamin B12"],"neurological":["Vitamin B12","Molybdenum","Vitamin B1 (Thiamine)"],"neuropathy":["Vitamin B12","Vitamin B1 (Thiamine)","Vitamin B6 (Pyridoxine)","Copper","Vitamin E"],"numbness":["Vitamin B12","Vitamin B1 (Thiamine)","Vitamin B6 (Pyridoxine)"],"tingling":["Vitamin B12","Vitamin B1 (Thiamine)","Vitamin B6 (Pyridoxine)"],"coordination":["Vitamin E","Vitamin B12"],"balance":["Vitamin E","Vitamin B12","Vitamin D"],"vertigo":["Vitamin D","Magnesium"],"dizziness":["Iron","Vitamin D","Vitamin B12"],"dizzy":["Iron","Vitamin D","Vitamin B12"],"seizure":["Vitamin B6 (Pyridoxine)","Calcium","Magnesium"],"seizures":["Vitamin B6 (Pyridoxine)","Calcium","Magnesium"],"insomnia":["Magnesium","Vitamin D","Calcium"],"sleep":["Magnesium","Vitamin D","Calcium"],"headache":["Magnesium","Sodium","Vitamin D"],"migraine":["Magnesium","Vitamin B2 (Riboflavin)","Vitamin D"],"muscle cramps":["Magnesium","Calcium","Potassium","Vitamin D"],"cramps":["Magnesium","Calcium","Potassium"],"leg cramps":["Magnesium","Calcium","Potassium"],"night cramps":["Magnesium","Calcium"],"restless legs":["Iron","Magnesium"],"restless":["Iron","Magnesium"],"muscle pain":["Vitamin D","Magnesium","Calcium"],"muscle weakness":["Vitamin D","Vitamin E","Potassium","Magnesium","Selenium"],"bone pain":["Vitamin D","Calcium","Phosphorus"],"bone":["Vitamin D","Calcium","Phosphorus","Manganese"],"joint pain":["Vitamin D","Calcium","Vitamin C"],"back pain":["Vitamin D","Calcium","Magnesium"],"osteoporosis":["Vitamin D","Calcium"],"osteopenia":["Calcium","Vitamin D"],"osteomalacia":["Vitamin D","Calcium"],"rickets":["Vitamin D","Calcium"],"teeth":["Calcium","Vitamin D","Phosphorus"],"stiffness":["Vitamin D","Calcium","Magnesium"],"twitching":["Magnesium","Calcium"],"spasms":["Magnesium","Calcium","Potassium"],"palpitations":["Magnesium","Potassium","Selenium"],"arrhythmia":["Potassium","Magnesium","Selenium"],"heart":["Magnesium","Potassium","Selenium"],"blood pressure":["Potassium","Magnesium","Calcium"],"hypertension":["Potassium","Magnesium","Calcium"],"anaemia":["Iron","Vitamin B12","Vitamin B9 (Folate)","Vitamin B6 (Pyridoxine)","Copper"],"anemia":["Iron","Vitamin B12","Vitamin B9 (Folate)","Vitamin B6 (Pyridoxine)","Copper"],"pale":["Iron","Vitamin B12","Vitamin B9 (Folate)"],"pallor":["Iron","Vitamin B12","Vitamin B9 (Folate)"],"pica":["Iron"],"breathless":["Iron","Vitamin B12"],"breathlessness":["Iron","Vitamin B12"],"cold hands":["Iron","Vitamin B12"],"cold feet":["Iron","Vitamin B12"],"restless legs":["Iron","Magnesium"],"bleeding gums":["Vitamin C"],"gums":["Vitamin C"],"bleeding":["Vitamin K","Vitamin C"],"bruising":["Vitamin K","Vitamin C"],"clotting":["Vitamin K"],"frequent infections":["Vitamin C","Vitamin D","Zinc","Vitamin A"],"infections":["Vitamin C","Vitamin D","Zinc","Vitamin A"],"infection":["Vitamin C","Vitamin D","Zinc"],"immune":["Vitamin C","Vitamin D","Zinc","Selenium"],"immunity":["Vitamin C","Vitamin D","Zinc","Selenium"],"low immunity":["Vitamin C","Vitamin D","Zinc","Selenium"],"poor immunity":["Vitamin C","Vitamin D","Zinc","Selenium"],"vision":["Vitamin A"],"night vision":["Vitamin A"],"dry eyes":["Vitamin A"],"dry eye":["Vitamin A"],"inflammation":["Vitamin D","Vitamin C","Zinc"],"mouth ulcer":["Vitamin B9 (Folate)","Vitamin B12","Iron","Vitamin B2 (Riboflavin)"],"mouth sores":["Vitamin B9 (Folate)","Vitamin B12","Iron"],"glossitis":["Vitamin B2 (Riboflavin)","Vitamin B9 (Folate)","Vitamin B12"],"cracked lips":["Vitamin B2 (Riboflavin)","Iron"],"cheilitis":["Vitamin B2 (Riboflavin)","Iron"],"lips":["Vitamin B2 (Riboflavin)","Iron"],"sore throat":["Vitamin C","Iron"],"constipation":["Magnesium"],"diarrhea":["Vitamin B3 (Niacin)","Zinc","Magnesium"],"diarrhoea":["Vitamin B3 (Niacin)","Zinc","Magnesium"],"nausea":["Vitamin B6 (Pyridoxine)","Vitamin B12"],"swelling":["Vitamin B1 (Thiamine)"],"swollen":["Vitamin B1 (Thiamine)","Sodium"],"edema":["Vitamin B1 (Thiamine)"],"thyroid":["Iodine","Selenium"],"hypothyroid":["Iodine","Selenium"],"goitre":["Iodine"],"goiter":["Iodine"],"weight gain":["Iodine","Vitamin D"],"weight loss":["Vitamin B12","Iron"],"appetite":["Zinc","Vitamin B12"],"loss of appetite":["Zinc","Vitamin B12"],"taste":["Zinc"],"smell":["Zinc"],"loss of taste":["Zinc"],"loss of smell":["Zinc"],"tinnitus":["Magnesium","Zinc","Vitamin B12"],"pms":["Magnesium","Vitamin B6 (Pyridoxine)","Calcium"],"premenstrual":["Magnesium","Vitamin B6 (Pyridoxine)","Calcium"],"heavy periods":["Iron","Vitamin K"],"fertility":["Iron","Zinc","Vitamin D","Vitamin B9 (Folate)"],"pregnancy":["Vitamin B9 (Folate)","Iron","Vitamin D","Calcium"],"wound healing":["Vitamin C","Zinc"],"slow healing":["Vitamin C","Zinc"],"healing":["Vitamin C","Zinc"],"sugar craving":["Chromium"],"sugar":["Chromium"],"craving":["Chromium","Iron"],"glucose":["Chromium"],"burning feet":["Vitamin B5 (Pantothenic acid)","Vitamin B1 (Thiamine)"],"pellagra":["Vitamin B3 (Niacin)"],"beriberi":["Vitamin B1 (Thiamine)"],"scurvy":["Vitamin C"],"growth":["Zinc","Calcium","Vitamin D","Vitamin A"],"poor growth":["Zinc","Calcium","Vitamin D"],"alopecia":["Iron","Zinc","Vitamin D","Vitamin B7 (Biotin)"],"dandruff":["Zinc","Vitamin B7 (Biotin)"],"eczema":["Vitamin D","Zinc","Vitamin B7 (Biotin)"],"psoriasis":["Vitamin D","Zinc"],"vertigo":["Vitamin D","Magnesium"],"adrenal":["Vitamin B5 (Pantothenic acid)","Vitamin C"],"stress":["Magnesium","Vitamin B5 (Pantothenic acid)","Vitamin C"],"photosensitivity":["Vitamin B3 (Niacin)"],"sunlight":["Vitamin D"],"rickets":["Vitamin D","Calcium"],"osteomalacia":["Vitamin D","Calcium"],"koilonychia":["Iron"],"spoon nails":["Iron"],"pica":["Iron"],"beriberi":["Vitamin B1 (Thiamine)"],"scurvy":["Vitamin C"],"pellagra":["Vitamin B3 (Niacin)"]};
+
+var COMBOS = [{"label":"Vitamin D + B12","desc":"Fatigue combined with anxiety or numbness","nutrients":["Vitamin D","Vitamin B12"]},{"label":"Iron + B12 + Folate","desc":"Complex anaemia — pallor, weakness, glossitis","nutrients":["Iron","Vitamin B12","Vitamin B9 (Folate)"]},{"label":"Magnesium + Vitamin D","desc":"Muscle cramps combined with anxiety or sleep issues","nutrients":["Magnesium","Vitamin D"]},{"label":"Zinc + Biotin","desc":"Hair fall combined with brittle nails or acne","nutrients":["Zinc","Vitamin B7 (Biotin)"]},{"label":"Iron + Vitamin C","desc":"Anaemia with poor wound healing or frequent infections","nutrients":["Iron","Vitamin C"]},{"label":"Calcium + Vitamin D + Magnesium","desc":"Bone pain with muscle cramps and sleep issues","nutrients":["Calcium","Vitamin D","Magnesium"]},{"label":"B12 + Folate","desc":"Megaloblastic anaemia — fatigue, mouth ulcers, glossitis","nutrients":["Vitamin B12","Vitamin B9 (Folate)"]}];
+
+var activeSymTags = [];
+
+function tagClick(el, sym) {
+  el.classList.toggle('active');
+  var idx = activeSymTags.indexOf(sym);
+  if (idx === -1) activeSymTags.push(sym);
+  else activeSymTags.splice(idx, 1);
+  var inp = document.getElementById('symInput');
+  inp.value = activeSymTags.join(', ');
+  if (activeSymTags.length) runChecker();
+  else clearResults();
+}
+
+function runChecker() {
+  var raw = document.getElementById('symInput').value.toLowerCase().trim();
+  if (!raw) { clearResults(); return; }
+
+  /* Extract tokens: split by comma or space */
+  var tokens = raw.split(/[,;\n]+/).map(function(t){ return t.trim(); }).filter(Boolean);
+  /* Also split each token by space for single word matching */
+  var allWords = [];
+  tokens.forEach(function(t){ allWords.push(t); t.split(/\s+/).forEach(function(w){ if(w.length>2) allWords.push(w); }); });
+
+  /* Score each nutrient */
+  var scores = {};   /* name → {score, matchedTerms} */
+  var matchedTermSets = {};
+
+  NUTRIENTS.forEach(function(n) {
+    scores[n.name] = { score: 0, matched: [] };
+    matchedTermSets[n.name] = {};
+  });
+
+  /* Pass 1: match against CLUES dictionary */
+  Object.keys(CLUES).forEach(function(clue) {
+    var matched = false;
+    /* check if any token contains the clue or the clue contains a token */
+    allWords.forEach(function(word) {
+      if (!matched && (clue.indexOf(word) !== -1 || word.indexOf(clue) !== -1 || clue === word)) {
+        matched = true;
+      }
+    });
+    if (!matched) tokens.forEach(function(t) {
+      if (!matched && (clue.indexOf(t) !== -1 || t.indexOf(clue) !== -1)) matched = true;
+    });
+    if (matched) {
+      CLUES[clue].forEach(function(nname) {
+        if (scores[nname]) {
+          scores[nname].score += 2;
+          if (!matchedTermSets[nname][clue]) { matchedTermSets[nname][clue] = true; scores[nname].matched.push(clue); }
+        }
+      });
+    }
+  });
+
+  /* Pass 2: direct symptom/deficiency text match */
+  NUTRIENTS.forEach(function(n) {
+    var symText = (n.symptoms + ' ' + n.deficiency).toLowerCase();
+    allWords.forEach(function(word) {
+      if (word.length > 2 && symText.indexOf(word) !== -1) {
+        scores[n.name].score += 1;
+        if (!matchedTermSets[n.name][word]) { matchedTermSets[n.name][word] = true; scores[n.name].matched.push(word); }
+      }
+    });
+  });
+
+  /* Filter and sort */
+  var results = NUTRIENTS.filter(function(n){ return scores[n.name].score > 0; });
+  results.sort(function(a,b){ return scores[b.name].score - scores[a.name].score; });
+  var maxScore = results.length ? scores[results[0].name].score : 1;
+
+  /* Check combo matches */
+  var matchedCombos = [];
+  COMBOS.forEach(function(combo) {
+    var allPresent = combo.nutrients.every(function(cn) {
+      return results.some(function(r){ return r.name === cn; });
+    });
+    if (allPresent) matchedCombos.push(combo);
+  });
+
+  renderResults(results, scores, maxScore, matchedCombos, tokens);
+}
+
+function renderResults(results, scores, maxScore, combos, tokens) {
+  var out = document.getElementById('checkerOutput');
+  if (!results.length) {
+    out.innerHTML = '<div class="checker-no-result">⚠️ No specific match found for "<strong>' + escHtml(tokens.join(', ')) + '</strong>". Try broader terms like <em>fatigue, hair fall, skin</em>, or use the quick-select tags above.</div>';
+    return;
+  }
+
+  var html = '<div class="checker-results-header"><h3>Possible Deficiencies Found</h3><span class="results-count">' + results.length + ' nutrient' + (results.length>1?'s':'') + ' matched</span></div>';
+  html += '<div class="checker-results-grid">';
+
+  results.forEach(function(n) {
+    var s = scores[n.name];
+    var pct = Math.min(100, Math.round((s.score / maxScore) * 100));
+    var matchLabel = pct >= 80 ? 'Strong match' : pct >= 50 ? 'Likely match' : 'Possible match';
+    var matchedHtml = s.matched.slice(0,4).map(function(t){ return '<span class="match-term">' + escHtml(t) + '</span>'; }).join('');
+
+    html += '<div class="result-card">'
+      + '<div class="result-card-top"><span class="result-name">' + escHtml(n.name) + '</span><span class="result-badge ' + n.type + '">' + (n.type === 'vitamin' ? '💊 Vitamin' : '⚙️ Mineral') + '</span></div>'
+      + '<div class="result-deficiency">Linked to: ' + escHtml(n.deficiency) + '</div>'
+      + '<div class="result-symptoms">' + escHtml(n.symptoms) + '</div>'
+      + '<div class="result-match-bar"><div class="result-match-fill" style="width:' + pct + '%"></div></div>'
+      + '<div style="display:flex;align-items:center;justify-content:space-between;">'
+      +   '<span class="result-match-label">' + matchLabel + '</span>'
+      +   '<div class="result-matched-terms">' + matchedHtml + '</div>'
+      + '</div>'
+      + '</div>';
+  });
+  html += '</div>';
+
+  if (combos.length) {
+    html += '<div class="combo-alert"><h4>⚡ Clinical Combination Alert</h4>';
+    combos.forEach(function(c) {
+      html += '<div class="combo-item">🔗 <span><strong>' + escHtml(c.label) + '</strong> — ' + escHtml(c.desc) + '</span></div>';
+    });
+    html += '</div>';
+  }
+
+  out.innerHTML = html;
+}
+
+function clearResults() {
+  document.getElementById('checkerOutput').innerHTML = '<div class="checker-empty"><span>🔍</span>Enter your symptoms above and press Check — results will appear here.</div>';
+}
+
+function clearChecker() {
+  document.getElementById('symInput').value = '';
+  activeSymTags = [];
+  document.querySelectorAll('.sym-tag').forEach(function(t){ t.classList.remove('active'); });
+  clearResults();
+}
+
+function escHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+(function(){
+  var btn = document.getElementById('hamburger-btn');
+  var closeBtn = document.getElementById('mob-close-btn');
+  var menu = document.getElementById('mobile-menu');
+  var overlay = document.getElementById('menu-overlay');
+  function openMenu(){ menu.classList.add('open'); overlay.classList.add('show'); btn.classList.add('open'); btn.setAttribute('aria-expanded','true'); document.body.style.overflow = 'hidden'; }
+  function closeMenu(){ menu.classList.remove('open'); overlay.classList.remove('show'); btn.classList.remove('open'); btn.setAttribute('aria-expanded','false'); document.body.style.overflow = ''; }
+  btn.addEventListener('click', function(){ menu.classList.contains('open') ? closeMenu() : openMenu(); });
+  closeBtn.addEventListener('click', closeMenu);
+  overlay.addEventListener('click', closeMenu);
+  menu.querySelectorAll('a').forEach(function(l){ l.addEventListener('click', closeMenu); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && menu.classList.contains('open')) closeMenu(); });
+})();
+</script>
+</body>
+</html>
