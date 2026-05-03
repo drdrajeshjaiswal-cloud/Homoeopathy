@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- GitHub Pages → Custom Domain redirect (prevents duplicate indexing) -->
+  <script>
+    (function(){
+      if(window.location.hostname.indexOf('github.io') !== -1){
+        var path = window.location.pathname.replace(/^\/Homoeopathy/, '');
+        window.location.replace('https://drjaiswalhomoeopathy.com' + (path || '/'));
+      }
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Tips | Dr. Jaiswal's Homoeopathy</title>
+  <link rel="canonical" href="https://drjaiswalhomoeopathy.com/tips.html">
+  <meta name="description" content="Natural health tips and homoeopathic wellness advice by Dr. D Rajesh Jaiswal, Homoeopathy Doctor in Hyderabad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --sage:       #4a7c59;
+      --sage-light: #6b9e7a;
+      --sage-pale:  #e8f0eb;
+      --earth:      #8b6f47;
+      --cream:      #faf7f2;
+      --dark:       #1e2d24;
+      --text:       #3a3a3a;
+      --muted:      #7a8a7d;
+      --border:     #d4e0d7;
+      --white:      #ffffff;
+      --shadow:     0 4px 24px rgba(74,124,89,0.10);
+      --shadow-lg:  0 8px 40px rgba(74,124,89,0.15);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* ── NAV ─────────────────────────────────────────────── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(250,247,242,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--sage);
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    .nav-logo img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+    .nav-logo span { color: var(--earth); }
+    .nav-links { display: flex; gap: 1.2rem; list-style: none; flex-wrap: nowrap; }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.83rem;
+      font-weight: 500;
+      white-space: nowrap;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--sage); }
+    .nav-cta {
+      background: var(--sage);
+      color: #fff !important;
+      padding: 0.45rem 1rem;
+      border-radius: 50px;
+      font-size: 0.83rem;
+      white-space: nowrap;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--sage-light) !important; }
+
+    /* ── HERO ─────────────────────────────────────────────── */
+    .hero {
+      background: linear-gradient(135deg, var(--dark) 0%, #2a4a34 50%, #1e3828 100%);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236b9e7a' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 1;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: rgba(107,158,122,0.2);
+      border: 1px solid rgba(107,158,122,0.4);
+      color: #a8d5b5;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.9rem;
+      border-radius: 50px;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      color: #fff;
+      line-height: 1.2;
+      max-width: 680px;
+      margin: 0 auto 1rem;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: #a8d5b5;
+    }
+    .hero p {
+      color: rgba(255,255,255,0.65);
+      font-size: 1.05rem;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* ── FILTER BAR ───────────────────────────────────────── */
+    .filter-bar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0.9rem 2rem;
+      display: flex; justify-content: center; gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--sage);
+      border-color: var(--sage);
+      color: #fff;
+    }
+
+    /* ── MAIN LAYOUT ──────────────────────────────────────── */
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem 5rem;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* ── TIPS GRID ────────────────────────────────────────── */
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .tip-card {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s, box-shadow 0.25s;
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+    }
+    .tip-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .tip-card-top {
+      padding: 1.5rem 1.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .tip-icon {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+    .tip-meta { text-align: right; }
+    .tip-category {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--sage);
+    }
+    .tip-date {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.1rem;
+    }
+
+    .tip-card-body { padding: 1rem 1.5rem 1.5rem; flex: 1; }
+    .tip-card-body h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--dark);
+      margin-bottom: 0.6rem;
+      line-height: 1.35;
+    }
+    .tip-card-body p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .tip-card-footer {
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--sage-pale);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .tip-tag {
+      display: inline-flex; align-items: center; gap: 0.3rem;
+      background: var(--sage-pale);
+      color: var(--sage);
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.25rem 0.7rem;
+      border-radius: 50px;
+    }
+    .read-more {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--sage);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 0.3rem;
+      transition: gap 0.2s;
+    }
+    .read-more:hover { gap: 0.6rem; }
+
+    /* Expandable detail section inside cards */
+    .card-details { display: none; padding: 0 1.5rem 1.2rem; border-top: 1px solid var(--sage-pale); margin-top: 0; }
+    .card-details.open { display: block; }
+    .card-details h4 { font-family: 'Playfair Display', serif; font-size: 0.95rem; color: var(--dark); margin: 1rem 0 0.4rem; }
+    .card-details ul { list-style: none; padding: 0; }
+    .card-details ul li { font-size: 0.85rem; color: var(--muted); padding: 0.25rem 0; display: flex; gap: 0.5rem; line-height: 1.5; }
+    .card-details ul li::before { flex-shrink: 0; }
+    .card-details p { font-size: 0.85rem; color: var(--muted); line-height: 1.7; margin-top: 0.4rem; }
+    .card-details .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin: 0.6rem 0; }
+    .card-details .detail-box { background: var(--sage-pale); border-radius: 8px; padding: 0.7rem 0.9rem; }
+    .card-details .detail-box.alert { background: #fff3cd; }
+    .card-details .detail-box.danger { background: #ffeaea; }
+    .card-details .detail-box h5 { font-size: 0.78rem; font-weight: 700; color: var(--sage); margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .card-details .detail-box.alert h5 { color: #b45309; }
+    .card-details .detail-box.danger h5 { color: #c0392b; }
+    .card-details .homoeo-note { background: var(--sage-pale); border-left: 3px solid var(--sage); border-radius: 0 8px 8px 0; padding: 0.7rem 1rem; font-size: 0.83rem; color: var(--dark); margin-top: 0.8rem; line-height: 1.6; }
+    @media (max-width: 500px) { .card-details .detail-grid { grid-template-columns: 1fr; } }
+
+    /* Featured card */
+    .tip-card.featured {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      align-items: stretch;
+    }
+    .tip-card.featured .featured-accent {
+      width: 8px;
+      background: linear-gradient(180deg, var(--sage) 0%, var(--earth) 100%);
+      flex-shrink: 0;
+      border-radius: 0;
+    }
+    .tip-card.featured .tip-card-body {
+      padding: 1.8rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .tip-card.featured .tip-card-body h2 {
+      font-size: 1.6rem;
+    }
+    .featured-label {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      background: linear-gradient(135deg, var(--sage), var(--sage-light));
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      border-radius: 50px;
+      margin-bottom: 0.8rem;
+      width: fit-content;
+    }
+
+    /* ── SIDEBAR ──────────────────────────────────────────── */
+    .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .sidebar-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 1.4rem;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .sidebar-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--dark);
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--sage-pale);
+    }
+
+    .did-you-know {
+      background: linear-gradient(135deg, var(--dark), #2a4a34);
+      color: #fff;
+      border: none;
+    }
+    .did-you-know h3 {
+      color: #a8d5b5;
+      border-bottom-color: rgba(168,213,181,0.2);
+    }
+    .did-you-know p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.65;
+    }
+    .did-you-know .quote-icon {
+      font-size: 2.5rem;
+      color: rgba(168,213,181,0.3);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .doctor-card { text-align: center; }
+    .doctor-card .doc-avatar-wrap {
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      margin: 0 auto 0.9rem;
+      padding: 3px;
+      background: linear-gradient(135deg, var(--sage), var(--sage-light));
+      display: flex; align-items: center; justify-content: center;
+    }
+    .doctor-card .doc-avatar {
+      width: 100%; height: 100%;
+      background: var(--sage-pale);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem;
+      border: 2px solid #fff;
+      overflow: hidden;
+    }
+    .doctor-card .doc-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 50%;
+      display: block;
+    }
+    .doctor-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem; color: var(--dark);
+    }
+    .doctor-card p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin: 0.2rem 0 1rem;
+    }
+    .btn-appt {
+      display: block;
+      background: var(--sage);
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      padding: 0.65rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn-appt:hover { background: var(--sage-light); }
+
+    .quick-tips-list { list-style: none; }
+    .quick-tips-list li {
+      display: flex; align-items: flex-start; gap: 0.6rem;
+      font-size: 0.85rem;
+      color: var(--text);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--sage-pale);
+      line-height: 1.5;
+    }
+    .quick-tips-list li:last-child { border-bottom: none; }
+    .quick-tips-list li span:first-child { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+
+    /* ── FOOTER ───────────────────────────────────────────── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.55);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.82rem;
+    }
+    footer a { color: #a8d5b5; text-decoration: none; }
+
+    /* ── ANIMATIONS ───────────────────────────────────────── */
+    .tip-card {
+      animation: fadeUp 0.5s ease both;
+    }
+    .tip-card:nth-child(1) { animation-delay: 0.05s; }
+    .tip-card:nth-child(2) { animation-delay: 0.10s; }
+    .tip-card:nth-child(3) { animation-delay: 0.15s; }
+    .tip-card:nth-child(4) { animation-delay: 0.20s; }
+    .tip-card:nth-child(5) { animation-delay: 0.25s; }
+    .tip-card:nth-child(6) { animation-delay: 0.30s; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── RESPONSIVE ───────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .container { grid-template-columns: 1fr; }
+      .tip-card.featured { flex-direction: column; }
+      .tip-card.featured .featured-accent { width: 100%; height: 6px; }
+      .nav-links { display: none; }
+      .tips-hamburger-btn { display: flex; }
+    }
+    @media (max-width: 500px) {
+      .tips-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── MOBILE DRAWER ── */
+    .tips-hamburger-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:6px;z-index:1100;flex-shrink:0;}
+    .tips-hamburger-btn span{display:block;width:24px;height:2px;background:var(--sage);border-radius:2px;transition:transform 0.3s,opacity 0.3s;}
+    .tips-hamburger-btn.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+    .tips-hamburger-btn.open span:nth-child(2){opacity:0;}
+    .tips-hamburger-btn.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
+    .tips-menu-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1200;cursor:pointer;}
+    .tips-menu-overlay.show{display:block;}
+    #tips-mobile-menu{display:none;position:fixed;top:0;right:0;width:78%;max-width:300px;height:100vh;background:#fff;z-index:1300;overflow-y:auto;box-shadow:-6px 0 30px rgba(74,124,89,0.2);transform:translateX(100%);transition:transform 0.32s cubic-bezier(0.4,0,0.2,1);flex-direction:column;}
+    #tips-mobile-menu.open{display:flex;transform:translateX(0);}
+    #tips-mobile-menu .tmob-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.2rem;background:linear-gradient(135deg,var(--dark),#2a4a34);color:white;}
+    #tips-mobile-menu .tmob-header span{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;}
+    #tips-mobile-menu .tmob-close{background:none;border:none;color:white;font-size:1.6rem;cursor:pointer;line-height:1;padding:2px 6px;}
+    #tips-mobile-menu ul{list-style:none;margin:0;padding:0.5rem 0 2rem;display:flex;flex-direction:column;}
+    #tips-mobile-menu ul li{border-bottom:1px solid #f0ebe1;}
+    #tips-mobile-menu ul li:last-child{border-bottom:none;padding:1rem 1rem 0;}
+    #tips-mobile-menu ul li a{display:flex;align-items:center;gap:0.7rem;padding:13px 20px;color:var(--text);text-decoration:none;font-size:0.93rem;font-weight:500;transition:background 0.2s,color 0.2s;}
+    #tips-mobile-menu ul li a:hover{background:var(--sage-pale);color:var(--sage);}
+    #tips-mobile-menu ul li a .mob-icon{font-size:1.1rem;width:22px;text-align:center;flex-shrink:0;}
+    #tips-mobile-menu ul li:last-child a{display:block;text-align:center;padding:0.8rem 1.2rem;background:var(--sage);color:white;border-radius:30px;font-weight:600;}
+  </style>
+</head>
+<body>
+
+<!-- ── NAVIGATION ─────────────────────────────────────── -->
+<nav>
+  <a class="nav-logo" href="/"><img src="logo-green.png" alt="Dr. Jaiswal's Homoeopathy Logo">Dr. Jaiswal's <span>Homoeopathy</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#treatment">Treatments</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="avoid-surgery.html">Avoid Surgery</a></li>
+    <li><a href="diseases.html">Diseases</a></li>
+    <li><a href="calculator.html">Calculators</a></li>
+    <li><a href="testimonials.html">Testimonials</a></li>
+    <li><a href="tips.html" class="active">Health Tips</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="/#contact" class="nav-cta">Book Appointment</a></li>
+  </ul>
+  <button class="tips-hamburger-btn" id="tips-hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile navigation drawer -->
+<div id="tips-mobile-menu" role="dialog" aria-label="Navigation menu">
+  <div class="tmob-header">
+    <span style="display:flex;align-items:center;gap:0.5rem;"><img src="logo-green.png" alt="" style="width:28px;height:28px;border-radius:50%;object-fit:cover;">Dr. Jaiswal's Homoeopathy</span>
+    <button class="tmob-close" id="tips-mob-close" aria-label="Close menu">&#x2715;</button>
+  </div>
+  <ul>
+    <li><a href="/"><span class="mob-icon">🏠</span>Home</a></li>
+    <li><a href="/#about"><span class="mob-icon">👨‍⚕️</span>About</a></li>
+    <li><a href="/#treatment"><span class="mob-icon">💊</span>Treatments</a></li>
+    <li><a href="pricing.html"><span class="mob-icon">💰</span>Pricing</a></li>
+    <li><a href="avoid-surgery.html"><span class="mob-icon">🛡️</span>Avoid Surgery</a></li>
+    <li><a href="diseases.html"><span class="mob-icon">🔬</span>Diseases</a></li>
+    <li><a href="calculator.html"><span class="mob-icon">🧮</span>Calculators</a></li>
+    <li><a href="testimonials.html"><span class="mob-icon">⭐</span>Testimonials</a></li>
+    <li><a href="tips.html"><span class="mob-icon">💡</span>Health Tips</a></li>
+    <li><a href="gallery.html"><span class="mob-icon">🖼️</span>Gallery</a></li>
+    <li><a href="/#contact">📅 Book Appointment</a></li>
+  </ul>
+</div>
+<div class="tips-menu-overlay" id="tips-menu-overlay"></div>
+
+<!-- ── HERO ───────────────────────────────────────────── -->
+<header class="hero">
+  <div class="hero-badge">🌿 Natural Wellness</div>
+  <h1>Health Tips &amp; <em>Homoeopathic</em> Wisdom</h1>
+  <p>Simple, natural advice from Dr. D Rajesh Jaiswal — 26+ years of holistic healing in Hyderabad.</p>
+</header>
+
+<!-- ── FILTER BAR ─────────────────────────────────────── -->
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filterTips('all', this)">All Tips</button>
+  <button class="filter-btn" onclick="filterTips('immunity', this)">Immunity</button>
+  <button class="filter-btn" onclick="filterTips('digestion', this)">Digestion</button>
+  <button class="filter-btn" onclick="filterTips('skin', this)">Skin &amp; Hair</button>
+  <button class="filter-btn" onclick="filterTips('lifestyle', this)">Lifestyle</button>
+  <button class="filter-btn" onclick="filterTips('seasonal', this)">Seasonal</button>
+  <button class="filter-btn" onclick="filterTips('nutrition', this)">Nutrition</button>
+</div>
+
+<!-- ── MAIN CONTENT ───────────────────────────────────── -->
+<div class="container">
+
+  <main>
+    <div class="tips-grid" id="tipsGrid">
+
+      <!-- Featured tip -->
+      <article class="tip-card featured" data-category="immunity">
+        <div class="featured-accent"></div>
+        <div class="tip-card-body">
+          <span class="featured-label">⭐ Featured Tip</span>
+          <h2>Boost Your Immunity Naturally with Homoeopathy</h2>
+          <p>A strong immune system is your best defence. Homoeopathic remedies like <em>Echinacea</em>, <em>Influenzinum</em>, and <em>Arsenicum Album</em> help the body build resilience against seasonal infections. Combined with a warm diet, adequate sleep, and stress reduction — natural immunity flourishes without side effects.</p>
+          <div style="margin-top:1rem; display:flex; gap:0.6rem; flex-wrap:wrap;">
+            <span class="tip-tag">🛡️ Immunity</span>
+            <span class="tip-tag">💊 Remedies</span>
+            <span class="tip-tag">🌿 Preventive Care</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tip 2 -->
+      <article class="tip-card" data-category="lifestyle">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#e8f0eb;">🌅</div>
+          <div class="tip-meta">
+            <div class="tip-category">Lifestyle</div>
+            <div class="tip-date">Daily Habit</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Start Your Day with Warm Lemon Water</h2>
+          <p>Drinking a glass of warm water with fresh lemon juice on an empty stomach kickstarts digestion, alkalises the body, and gently flushes toxins — a cornerstone of homoeopathic wellness philosophy.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🍋 Detox</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Tip 3 -->
+      <article class="tip-card" data-category="digestion">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#fff3e8;">🫚</div>
+          <div class="tip-meta">
+            <div class="tip-category">Digestion</div>
+            <div class="tip-date">Gut Health</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Eat Mindfully — Chew Every Bite</h2>
+          <p>Digestion begins in the mouth. Chewing food 20–30 times per bite reduces bloating, improves nutrient absorption, and reduces the burden on your digestive system. Homoeopathy treats the root cause — but this habit prevents it.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🫁 Gut Health</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Tip 4 -->
+      <article class="tip-card" data-category="skin">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#f0e8f8;">✨</div>
+          <div class="tip-meta">
+            <div class="tip-category">Skin &amp; Hair</div>
+            <div class="tip-date">Natural Beauty</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Hydrate for Glowing Skin — Inside Out</h2>
+          <p>Most skin problems originate from within. Drinking 8–10 glasses of water daily, eating antioxidant-rich fruits, and managing stress can dramatically improve skin clarity. Homoeopathic remedies address the underlying constitution for lasting results.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">💧 Hydration</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Tip 5 -->
+      <article class="tip-card" data-category="seasonal">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#e8f4fb;">🌧️</div>
+          <div class="tip-meta">
+            <div class="tip-category">Seasonal</div>
+            <div class="tip-date">Monsoon Care</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Monsoon Health: Protect Your Family Naturally</h2>
+          <p>Hyderabad's monsoon brings beautiful rains — and risk of viral fevers, stomach infections, and allergies. Preventive homoeopathy with remedies like <em>Bryonia</em> and <em>Natrum Sulph</em>, combined with avoiding street food and stagnant water, keeps your family safe.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🌧️ Monsoon</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Tip 6 -->
+      <article class="tip-card" data-category="immunity">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#e8f0eb;">😴</div>
+          <div class="tip-meta">
+            <div class="tip-category">Immunity</div>
+            <div class="tip-date">Sleep Wellness</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Sleep Is Your Most Powerful Medicine</h2>
+          <p>7–8 hours of quality sleep is when your body heals, regenerates cells, and consolidates immunity. Poor sleep weakens your body's response to illness. Establish a consistent bedtime — it is as important as any remedy.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🌙 Sleep</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Tip 7 -->
+      <article class="tip-card" data-category="lifestyle">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#fef0e8;">🧘</div>
+          <div class="tip-meta">
+            <div class="tip-category">Lifestyle</div>
+            <div class="tip-date">Mind &amp; Body</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>10 Minutes of Pranayama Changes Everything</h2>
+          <p>Controlled breathing (pranayama) reduces cortisol, improves oxygen circulation, and calms the nervous system. Homoeopathy works at the mental-emotional level too — breathwork is a perfect daily companion to constitutional treatment.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🧘 Breathing</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Tip 8 -->
+      <article class="tip-card" data-category="digestion">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#e8f5e8;">🫚</div>
+          <div class="tip-meta">
+            <div class="tip-category">Digestion</div>
+            <div class="tip-date">Food Wisdom</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Avoid Mixing Incompatible Foods</h2>
+          <p>Ayurvedic and homoeopathic traditions both caution against eating milk with sour fruits, or heavy protein with fruit. These combinations can produce ama (toxins) and disturb digestion. Simple, seasonal, freshly cooked food is always the best choice.</p>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🥗 Nutrition</span>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <!-- ══ Sunstroke Card ══ -->
+      <article class="tip-card" data-category="seasonal">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#fff3cd;">☀️</div>
+          <div class="tip-meta">
+            <div class="tip-category">Seasonal · Summer</div>
+            <div class="tip-date">Emergency Awareness</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Sunstroke — Recognise It, Respond Fast, Recover Naturally</h2>
+          <p>Hyderabad's intense summer heat (April–June) makes sunstroke a real risk. Early signs include heavy sweating that suddenly stops, throbbing headache, dizziness, and flushed dry skin. Homoeopathic remedies like <em>Glonoine</em> and <em>Belladonna</em> support recovery — but prevention is always better.</p>
+        </div>
+        <div class="card-details" id="sun-details">
+          <h4>⚠️ Warning Signs to Watch For</h4>
+          <ul>
+            <li style="--bullet:'⚠️'">Heavy sweating that suddenly stops; skin becomes hot and dry</li>
+            <li style="--bullet:'⚠️'">Throbbing headache, dizziness or confusion</li>
+            <li style="--bullet:'⚠️'">Rapid weak pulse; nausea or vomiting</li>
+            <li style="--bullet:'🚨'"><strong>Emergency:</strong> Temperature above 40°C, loss of consciousness, seizure — call 108 immediately</li>
+          </ul>
+          <div class="detail-grid">
+            <div class="detail-box">
+              <h5>✅ Immediate First Aid</h5>
+              <ul>
+                <li>Move to shade or a cool room at once</li>
+                <li>Apply cool wet cloths to neck, armpits, groin</li>
+                <li>Sip cool water or ORS if conscious</li>
+                <li>Fan while misting with water; loosen clothing</li>
+              </ul>
+            </div>
+            <div class="detail-box">
+              <h5>🌿 Homoeopathic Support</h5>
+              <ul>
+                <li><em>Glonoine 30</em> — throbbing head, worse in sun</li>
+                <li><em>Belladonna 30</em> — red dry hot skin, sudden onset</li>
+                <li><em>Natrum Carb 30</em> — debility and sweating from heat</li>
+                <li><em>Cuprum Met 30</em> — cramps and spasms</li>
+              </ul>
+            </div>
+          </div>
+          <h4>☀️ Prevention for Hyderabad Summers</h4>
+          <ul>
+            <li>💧 Drink 3–4 litres of water daily; start the day with two glasses</li>
+            <li>🕙 Avoid direct sun between 11 am and 4 pm</li>
+            <li>👒 Wear light, loose cotton clothing and always carry an umbrella</li>
+            <li>🥒 Eat water-rich foods — cucumber, watermelon, coconut water</li>
+            <li>🚫 Avoid alcohol, excess tea and coffee in summer</li>
+          </ul>
+          <div class="homoeo-note">🌿 <strong>Dr. Jaiswal's note:</strong> Use homoeopathic remedies only for mild early-stage or recovery support. Severe sunstroke is a medical emergency — seek hospital care first, then constitutional follow-up.</div>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">☀️ Summer</span>
+          <a href="#" class="read-more" onclick="toggleDetails(event,'sun-details',this)">Read more →</a>
+        </div>
+      </article>
+
+      <!-- ══ Vitamins & Minerals Card ══ -->
+      <article class="tip-card" data-category="nutrition">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#f0e8f8;">💊</div>
+          <div class="tip-meta">
+            <div class="tip-category">Nutrition · Reference</div>
+            <div class="tip-date">Health Awareness</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Vitamins &amp; Minerals — Know Your Deficiency Signs</h2>
+          <p>Many chronic symptoms — fatigue, hair fall, brittle nails, low mood, aching joints — trace back to nutritional deficiencies. Vitamin D, B12, Iron, Magnesium, and Zinc are among the most commonly deficient in India. Constitutional homoeopathy and dietary correction work best together.</p>
+        </div>
+        <div class="card-details" id="vit-details">
+          <h4>⚡ Most Common Deficiencies in India</h4>
+          <ul>
+            <li>🦴 <strong>Vitamin D</strong> — bone &amp; muscle pain, fatigue, depression, hair fall, frequent infections</li>
+            <li>🩸 <strong>Vitamin B12</strong> — tingling in hands/feet, memory loss, anaemia, mouth ulcers, pale skin</li>
+            <li>🔴 <strong>Iron</strong> — fatigue, pallor, brittle/spoon nails, poor concentration, breathlessness</li>
+            <li>🧠 <strong>Magnesium</strong> — muscle cramps, insomnia, anxiety, migraine, constipation</li>
+            <li>🌿 <strong>Folate (B9)</strong> — anaemia, mouth ulcers, neural tube defects in pregnancy</li>
+            <li>💪 <strong>Zinc</strong> — slow wound healing, hair loss, loss of taste/smell, acne, recurrent infections</li>
+          </ul>
+          <div class="homoeo-note">🌿 <strong>Homoeopathic connection:</strong> Remedies like <em>Calcarea Carb</em> (calcium/D deficiency patterns), <em>Ferrum Phos</em> (iron), <em>Natrum Mur</em> (B12 patterns), and <em>Silicea</em> (zinc patterns) are often indicated alongside dietary correction. Dr. Jaiswal assesses your full nutritional and constitutional picture during consultation.</div>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">💊 Vitamins</span>
+          <a href="vitamins.html" class="read-more">Full Reference Chart →</a>
+        </div>
+      </article>
+
+      <!-- Grounding / Earthing Card -->
+      <article class="tip-card" data-category="lifestyle">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#e8f5e9;">🌿</div>
+          <div class="tip-meta">
+            <div class="tip-category">Lifestyle</div>
+            <div class="tip-date">Daily Habit</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Grounding — Walk Barefoot, Feel the Difference</h2>
+          <p>Walking barefoot on soil, grass, or sand for 20–30 minutes connects your body directly to the Earth's surface. This simple, free practice is used worldwide for relaxation, stress relief, and overall well-being.</p>
+        </div>
+        <div class="card-details" id="grounding-details">
+          <h4>🌍 What is Earthing / Grounding?</h4>
+          <p>The Earth carries a mild negative electric charge. Direct contact — bare feet on natural ground — allows electrons to flow into the body, neutralising free radicals and reducing physiological stress signals. Most of us have lost this daily contact through rubber-soled shoes and indoor living.</p>
+          <h4>✅ Reported Benefits</h4>
+          <ul>
+            <li>😴 Improved sleep quality and faster onset of sleep</li>
+            <li>😌 Reduced anxiety, tension, and mental fatigue</li>
+            <li>🔥 Reduced inflammation and muscle soreness after activity</li>
+            <li>❤️ Better heart rate variability — a marker of stress resilience</li>
+            <li>⚡ Improved energy and mood throughout the day</li>
+          </ul>
+          <h4>🟢 How to Practise</h4>
+          <ul>
+            <li>🌿 Walk barefoot on grass, garden soil, beach sand, or clay</li>
+            <li>⏱️ 20–30 minutes daily is enough — morning is ideal</li>
+            <li>🏡 A garden, public park, or beach all work equally well</li>
+            <li>🚫 Avoid concrete or tarmac — these block the Earth's charge</li>
+          </ul>
+          <div class="homoeo-note">🌿 <strong>Homoeopathic perspective:</strong> Grounding aligns with homoeopathy's principle of treating the whole person — mind, body, and environment. It is an excellent complementary habit alongside constitutional treatment, particularly for patients with chronic fatigue, anxiety, and insomnia.</div>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🌍 Earthing</span>
+          <a href="#" class="read-more" onclick="toggleDetails(event,'grounding-details',this)">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Garlic for Cholesterol Card -->
+      <article class="tip-card" data-category="nutrition">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#fffde7;">🧄</div>
+          <div class="tip-meta">
+            <div class="tip-category">Nutrition</div>
+            <div class="tip-date">Heart Health</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Raw Garlic — A Natural Aid for Cholesterol</h2>
+          <p>Chewing one raw garlic clove on an empty stomach each morning is a time-tested practice for supporting healthy cholesterol levels, circulation, and cardiovascular health — backed by both tradition and research.</p>
+        </div>
+        <div class="card-details" id="garlic-details">
+          <h4>🧪 How Garlic Works</h4>
+          <p>Raw garlic releases <strong>allicin</strong> — a sulphur compound activated by crushing or chewing. Allicin inhibits cholesterol synthesis in the liver, reduces LDL ("bad") cholesterol, mildly raises HDL ("good") cholesterol, and has natural blood-thinning and anti-inflammatory properties. Cooking destroys most of its active compounds — raw is essential.</p>
+          <h4>✅ Key Benefits</h4>
+          <ul>
+            <li>🩸 Lowers LDL cholesterol and total cholesterol over 8–12 weeks</li>
+            <li>❤️ Reduces blood pressure by relaxing blood vessel walls</li>
+            <li>🔥 Anti-inflammatory — helps reduce arterial plaque formation</li>
+            <li>🛡️ Boosts immunity — natural antimicrobial and antiviral properties</li>
+            <li>🍬 Helps regulate blood sugar — beneficial in pre-diabetes</li>
+          </ul>
+          <h4>🌿 How to Use</h4>
+          <ul>
+            <li>🧄 Crush or peel one medium clove and chew it raw</li>
+            <li>🕖 Best on an empty stomach — first thing in the morning</li>
+            <li>💧 Follow with a glass of warm water to reduce the aftertaste</li>
+            <li>⏳ Consistent daily use for 8–12 weeks shows measurable results</li>
+            <li>🚫 Avoid if you have a sensitive stomach, acid reflux, or are on blood thinners — consult Dr. Jaiswal first</li>
+          </ul>
+          <div class="homoeo-note">🌿 <strong>Homoeopathic complement:</strong> <em>Allium Sativum</em> (garlic) is itself a homoeopathic remedy used constitutionally for high cholesterol, chronic bronchitis, and arterial complaints. Dr. Jaiswal may prescribe it as part of a broader treatment plan alongside dietary guidance.</div>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🧄 Cholesterol</span>
+          <a href="#" class="read-more" onclick="toggleDetails(event,'garlic-details',this)">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Alkaline Body Card -->
+      <article class="tip-card" data-category="nutrition">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#e8f5e9;">⚗️</div>
+          <div class="tip-meta">
+            <div class="tip-category">Nutrition</div>
+            <div class="tip-date">pH Balance</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Keep Your Body Alkaline — The Foundation of Good Health</h2>
+          <p>A slightly alkaline internal environment (blood pH 7.35–7.45) allows every organ, enzyme, and immune cell to function optimally. Modern diets, stress, and poor sleep push the body towards acidity — the root of many chronic conditions.</p>
+        </div>
+        <div class="card-details" id="alkaline-details">
+          <h4>🔬 Why pH Balance Matters</h4>
+          <p>Your blood must stay within a very narrow pH range to sustain life. When the body becomes overly acidic, it compensates by pulling alkaline minerals — calcium, magnesium, potassium — from bones, muscles, and organs. Over time, this creates deficiencies, weakens immunity, and promotes inflammation that underlies conditions from arthritis to chronic fatigue.</p>
+          <h4>⚠️ Signs Your Body May Be Too Acidic</h4>
+          <ul>
+            <li>😴 Persistent fatigue even after adequate sleep</li>
+            <li>🦷 Frequent cavities or sensitive teeth (calcium being leached)</li>
+            <li>🦴 Joint and muscle pain with no clear cause</li>
+            <li>🤒 Frequent infections — viruses thrive in acidic environments</li>
+            <li>🔥 Chronic acid reflux, bloating, or indigestion</li>
+            <li>🧠 Brain fog, poor concentration, irritability</li>
+          </ul>
+          <div class="detail-grid">
+            <div class="detail-box">
+              <h5>✅ Alkaline Foods to Favour</h5>
+              <ul>
+                <li>🥬 Dark leafy greens — spinach, methi, palak</li>
+                <li>🥒 Cucumber, bottle gourd (lauki), ash gourd</li>
+                <li>🍋 Lemon &amp; amla — acidic in taste, alkaline in effect</li>
+                <li>🥥 Coconut water — nature's best alkaline drink</li>
+                <li>🌾 Ragi, bajra, jowar — alkaline millets</li>
+                <li>🫘 Sprouts, chickpeas, moong dal</li>
+              </ul>
+            </div>
+            <div class="detail-box alert">
+              <h5>🚫 Acid-Forming Foods to Reduce</h5>
+              <ul>
+                <li>🍞 Refined flour (maida) — bread, biscuits, noodles</li>
+                <li>🥤 Soft drinks, packaged juices, energy drinks</li>
+                <li>🍗 Excess red meat, processed and fried foods</li>
+                <li>☕ Excess tea, coffee, and alcohol</li>
+                <li>🍬 Sugar and artificial sweeteners</li>
+                <li>🧂 Excess table salt and preservatives</li>
+              </ul>
+            </div>
+          </div>
+          <h4>🌿 Daily Alkalising Habits</h4>
+          <ul>
+            <li>💧 Start the morning with warm water + half a lemon — alkalises the gut within minutes</li>
+            <li>🥤 Drink 3–4 litres of water daily — hydration buffers acidity</li>
+            <li>🧘 Pranayama and deep breathing remove CO₂ — the primary acid in the body</li>
+            <li>🌍 Grounding / walking barefoot on grass — helps neutralise excess free radicals</li>
+            <li>😴 7–8 hours of sleep — the body alkalises and repairs during deep sleep</li>
+            <li>🥗 Fill half your plate with vegetables at every meal</li>
+          </ul>
+          <div class="homoeo-note">🌿 <strong>Homoeopathic perspective:</strong> In homoeopathy, chronic acidity reflects a deeper miasmatic imbalance — often Psoric or Sycotic. Remedies like <em>Natrum Phos</em> (the biochemic acid neutraliser), <em>Calcarea Carb</em>, and <em>Sulphur</em> are frequently indicated. Constitutional treatment by Dr. Jaiswal addresses not just the diet but the deeper tendencies that cause the body to hold onto acidity.</div>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">⚗️ Alkaline</span>
+          <a href="#" class="read-more" onclick="toggleDetails(event,'alkaline-details',this)">Read more →</a>
+        </div>
+      </article>
+
+      <!-- ══ Incompatible Foods Card ══ -->
+      <article class="tip-card" data-category="nutrition">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#fdecea;">🚫🍽️</div>
+          <div class="tip-meta">
+            <div class="tip-category">Nutrition</div>
+            <div class="tip-date">Food Combining</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Incompatible Foods — What Not to Eat Together</h2>
+          <p>Ancient Ayurvedic wisdom and modern nutrition both recognise that certain food combinations disturb digestion, produce toxins, and trigger inflammation. Knowing what <em>not</em> to combine is as important as knowing what to eat.</p>
+        </div>
+        <div class="card-details" id="incompatible-foods-details">
+          <h4>⚠️ Why Food Combining Matters</h4>
+          <p>Different foods require different digestive enzymes and gastric environments — some need an acidic medium, others alkaline. When incompatible foods are eaten together, enzymes clash, digestion slows, food ferments or putrefies in the gut, and <em>ama</em> (toxins) accumulate. Over time this leads to bloating, acidity, skin problems, joint pain, and lowered immunity.</p>
+
+          <h4>🚫 Common Incompatible Combinations</h4>
+          <ul>
+            <li>🥛 <strong>Milk + Fish or Meat</strong> — opposite qualities (cooling vs heating) generate toxins; linked to skin disorders like vitiligo &amp; eczema (<em>viruddha ahara</em>)</li>
+            <li>🍋 <strong>Milk + Sour Fruits / Citrus</strong> — oranges, lemons, tamarind, tomatoes curdle milk in the stomach, causing bloating, gas &amp; acidity</li>
+            <li>🍌 <strong>Milk + Banana</strong> — both are heavy; together they slow digestion, promote mucus &amp; cause lethargy; avoid in respiratory conditions</li>
+            <li>🍯 <strong>Honey + Hot / Boiling Liquid</strong> — heating honey above 40 °C creates harmful compounds; always add to lukewarm drinks only</li>
+            <li>🥚 <strong>Eggs + Dairy</strong> — double high-protein load is hard to assimilate; leads to sluggishness, bloating &amp; metabolic stress over time</li>
+            <li>🍉 <strong>Fruit + Cooked Meals</strong> — fruit digests in 20–40 min; eaten after meals it ferments behind slower food, causing gas &amp; bloating; eat fruit on an empty stomach</li>
+            <li>🫘 <strong>Beans + Dairy or Eggs</strong> — protein overload from legumes + dairy/eggs produces excess gas &amp; strains the gut and kidneys</li>
+            <li>🥤 <strong>Cold Drinks During Meals</strong> — ice-cold liquids dilute digestive enzymes &amp; solidify fats; sip warm or room-temperature water instead</li>
+            <li>🧀 <strong>Yogurt + Fruit or Heating Foods</strong> — curd with fruits (especially mango) or combined with fish/meat creates opposing potencies; best eaten plain</li>
+            <li>🍚 <strong>Rice / Starch + Proteins</strong> — heavy starches with dense proteins (e.g. rice + meat in large amounts) slow gastric transit; prefer dal-rice balance</li>
+          </ul>
+
+          <h4>✅ Better Combinations to Follow</h4>
+          <ul>
+            <li>🌾 Grains + Vegetables — the foundation of a balanced Indian thali</li>
+            <li>🫘 Dal + Rice or Roti — complementary proteins that digest well together</li>
+            <li>🥦 Cooked vegetables + healthy fats (ghee, coconut oil) — improves fat-soluble vitamin absorption</li>
+            <li>🍋 Lemon + warm water — alkalises and primes the stomach before meals</li>
+            <li>🌿 Spices (turmeric, cumin, coriander) with any food — they enhance enzymatic activity</li>
+          </ul>
+
+          <div class="homoeo-note">🌿 <strong>Homoeopathic perspective:</strong> Repeated incompatible food habits create a chronic toxic load that suppresses the vital force and triggers miasmatic expression. In Dr. Jaiswal's practice, dietary correction is always part of constitutional treatment — remedies like <em>Nux Vomica</em>, <em>Lycopodium</em>, and <em>Antimonium Crudum</em> are often indicated in patients with long-standing wrong food combining habits.</div>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🚫 Food Combining</span>
+          <a href="#" class="read-more" onclick="toggleDetails(event,'incompatible-foods-details',this)">Read more →</a>
+        </div>
+      </article>
+
+      <!-- ══ Vitamin B12 Card ══ -->
+      <article class="tip-card" data-category="nutrition">
+        <div class="tip-card-top">
+          <div class="tip-icon" style="background:#eef4fb;">🧬</div>
+          <div class="tip-meta">
+            <div class="tip-category">Nutrition</div>
+            <div class="tip-date">Vitamin B12</div>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <h2>Vitamin B12 — Natural Sources &amp; Why It Matters</h2>
+          <p>Vitamin B12 (cobalamin) is essential for nerve function, red blood cell formation, DNA synthesis, and brain health. Deficiency is extremely common in India — especially among vegetarians — yet it often goes undetected for years while causing serious neurological and haematological damage.</p>
+        </div>
+        <div class="card-details" id="b12-details">
+
+          <h4>⚠️ Why Deficiency Is So Common in India</h4>
+          <p>B12 is produced by bacteria and is naturally found almost exclusively in animal-derived foods. India's largely vegetarian diet, combined with widespread use of antacids &amp; proton-pump inhibitors (which reduce stomach acid needed to absorb B12), gut dysbiosis, and H. pylori infection, makes deficiency endemic. Studies show over 80% of vegetarians in India are deficient or insufficient.</p>
+
+          <h4>🚨 Signs &amp; Symptoms of B12 Deficiency</h4>
+          <ul>
+            <li>🧠 <span><strong>Neurological:</strong> tingling or numbness in hands &amp; feet, poor balance, memory lapses, brain fog, mood changes, depression</span></li>
+            <li>🩸 <span><strong>Blood:</strong> megaloblastic anaemia — large, immature RBCs unable to carry oxygen efficiently; pallor, fatigue, breathlessness</span></li>
+            <li>👅 <span><strong>Oral:</strong> sore, inflamed tongue (glossitis), mouth ulcers</span></li>
+            <li>👁️ <span><strong>Eyes:</strong> blurred or disturbed vision in severe deficiency</span></li>
+            <li>💪 <span><strong>General:</strong> weakness, unexplained fatigue, poor concentration, irritability</span></li>
+            <li>🤰 <span><strong>Pregnancy risk:</strong> deficiency in pregnancy is linked to neural tube defects, miscarriage, and developmental delays in the baby</span></li>
+          </ul>
+
+          <h4>🍽️ Natural Food Sources of B12</h4>
+          <ul>
+            <li>🥩 <span><strong>Liver &amp; organ meats</strong> — the richest source; beef liver gives ~70 µg per 100 g (daily requirement is just 2.4 µg)</span></li>
+            <li>🐟 <span><strong>Fish &amp; seafood</strong> — sardines, mackerel, tuna, salmon, clams; excellent bioavailability</span></li>
+            <li>🍖 <span><strong>Chicken &amp; mutton</strong> — good moderate sources for non-vegetarians</span></li>
+            <li>🥚 <span><strong>Eggs</strong> — especially the yolk; vegetarian-friendly; provides ~0.6 µg per egg</span></li>
+            <li>🥛 <span><strong>Dairy — milk, curd, paneer, cheese</strong> — the primary B12 source for lacto-vegetarians; ~1 µg per cup of milk; absorption is better from dairy than from eggs</span></li>
+            <li>🧀 <span><strong>Fermented dairy (curd / yogurt)</strong> — fermentation slightly enhances B12 bioavailability; have 1–2 cups of full-fat curd daily</span></li>
+            <li>🌊 <span><strong>Nori (dried seaweed)</strong> — the only plant food with meaningful B12; still low-quantity but useful for strict vegans</span></li>
+            <li>🥛 <span><strong>B12-fortified foods</strong> — fortified plant milks (soy, oat), nutritional yeast, fortified cereals; always check the label for "cyanocobalamin" or "methylcobalamin"</span></li>
+          </ul>
+
+          <h4>💡 Tips to Maximise B12 Absorption</h4>
+          <ul>
+            <li>🫙 <span><strong>Eat dairy in smaller portions spread through the day</strong> — the stomach can absorb B12 from only ~1.5–2 µg at a time via intrinsic factor; spreading intake improves total absorption</span></li>
+            <li>🚫 <span><strong>Avoid antacids &amp; PPIs long-term</strong> — acid is essential to release B12 from food proteins; discuss alternatives with your doctor</span></li>
+            <li>🧫 <span><strong>Treat gut issues</strong> — H. pylori, gut dysbiosis, or SIBO impair B12 absorption; homoeopathic constitutional treatment addresses the root cause</span></li>
+            <li>☀️ <span><strong>Pair with folate-rich foods</strong> — B12 and folate work together; eat green leafy vegetables alongside your B12 sources</span></li>
+            <li>🚬 <span><strong>Quit smoking &amp; limit alcohol</strong> — both reduce serum B12 levels significantly</span></li>
+            <li>💊 <span><strong>Prefer methylcobalamin over cyanocobalamin</strong> — if supplementing, methylcobalamin is the active form and better retained in tissues</span></li>
+          </ul>
+
+          <h4>🌿 Practical Daily Plan for Vegetarians</h4>
+          <ul>
+            <li>☀️ <span><strong>Morning:</strong> 1 glass of warm full-fat milk</span></li>
+            <li>🍳 <span><strong>Breakfast:</strong> 2 eggs (any form) OR 1 cup yogurt</span></li>
+            <li>🥗 <span><strong>Lunch:</strong> paneer / cheese in sabzi or salad + curd on the side</span></li>
+            <li>🌙 <span><strong>Dinner:</strong> 1 cup curd / lassi OR a small piece of paneer</span></li>
+            <li>📅 <span><strong>Weekly:</strong> get B12 tested annually (serum B12 + homocysteine); target serum B12 &gt; 400 pg/mL for optimal neurological protection, not just &gt;200 (lab "normal")</span></li>
+          </ul>
+
+          <h4>🦠 The Role of Microbes &amp; Healthy Gut Bacteria in B12</h4>
+          <p>Vitamin B12 is unique among vitamins — it is <em>synthesised exclusively by microorganisms</em>: bacteria, archaea, and certain fungi. No plant, animal, or human cell can make it. Animals (and humans) obtain B12 only by eating other animals or by harbouring B12-producing bacteria in their gut. Understanding this microbial connection is key to understanding why gut health is inseparable from B12 status.</p>
+          <ul>
+            <li>🧫 <span><strong>B12 is made only by bacteria</strong> — species like <em>Lactobacillus reuteri</em>, <em>Propionibacterium freudenreichii</em>, <em>Pseudomonas denitrificans</em>, and certain <em>Clostridium</em> strains are the primary producers in nature. Animal liver is rich in B12 because the animal accumulated bacterial B12 through its own gut flora or diet.</span></li>
+            <li>📍 <span><strong>The absorption location problem</strong> — in humans, B12-producing bacteria colonise the <strong>large intestine (colon)</strong>, but B12 is absorbed only in the <strong>terminal ileum</strong> (last part of the small intestine). This anatomical mismatch means the B12 our colon bacteria make is excreted in faeces, not absorbed — which is why humans cannot rely on their own gut flora for B12 the way ruminant animals do.</span></li>
+            <li>🐄 <span><strong>How ruminants self-supply B12</strong> — cows, buffaloes, and goats have bacteria throughout their multi-chambered stomach (rumen) that produce B12 in a region where it <em>can</em> be absorbed. This is why milk and dairy are reliable B12 sources — the animal has already done the microbial work.</span></li>
+            <li>🦠 <span><strong>A diverse, healthy gut microbiome supports B12 indirectly</strong> — while the colon flora cannot supply absorbable B12, a healthy microbiome: (a) maintains intestinal wall integrity so absorbed B12 is not lost, (b) prevents dysbiosis and SIBO (small intestinal bacterial overgrowth), which can compete for and consume dietary B12 before it reaches absorption sites, and (c) supports production of intrinsic factor by keeping the gastric mucosa healthy.</span></li>
+            <li>🧪 <span><strong>SIBO — when bacteria move to the wrong place</strong> — in Small Intestinal Bacterial Overgrowth, bacteria colonise the small intestine where they actively consume ingested B12, causing severe deficiency even in people eating adequate amounts. SIBO is a growing problem linked to antacid overuse, stress, and processed food diets.</span></li>
+            <li>🥛 <span><strong>Fermented foods &amp; probiotic bacteria</strong> — <em>Lactobacillus reuteri</em> (found in traditional curd, fermented buttermilk, and some probiotic supplements) is one of the few human-friendly bacteria that produces a small but meaningful amount of bioactive B12. Regular consumption of homemade curd, kanji (fermented rice water), fermented idli/dosa batter, and traditional pickles nourishes these strains.</span></li>
+            <li>🌱 <span><strong>Why soil microbes matter for vegans</strong> — unwashed, organically grown root vegetables (carrots, radishes, beetroot) carry trace B12 from soil bacteria (<em>Rhizobium</em> species). Industrial washing and sanitisation remove these microbes completely, which is one reason modern vegan diets are more deficient than those of traditional rural populations who ate garden-fresh, lightly washed produce.</span></li>
+            <li>💊 <span><strong>Probiotics &amp; B12 — the emerging evidence</strong> — supplementing with <em>L. reuteri</em>-containing probiotics has been shown in some studies to modestly raise serum B12. While not a replacement for dietary sources or supplementation in deficiency, maintaining a probiotic-rich diet is a meaningful supporting strategy, especially for vegetarians.</span></li>
+          </ul>
+
+          <h4>🌿 How to Nurture Your B12-Supporting Microbiome</h4>
+          <ul>
+            <li>🥛 <span>Eat fresh homemade curd (not packaged) daily — live <em>Lactobacillus</em> cultures intact</span></li>
+            <li>🍚 <span>Use traditionally fermented foods — idli, dosa, kanji, ambali, fermented rice — these feed and diversify gut flora</span></li>
+            <li>🥕 <span>Buy organic, locally grown vegetables when possible and wash lightly — preserve surface microbes</span></li>
+            <li>🚫 <span>Minimise antibiotics, antacids, and PPIs — these devastate B12-producing and B12-supporting gut flora</span></li>
+            <li>🌾 <span>Eat prebiotic fibre daily — oats, raw banana, onion, garlic, dal — these feed beneficial bacteria</span></li>
+            <li>🧘 <span>Manage stress — chronic stress disrupts the gut-brain axis, alters microbiome composition, and impairs gastric acid and intrinsic factor secretion, all of which reduce B12 absorption</span></li>
+          </ul>
+
+          <div class="homoeo-note">🌿 <strong>Homoeopathic perspective:</strong> B12 deficiency often manifests with symptoms that overlap classical homoeopathic pictures. <em>Arsenicum Album</em> — restlessness with burning pains and weakness; <em>Phosphorus</em> — nervous exhaustion with tingling in extremities; <em>Picric Acid</em> — profound mental and physical prostration. Dr. Jaiswal uses constitutional remedies alongside dietary correction to restore vitality — supplementation alone does not address the underlying absorption and assimilation problem in many chronic cases.</div>
+        </div>
+        <div class="tip-card-footer">
+          <span class="tip-tag">🧬 Vitamin B12</span>
+          <a href="#" class="read-more" onclick="toggleDetails(event,'b12-details',this)">Read more →</a>
+        </div>
+      </article>
+
+    </div><!-- /tips-grid -->
+  </main>
+
+  <!-- ── SIDEBAR ──────────────────────────────────────── -->
+  <aside class="sidebar">
+
+    <!-- Doctor card -->
+    <div class="sidebar-card doctor-card">
+      <div class="doc-avatar-wrap">
+        <div class="doc-avatar">
+          <img src="doctor.jpg"
+               alt="Dr. D Rajesh Jaiswal – Homoeopathy Doctor Hyderabad"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='👨‍⚕️';" />
+        </div>
+      </div>
+      <h4>Dr. D Rajesh Jaiswal</h4>
+      <p>Classical Homoeopath · 26+ Years · Tarnaka, Hyderabad</p>
+      <a class="btn-appt" href="/#contact">📅 Book a Consultation</a>
+    </div>
+
+    <!-- Did you know -->
+    <div class="sidebar-card did-you-know">
+      <div class="quote-icon">"</div>
+      <h3>Did You Know?</h3>
+      <p>Homoeopathy treats <strong style="color:#a8d5b5;">the person</strong>, not the disease. Two patients with the same illness may receive entirely different remedies based on their individual constitution, emotions, and symptom patterns.</p>
+    </div>
+
+    <!-- Quick tips -->
+    <div class="sidebar-card">
+      <h3>Quick Daily Tips</h3>
+      <ul class="quick-tips-list">
+        <li><span>☀️</span> Get 15 min of morning sunlight</li>
+        <li><span>💧</span> Drink water 30 min before meals</li>
+        <li><span>🚶</span> Walk 30 min after dinner</li>
+        <li><span>📵</span> No screens 1 hour before sleep</li>
+        <li><span>🧂</span> Reduce salt &amp; processed food</li>
+        <li><span>🙏</span> Practice gratitude daily</li>
+      </ul>
+    </div>
+
+    <!-- Call to action -->
+    <div class="sidebar-card" style="background:var(--sage-pale); border-color:var(--sage); text-align:center;">
+      <div style="font-size:2rem; margin-bottom:0.5rem;">📞</div>
+      <h3 style="border-bottom:none; margin-bottom:0.5rem;">Need Personalised Advice?</h3>
+      <p style="font-size:0.83rem; color:var(--muted); margin-bottom:1rem;">Every body is unique. Book a consultation for tailored homoeopathic care.</p>
+      <a class="btn-appt" href="/#contact">Talk to Dr. Jaiswal</a>
+    </div>
+
+  </aside>
+</div>
+
+<!-- ── FOOTER ──────────────────────────────────────────── -->
+<footer>
+  <p>© 2025 Dr. D Rajesh Jaiswal — Homoeopathy, Tarnaka, Secunderabad, Hyderabad &nbsp;|&nbsp;
+     <a href="/">← Back to Home</a> &nbsp;|&nbsp; <a href="gallery.html">Gallery</a> &nbsp;|&nbsp; <a href="calculator.html">Health Calculators</a>
+  </p>
+
+<!-- Legal Links Bar -->
+<div style="border-top:1px solid rgba(255,255,255,0.12);margin-top:1.5rem;padding-top:1.2rem;text-align:center;">
+    <div style="display:flex;justify-content:center;gap:0.5rem;flex-wrap:wrap;align-items:center;">
+        <a href="terms-of-service.html" style="color:rgba(255,255,255,0.45);text-decoration:none;font-size:0.78rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Terms of Service</a>
+        <span style="color:rgba(255,255,255,0.2);font-size:0.78rem;">&middot;</span>
+        <a href="medical-disclaimer.html" style="color:rgba(255,255,255,0.45);text-decoration:none;font-size:0.78rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Medical Disclaimer</a>
+        <span style="color:rgba(255,255,255,0.2);font-size:0.78rem;">&middot;</span>
+        <a href="privacy-policy.html" style="color:rgba(255,255,255,0.45);text-decoration:none;font-size:0.78rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Privacy Policy</a>
+        <span style="color:rgba(255,255,255,0.2);font-size:0.78rem;">&middot;</span>
+        <a href="teleconsultation-disclaimer.html" style="color:rgba(255,255,255,0.45);text-decoration:none;font-size:0.78rem;" onmouseover="this.style.color='#a8d5b5'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Teleconsultation Disclaimer</a>
+    </div>
+</div>
+</footer>
+
+<script>
+  function filterTips(category, btn) {
+    // Update active button
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // Filter cards
+    document.querySelectorAll('#tipsGrid .tip-card').forEach(card => {
+      const match = category === 'all' || card.dataset.category === category;
+      card.style.display = match ? '' : 'none';
+    });
+
+    // Hide featured if not all / immunity
+    const featured = document.querySelector('.tip-card.featured');
+    if (featured) {
+      featured.style.display = (category === 'all' || category === 'immunity') ? '' : 'none';
+    }
+  }
+
+  function toggleDetails(e, id, link) {
+    e.preventDefault();
+    var panel = document.getElementById(id);
+    var open = panel.classList.toggle('open');
+    link.textContent = open ? 'Show less ↑' : 'Read more →';
+  }
+</script>
+
+<script>
+/* ── Mobile hamburger (tips.html) ── */
+(function(){
+  var btn     = document.getElementById('tips-hamburger-btn');
+  var closeBtn= document.getElementById('tips-mob-close');
+  var menu    = document.getElementById('tips-mobile-menu');
+  var overlay = document.getElementById('tips-menu-overlay');
+  function openMenu(){menu.classList.add('open');overlay.classList.add('show');btn.classList.add('open');btn.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+  function closeMenu(){menu.classList.remove('open');overlay.classList.remove('show');btn.classList.remove('open');btn.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+  btn.addEventListener('click',function(){menu.classList.contains('open')?closeMenu():openMenu();});
+  closeBtn.addEventListener('click',closeMenu);
+  overlay.addEventListener('click',closeMenu);
+  menu.querySelectorAll('a').forEach(function(l){l.addEventListener('click',closeMenu);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&menu.classList.contains('open'))closeMenu();});
+})();
+</script>
+
+</body>
+</html>
